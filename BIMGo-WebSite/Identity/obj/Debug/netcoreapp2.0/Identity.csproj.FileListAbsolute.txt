@@ -118,3 +118,15 @@ C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\n
 C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfo.cs
 C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.dll
 C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.pdb
+C:\PerformanceFolder\BIMgo-GP\BIMGo-WebSite\Identity\bin\Debug\netcoreapp2.0\Identity.deps.json
+C:\PerformanceFolder\BIMgo-GP\BIMGo-WebSite\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.json
+C:\PerformanceFolder\BIMgo-GP\BIMGo-WebSite\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.dev.json
+C:\PerformanceFolder\BIMgo-GP\BIMGo-WebSite\Identity\bin\Debug\netcoreapp2.0\Identity.dll
+C:\PerformanceFolder\BIMgo-GP\BIMGo-WebSite\Identity\bin\Debug\netcoreapp2.0\Identity.pdb
+C:\PerformanceFolder\BIMgo-GP\BIMGo-WebSite\Identity\obj\Debug\netcoreapp2.0\Identity.csprojAssemblyReference.cache
+C:\PerformanceFolder\BIMgo-GP\BIMGo-WebSite\Identity\obj\Debug\netcoreapp2.0\Identity.csproj.CoreCompileInputs.cache
+C:\PerformanceFolder\BIMgo-GP\BIMGo-WebSite\Identity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\PerformanceFolder\BIMgo-GP\BIMGo-WebSite\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfoInputs.cache
+C:\PerformanceFolder\BIMgo-GP\BIMGo-WebSite\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfo.cs
+C:\PerformanceFolder\BIMgo-GP\BIMGo-WebSite\Identity\obj\Debug\netcoreapp2.0\Identity.dll
+C:\PerformanceFolder\BIMgo-GP\BIMGo-WebSite\Identity\obj\Debug\netcoreapp2.0\Identity.pdb

@@ -41,11 +41,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">*@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="~/css/style3.css">
     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">*@
     <!-- Bootstrap Js CDN -->
 
     <style>
@@ -75,6 +75,27 @@
       Author: BootstrapMade.com
       Author URL: https://bootstrapmade.com
     ======================================================= -->
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="~/lib/superfish/hoverIntent.js"></script>
+    <script src="~/lib/superfish/superfish.min.js"></script>
+    <script src="~/lib/tether/js/tether.min.js"></script>
+    <script src="~/lib/stellar/stellar.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/counterup/counterup.min.js"></script>
+    <script src="~/lib/waypoints/waypoints.min.js"></script>
+    <script src="~/lib/easing/easing.js"></script>
+    <script src="~/lib/stickyjs/sticky.js"></script>
+    <script src="~/lib/parallax/parallax.js"></script>
+    <script src="~/lib/lockfixed/lockfixed.min.js"></script>
+
+    <!-- Template Specisifc Custom Javascript File -->
+    <script src="~/js/custom.js"></script>
+
+    <script src="contactform/contactform.js"></script>
+
+    @RenderSection("Scripts", required: false)
 </head>
 <body>
     <!-- Page Content
@@ -170,7 +191,7 @@
                         <button type="button" class="btn btn-primary">New</button>
                         <button type="button" class="btn btn-primary">Open</button>
                         <button type="button" class="btn btn-primary">Save</button>
-                        <button type="button" class="btn btn-primary">Save As</button>
+                        <button id="SaveBtn" type="button" class="btn btn-primary">Save As</button>
                         <button type="button" class="btn btn-primary">Print</button>
                         <button type="button" class="btn btn-primary">Export</button>
                         <button type="button" class="btn btn-primary">Print</button>
@@ -365,6 +386,35 @@
                     function closeNav2() {
                         document.getElementById("mySidenav2").style.width = "0";
                     }
+                    $("#SaveBtn").click(function () {
+                        var mdata = {
+                            FK_ApplicatioUserId: "sfsfds",
+                            StaticFilePath: "abo elftooh"
+
+                        };
+
+
+                        $.ajax({
+                            url: './create/',
+                            type: "POST",
+                            data: mdata,
+                            //contentType: "application/json; charset=utf-8",
+                            //crossDomain:true,
+                            // dataType: 'json',
+                            //traditional:true,
+                            //processData:true,
+                            success: function (data) {
+                                alert("data Saved");
+                            },
+                            done: function () {
+                                console.log("data Saved");
+                            },
+                            error: function (err) {
+                                alert("data Not Saved");
+                            }
+                        });
+
+                    })
                 </script>
 
 
@@ -379,26 +429,7 @@
     </section>
 
     <!-- Required JavaScript Libraries -->
-    <script src="~/lib/jquery/jquery.min.js"></script>
-    <script src="~/lib/jquery/jquery-migrate.min.js"></script>
-    <script src="~/lib/superfish/hoverIntent.js"></script>
-    <script src="~/lib/superfish/superfish.min.js"></script>
-    <script src="~/lib/tether/js/tether.min.js"></script>
-    <script src="~/lib/stellar/stellar.min.js"></script>
-    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="~/lib/counterup/counterup.min.js"></script>
-    <script src="~/lib/waypoints/waypoints.min.js"></script>
-    <script src="~/lib/easing/easing.js"></script>
-    <script src="~/lib/stickyjs/sticky.js"></script>
-    <script src="~/lib/parallax/parallax.js"></script>
-    <script src="~/lib/lockfixed/lockfixed.min.js"></script>
-
-    <!-- Template Specisifc Custom Javascript File -->
-    <script src="js/custom.js"></script>
-
-    <script src="contactform/contactform.js"></script>
-
-    @RenderSection("Scripts", required: false)
+    
     @RenderBody()
 </body>
 </html>
