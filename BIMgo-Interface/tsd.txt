@@ -1,0 +1,1 @@
+tsd query -r -o -a install bardjs angular jquery chai mocha angular-ui-router angular-sanitize angular-mocks angular-animate bootstrap moment-node moment sinon toastr -s

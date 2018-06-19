@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BAT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="css/style3.css">
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src='https://code.playcanvas.com/playcanvas-stable.min.js'></script>
+
+  <style>.Myunselectedhear {
+      cursor: context-menu;
+    -moz-user-select: none; /* Firefox */
+     -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+ -webkit-user-select: none; /* Chrome, Safari, and Opera */
+ -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+  </style>
+</head>
+
+<body>
+    
+<header style="height:30px;margin-top:8px;">
+    <h4 class="Myunselectedhear">&nbsp;&nbsp;Web-BAT Ver 1.0</h4>
+  </header>
+  <div class="container-fluid">
+
+    <div class="row align-items-start">
+          
+        <div class="panel panel-default" style="margin-bottom:30px;">
+            <div class="panel-heading" style="padding:0px 0px;">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#home" role="tab" data-toggle="tab">Main</a></li>
+                <li><a href="#Architecture" role="tab" data-toggle="tab">Architecture</a></li>
+                <li><a href="#Structure" role="tab" data-toggle="tab">Structure</a></li>
+                <li><a href="#Insert" role="tab" data-toggle="tab">Insert</a></li>
+                <li><a href="#Annotate" role="tab" data-toggle="tab">Annotate</a></li>
+                <li><a href="#Analyze" role="tab" data-toggle="tab">Analyze</a></li>
+                <li><a href="#View" role="tab" data-toggle="tab">View</a></li>
+                <li><a href="#Manage" role="tab" data-toggle="tab">Manage</a></li>
+                  <li><a href="#Add-ins" role="tab" data-toggle="tab">Add-ins</a></li>
+            </ul>
+
+        </div>
+        <!-- Tab panes + Panel body -->
+        <div class="panel-body tab-content" style="padding:0px;">
+            <div class="tab-pane active" id="home"> 
+                <button type="button" class="btn btn-primary">New</button>
+                <button type="button" class="btn btn-primary">Open</button>
+                <button type="button" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-primary">Save As</button>
+                <button type="button" class="btn btn-primary">Print</button>
+                <button type="button" class="btn btn-primary">Export</button>
+                <button type="button" class="btn btn-primary">Print</button>
+                <button type="button" class="btn btn-primary">Options</button>
+            </div>
+            <div class="tab-pane" id="Architecture">
+                <button type="button" class="btn btn-primary">Modify</button>
+                <button type="button" class="btn btn-primary">Wall</button>
+                <button type="button" class="btn btn-primary">Door</button>
+                <button type="button" class="btn btn-primary">Window</button>
+                <button type="button" class="btn btn-primary">Column</button>
+                <button type="button" class="btn btn-primary">Roof</button>
+                <button type="button" class="btn btn-primary">Ceiling</button>
+                <button type="button" class="btn btn-primary">Floor</button>
+                <button type="button" class="btn btn-primary">Stair</button>
+                <button type="button" class="btn btn-primary">Ramp</button>
+            </div>
+            <div class="tab-pane" id="Structure">
+                <button type="button" class="btn btn-primary">Modify</button>
+                <button type="button" class="btn btn-primary">Beam</button>
+                <button type="button" class="btn btn-primary">Wall</button>
+                <button type="button" class="btn btn-primary">Column</button>
+                <button type="button" class="btn btn-primary">Floor</button>
+                <button type="button" class="btn btn-primary">Truss</button>
+                <button type="button" class="btn btn-primary">Brace</button>
+                <button type="button" class="btn btn-primary">Beam System</button>
+                <button type="button" class="btn btn-primary">Connection</button>
+                <button type="button" class="btn btn-primary">Isolated Foundation</button>
+                <button type="button" class="btn btn-primary">Wall Foundation</button>
+                <button type="button" class="btn btn-primary">Slab Foundation</button>
+
+            </div>
+
+            <div class="tab-pane" id="Insert">
+                <button type="button" class="btn btn-primary">Modify</button>
+                <button type="button" class="btn btn-primary">Link CAD</button>
+                <button type="button" class="btn btn-primary">Decal</button>
+                <button type="button" class="btn btn-primary">Load Family</button>
+
+            </div>
+            <div class="tab-pane" id="Annotate">
+                <button type="button" class="btn btn-primary">Modify</button>
+                <button type="button" class="btn btn-primary">Aligned</button>
+                <button type="button" class="btn btn-primary">Angular</button>
+                <button type="button" class="btn btn-primary">Radial</button>
+                <button type="button" class="btn btn-primary">Diameter</button>
+                <button type="button" class="btn btn-primary">Arc Length</button>
+            </div>
+            <div class="tab-pane" id="Analyze">
+                <button type="button" class="btn btn-primary">Materials</button>
+                <button type="button" class="btn btn-primary">Boundary Condition</button>
+                <button type="button" class="btn btn-primary">Functions</button>
+                <button type="button" class="btn btn-primary">Load Patterns</button>
+                <button type="button" class="btn btn-primary">Load Cases</button>
+
+            </div>
+
+            <div class="tab-pane" id="View"></div>
+             <div class="tab-pane" id="Manage"></div>
+            <div class="tab-pane" id="Add-ins"></div>
+           
+        </div>
+    </div>
+</div>
+<div class="row align-items-center">
+     
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      <div id="mySidenav2" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+        <a href="#">xxxxxxxxx</a>
+        <a href="#">xxxxxxxxxxxxxxxxxxxxx</a>
+        <a href="#">xxxxxxxxxxxxxxxxxx</a>
+        <a href="#">xxxxxxx</a>
+      </div>
+      <canvas id='application'></canvas>
+    <script>
+        // create a PlayCanvas application
+        var canvas = document.getElementById('application');
+        var app = new pc.Application(canvas, { });
+        app.start();
+
+        // fill the available space at full resolution
+        app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);
+        app.setCanvasResolution(pc.RESOLUTION_AUTO);
+
+        // ensure canvas is resized when window changes size
+        window.addEventListener('resize', function() {
+            app.resizeCanvas();
+        });
+
+        // create box entity
+        var cube = new pc.Entity('cube');
+        cube.addComponent('model', {
+            type: 'box'
+        });
+
+        // create camera entity
+        var camera = new pc.Entity('camera');
+        camera.addComponent('camera', {
+            clearColor: new pc.Color(0.1, 0.1, 0.1)
+        });
+
+        // create directional light entity
+        var light = new pc.Entity('light');
+        light.addComponent('light');
+
+        // add to hierarchy
+        app.root.addChild(cube);
+        app.root.addChild(camera);
+        app.root.addChild(light);
+
+        // set up initial positions and orientations
+        camera.setPosition(0, 0, 3);
+        light.setEulerAngles(45, 0, 0);
+
+        // register a global update event
+        app.on('update', function (deltaTime) {
+            cube.rotate(10 * deltaTime, 20 * deltaTime, 30 * deltaTime);
+        });
+    </script>
+    </div>
+      <div style="font-size:15px;cursor:pointer;transform:translate(-163px, -500px) rotate(90deg);
+      width: 300px;
+      height: 60px;display: inline-block;" onclick="openNav()">&#9776; Project Explorer<br></br></div>
+      <div class="row">
+  <div class="column">
+    
+      <div style="font-size:15px;cursor:pointer;transform:translate(-147px, -400px) rotate(90deg);
+      width: 300px;
+      height: 60px;" onclick="openNav2()">&#9776; Element Properties</div>
+      <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+      function openNav2() {
+          document.getElementById("mySidenav2").style.width = "250px";
+      }
+      
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+      function closeNav2() {
+          document.getElementById("mySidenav2").style.width = "0";
+      }
+      </script>
+    
+
+    
+      </div>
+
+  </div>
+  
+  <div id="threeContainer" style="width: 500px;height: 500px;position: relative;left: 300px;top: 60px;"></div>
+
+</body>
+    <script src="node_modules\angular\angular.js"></script>
+    <script src="node_modules\jquery\dist\jquery.js"></script>
+    <script src="node_modules\three\build\three.js"></script>
+    <script src="node_modules\three-orbit-controls\OrbitControls.js"></script>
+    <script src="node_modules\detector-webgl\Detector.js"></script>
+    <script src="node_modules\stats.js\build\stats.min.js"></script>
+    <script src="MyCodes\Modeling.js"></script>
+</html>
