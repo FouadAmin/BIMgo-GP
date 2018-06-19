@@ -1,0 +1,62 @@
+﻿@model Identity.Models.Models.IFCFile
+@{
+    ViewData["Title"] = "BIMGo";
+    Layout = "~/Views/Shared/_BIMGoLayout.cshtml";
+}
+<div>
+    <h4>IFCFile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FileName)
+        </dt>
+        <dd>
+            <div id="divCheckbox" style="display: none;">
+                @{
+                    @Html.DisplayFor(model => model.FileName) }
+            </div>
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StaticFilePath)
+        </dt>
+        <dd>
+            <div id="divCheckbox" style="display: none;">
+                @{
+                    @Html.DisplayFor(model => model.StaticFilePath) }
+            </div>
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RelativeFilePath)
+        </dt>
+        <dd>
+            <div id="divCheckbox" style="display: none;">
+                @{
+                    @Html.DisplayFor(model => model.RelativeFilePath) }
+            </div>
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UploadedTime)
+        </dt>
+        <dd>   
+            <div id="divCheckbox" style="display: none;">
+            @{
+                @Html.DisplayFor(model => model.UploadedTime) }
+</div>
+        </dd>
+<dt>
+    @Html.DisplayNameFor(model => model.ApplicationUser)
+</dt>
+<dd>
+
+    <div id="divCheckbox" style="display: none;">
+        @{
+            @Html.DisplayFor(model => model.ApplicationUser.Id) }
+    </div>
+</dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

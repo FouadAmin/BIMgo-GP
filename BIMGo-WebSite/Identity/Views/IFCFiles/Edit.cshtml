@@ -1,0 +1,51 @@
+﻿@model Identity.Models.Models.IFCFile
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutAll.cshtml";
+
+}
+
+<h2>Edit</h2>
+
+<h4>IFCFile</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="FK_ApplicatioUserId" class="control-label"></label>
+                <select asp-for="FK_ApplicatioUserId" class="form-control" asp-items="ViewBag.FK_ApplicatioUserId"></select>
+                <span asp-validation-for="FK_ApplicatioUserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StaticFilePath" class="control-label"></label>
+                <input asp-for="StaticFilePath" class="form-control" />
+                <span asp-validation-for="StaticFilePath" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RelativeFilePath" class="control-label"></label>
+                <input asp-for="RelativeFilePath" class="form-control" />
+                <span asp-validation-for="RelativeFilePath" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UploadedTime" class="control-label"></label>
+                <input asp-for="UploadedTime" class="form-control" />
+                <span asp-validation-for="UploadedTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

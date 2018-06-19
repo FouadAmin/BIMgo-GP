@@ -1,0 +1,120 @@
+C:\Users\Mohammed\source\repos\Identity\Identity\bin\Debug\netcoreapp2.0\Identity.deps.json
+C:\Users\Mohammed\source\repos\Identity\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.json
+C:\Users\Mohammed\source\repos\Identity\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.dev.json
+C:\Users\Mohammed\source\repos\Identity\Identity\bin\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\source\repos\Identity\Identity\bin\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\source\repos\Identity\Identity\obj\Debug\netcoreapp2.0\Identity.csprojAssemblyReference.cache
+C:\Users\Mohammed\source\repos\Identity\Identity\obj\Debug\netcoreapp2.0\Identity.csproj.CoreCompileInputs.cache
+C:\Users\Mohammed\source\repos\Identity\Identity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Mohammed\source\repos\Identity\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfoInputs.cache
+C:\Users\Mohammed\source\repos\Identity\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfo.cs
+C:\Users\Mohammed\source\repos\Identity\Identity\obj\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\source\repos\Identity\Identity\obj\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\09-Identity\Identity\bin\Debug\netcoreapp2.0\Identity.deps.json
+C:\Users\Mohammed\Desktop\BIMGo\09-Identity\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.json
+C:\Users\Mohammed\Desktop\BIMGo\09-Identity\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.dev.json
+C:\Users\Mohammed\Desktop\BIMGo\09-Identity\Identity\bin\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\09-Identity\Identity\bin\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\09-Identity\Identity\obj\Debug\netcoreapp2.0\Identity.csprojAssemblyReference.cache
+C:\Users\Mohammed\Desktop\BIMGo\09-Identity\Identity\obj\Debug\netcoreapp2.0\Identity.csproj.CoreCompileInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\09-Identity\Identity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\09-Identity\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfoInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\09-Identity\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\09-Identity\Identity\obj\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\09-Identity\Identity\obj\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes\Identity\bin\Debug\netcoreapp2.0\Identity.deps.json
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.json
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.dev.json
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes\Identity\bin\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes\Identity\bin\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes\Identity\obj\Debug\netcoreapp2.0\Identity.csprojAssemblyReference.cache
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes\Identity\obj\Debug\netcoreapp2.0\Identity.csproj.CoreCompileInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes\Identity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfoInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes\Identity\obj\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes\Identity\obj\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes(Files,Posts,Categoru)+Authorization\Identity\bin\Debug\netcoreapp2.0\Identity.deps.json
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes(Files,Posts,Categoru)+Authorization\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.json
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes(Files,Posts,Categoru)+Authorization\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.dev.json
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes(Files,Posts,Categoru)+Authorization\Identity\bin\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes(Files,Posts,Categoru)+Authorization\Identity\bin\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes(Files,Posts,Categoru)+Authorization\Identity\obj\Debug\netcoreapp2.0\Identity.csprojAssemblyReference.cache
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes(Files,Posts,Categoru)+Authorization\Identity\obj\Debug\netcoreapp2.0\Identity.csproj.CoreCompileInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes(Files,Posts,Categoru)+Authorization\Identity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes(Files,Posts,Categoru)+Authorization\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfoInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes(Files,Posts,Categoru)+Authorization\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes(Files,Posts,Categoru)+Authorization\Identity\obj\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\11-BIMGo-Classes(Files,Posts,Categoru)+Authorization\Identity\obj\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\14-BIMGo-Classes(Files,Posts,Categoru)+Authorization - Files\Identity\obj\Debug\netcoreapp2.0\Identity.csprojAssemblyReference.cache
+C:\Users\Mohammed\Desktop\BIMGo\14-BIMGo-Classes(Files,Posts,Categoru)+Authorization - Files\Identity\obj\Debug\netcoreapp2.0\Identity.csproj.CoreCompileInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\14-BIMGo-Classes(Files,Posts,Categoru)+Authorization - Files\Identity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\14-BIMGo-Classes(Files,Posts,Categoru)+Authorization - Files\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfoInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\14-BIMGo-Classes(Files,Posts,Categoru)+Authorization - Files\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\14-BIMGo-Classes(Files,Posts,Categoru)+Authorization - Files\Identity\obj\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\14-BIMGo-Classes(Files,Posts,Categoru)+Authorization - Files\Identity\obj\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\14-BIMGo-Classes(Files,Posts,Categoru)+Authorization - Files\Identity\bin\Debug\netcoreapp2.0\Identity.deps.json
+C:\Users\Mohammed\Desktop\BIMGo\14-BIMGo-Classes(Files,Posts,Categoru)+Authorization - Files\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.json
+C:\Users\Mohammed\Desktop\BIMGo\14-BIMGo-Classes(Files,Posts,Categoru)+Authorization - Files\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.dev.json
+C:\Users\Mohammed\Desktop\BIMGo\14-BIMGo-Classes(Files,Posts,Categoru)+Authorization - Files\Identity\bin\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\14-BIMGo-Classes(Files,Posts,Categoru)+Authorization - Files\Identity\bin\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\15-BIMGo-PassingData\Identity\bin\Debug\netcoreapp2.0\Identity.deps.json
+C:\Users\Mohammed\Desktop\BIMGo\15-BIMGo-PassingData\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.json
+C:\Users\Mohammed\Desktop\BIMGo\15-BIMGo-PassingData\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.dev.json
+C:\Users\Mohammed\Desktop\BIMGo\15-BIMGo-PassingData\Identity\bin\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\15-BIMGo-PassingData\Identity\bin\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\15-BIMGo-PassingData\Identity\obj\Debug\netcoreapp2.0\Identity.csprojAssemblyReference.cache
+C:\Users\Mohammed\Desktop\BIMGo\15-BIMGo-PassingData\Identity\obj\Debug\netcoreapp2.0\Identity.csproj.CoreCompileInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\15-BIMGo-PassingData\Identity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\15-BIMGo-PassingData\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfoInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\15-BIMGo-PassingData\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\15-BIMGo-PassingData\Identity\obj\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\15-BIMGo-PassingData\Identity\obj\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\16-BIMGo-PassingData -Original File Name\Identity\bin\Debug\netcoreapp2.0\Identity.deps.json
+C:\Users\Mohammed\Desktop\BIMGo\16-BIMGo-PassingData -Original File Name\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.json
+C:\Users\Mohammed\Desktop\BIMGo\16-BIMGo-PassingData -Original File Name\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.dev.json
+C:\Users\Mohammed\Desktop\BIMGo\16-BIMGo-PassingData -Original File Name\Identity\bin\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\16-BIMGo-PassingData -Original File Name\Identity\bin\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\16-BIMGo-PassingData -Original File Name\Identity\obj\Debug\netcoreapp2.0\Identity.csprojAssemblyReference.cache
+C:\Users\Mohammed\Desktop\BIMGo\16-BIMGo-PassingData -Original File Name\Identity\obj\Debug\netcoreapp2.0\Identity.csproj.CoreCompileInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\16-BIMGo-PassingData -Original File Name\Identity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\16-BIMGo-PassingData -Original File Name\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfoInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\16-BIMGo-PassingData -Original File Name\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\16-BIMGo-PassingData -Original File Name\Identity\obj\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\16-BIMGo-PassingData -Original File Name\Identity\obj\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\19-BIMGo-file details\Identity\bin\Debug\netcoreapp2.0\Identity.deps.json
+C:\Users\Mohammed\Desktop\BIMGo\19-BIMGo-file details\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.json
+C:\Users\Mohammed\Desktop\BIMGo\19-BIMGo-file details\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.dev.json
+C:\Users\Mohammed\Desktop\BIMGo\19-BIMGo-file details\Identity\bin\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\19-BIMGo-file details\Identity\bin\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\19-BIMGo-file details\Identity\obj\Debug\netcoreapp2.0\Identity.csprojAssemblyReference.cache
+C:\Users\Mohammed\Desktop\BIMGo\19-BIMGo-file details\Identity\obj\Debug\netcoreapp2.0\Identity.csproj.CoreCompileInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\19-BIMGo-file details\Identity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\19-BIMGo-file details\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfoInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\19-BIMGo-file details\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\19-BIMGo-file details\Identity\obj\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\19-BIMGo-file details\Identity\obj\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\20-BIMGo-BIMGo Page Installation\Identity\bin\Debug\netcoreapp2.0\Identity.deps.json
+C:\Users\Mohammed\Desktop\BIMGo\20-BIMGo-BIMGo Page Installation\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.json
+C:\Users\Mohammed\Desktop\BIMGo\20-BIMGo-BIMGo Page Installation\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.dev.json
+C:\Users\Mohammed\Desktop\BIMGo\20-BIMGo-BIMGo Page Installation\Identity\bin\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\20-BIMGo-BIMGo Page Installation\Identity\bin\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\Mohammed\Desktop\BIMGo\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.csprojAssemblyReference.cache
+C:\Users\Mohammed\Desktop\BIMGo\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.csproj.CoreCompileInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfoInputs.cache
+C:\Users\Mohammed\Desktop\BIMGo\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfo.cs
+C:\Users\Mohammed\Desktop\BIMGo\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.dll
+C:\Users\Mohammed\Desktop\BIMGo\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\bin\Debug\netcoreapp2.0\Identity.deps.json
+C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.json
+C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\bin\Debug\netcoreapp2.0\Identity.runtimeconfig.dev.json
+C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\bin\Debug\netcoreapp2.0\Identity.dll
+C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\bin\Debug\netcoreapp2.0\Identity.pdb
+C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.csprojAssemblyReference.cache
+C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.csproj.CoreCompileInputs.cache
+C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfoInputs.cache
+C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.AssemblyInfo.cs
+C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.dll
+C:\Users\fouad5657\Desktop\20-BIMGo-BIMGo Page Installation\Identity\obj\Debug\netcoreapp2.0\Identity.pdb

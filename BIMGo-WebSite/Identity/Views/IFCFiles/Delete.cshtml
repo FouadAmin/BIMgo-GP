@@ -1,0 +1,47 @@
+﻿@model Identity.Models.Models.IFCFile
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_LayoutAll.cshtml";
+
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>IFCFile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StaticFilePath)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StaticFilePath)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RelativeFilePath)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RelativeFilePath)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UploadedTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UploadedTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationUser)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationUser.Id)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
