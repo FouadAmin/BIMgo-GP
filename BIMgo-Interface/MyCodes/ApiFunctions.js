@@ -1,5 +1,5 @@
 
-function GetBimModelListedFromPath(fullPath) {
+function GetBimModelListedFromFullPath(fullPath) {
     var APIURL = "http://localhost:2611/BimApi/BimIO/GetBimModelListedFromFullPath?fullPath=" + fullPath;
 
     $.ajax({
@@ -26,7 +26,7 @@ function GetBimModelListedFromPath(fullPath) {
 
 function GetBimModelQuery_Success(data) {
 
-    document.getElementById("Alert-For-Server").style.display =  "none";
+    
 
     bimModelJS = data;
 
@@ -35,9 +35,9 @@ function GetBimModelQuery_Success(data) {
 
 function LoadingFailed() {
 
-    //alert("Loading Failed From Server : A Sample Model Will Be loaded ");
+    alert("Loading Failed From Server : A Sample Model Will Be loaded ");
 
-    document.getElementById("Alert-For-Server").style.display = "block";
+    //document.getElementById("Alert-For-Server").style.display = "block";
     //document.getElementById("Alert-For-Server-Modal").modal('show');
     
     bimModelJS = BimModelNewSlantedBeamNG;
@@ -148,6 +148,13 @@ function AnalyzeModelSent(pointsTolerance,maximumShellMeshSize) {
 function attachResponceToBimModelJS(data) {
     bimModelJS=data;
     alert("  Analysis Done Sucessfully");
+    ReSetAllDeclarations();
+    RunMainProgram();
+}
+
+
+function OpenNewFile() {
+    bimModelJS=BimModelNewModel;
     ReSetAllDeclarations();
     RunMainProgram();
 }

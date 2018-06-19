@@ -1,2 +1,14 @@
+switch (WebSiteNewFolder) {
+    case 0://open old file
+        var fullPath = WebSiteFilePath + WebSiteFileName;
+        GetBimModelListedFromFullPath(fullPath);
 
-GetBimModelListedFromPath("D:\\IFCSamples\\New_Str_New_Arch") ;
+        break;
+    case 1://open new file
+        OpenNewFile();
+        break;
+
+    default:
+        break;
+}
+

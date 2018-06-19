@@ -248,18 +248,24 @@
             <p id="ThreeContainerHeightHeader" style="display: inline"> / ThreeContainerHeight : </p>
             <p id="ThreeContainerHeightText" style="display: inline"></p>
         </div>
-        <div id="threeButtons">
-            <!-- Three Buttons Add Buttons Here -->
 
-            <button id="Extruded_Standard" type="button" class="btn btn-primary btn-md">Extruded/Standard View</button>
-            <button id="Show_Hide_Grid" type="button" class="btn btn-primary btn-md">Show/Hide Grid</button>
-            <button id="Draw_Line_Element" type="button" class="btn btn-primary btn-md">Draw Line Element</button>
-        </div>
-        <div id="pathContainer" style="visibility: hidden"></div>
-        <div id="TakeLineData" class="BackGround Hidden">
 
-        </div>
     </div>
+    </div>
+
+
+    <!-- Button :button View Extruded / Standard Toggle -->
+    <button id="Extruded_Standard" type="button" class="btn btn-primary btn-md">Extruded/Standard View</button>
+    <!-- Modal Data View 3D  -->
+    <!-- No Modal Needed  -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+
+    <!-- Button :button View Extruded / Standard Toggle -->
+    <button id="Show_Hide_Grid" type="button" class="btn btn-primary btn-md">Show/Hide Grid</button>
+    <!-- Modal Data View 3D  -->
+    <!-- No Modal Needed  -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+
 
     <!-- Button : Edit Grid -->
     <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditGridDataModal" id="EditGridDataButton">Edit Grid</button>
@@ -717,7 +723,7 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 
-    
+
 
     <!-- Button :button Save -->
     <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Save-Model-Modal" id="Save-Model-Button">Save Model</button>
@@ -805,7 +811,7 @@
                             <label for="Model-Data-OutPut">Model Data :</label>
                             <input type="text" class="form-control" id="Model-Data-OutPut" value="" readonly="readonly">
                         </div>
-                        
+
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -832,7 +838,7 @@
                     <form>
                         <div class="form-group">
                             <label for="Model-Data-OutPut">Model Data :</label>
-                            <input type="text" class="form-control" id="Model-Data-InPut" value="" >
+                            <input type="text" class="form-control" id="Model-Data-InPut" value="">
                         </div>
                     </form>
                 </div>
@@ -845,6 +851,11 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <div id="WebSiteNewFolder_id" style="display: none;">0</div>
+    <div id="WebSiteFilePath_id" style="display: none;">D:\\IFCSamples\\</div>
+    <div id="WebSiteFileName_id" style="display: none;">New_Str_New_Arch</div>
+    <div id="WebSiteUserId_id" style="display: none;">123456789</div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 
 
@@ -861,6 +872,7 @@
 <script src="node_modules\three-orbit-controls\OrbitControls.js"></script>
 <script src="node_modules\detector-webgl\Detector.js"></script>
 <script src="node_modules\stats.js\build\stats.min.js"></script>
+<script src="MyModels\BimModelNewModel.js"></script>
 <script src="MyModels\BimModel.js"></script>
 <script src="MyModels\BimModelG.js"></script>
 <script src="MyModels\BimModelAnalyzed.js"></script>

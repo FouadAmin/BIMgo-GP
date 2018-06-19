@@ -217,7 +217,6 @@ function AssignBimPointDataToBimPoint(bimPoint) {
 
     bimPoint.Restrains = pointRestarints;
 
-    var check=55;
 }
 
 function CreateNewBimProfile(profName, width, length) {

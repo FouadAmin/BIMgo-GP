@@ -13892,11 +13892,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PerformanceFolder\\Private Codes\\z_G_Project\\CodeManagers\\ApiCodeManager\\BimAPI_Core\\BimAPI_Core.csproj",
+      "projectUniqueName": "C:\\PerformanceFolder\\BIMgo-GP\\ApiCodeManager\\BimAPI_Core\\BimAPI_Core.csproj",
       "projectName": "BimAPI_Core",
-      "projectPath": "C:\\PerformanceFolder\\Private Codes\\z_G_Project\\CodeManagers\\ApiCodeManager\\BimAPI_Core\\BimAPI_Core.csproj",
+      "projectPath": "C:\\PerformanceFolder\\BIMgo-GP\\ApiCodeManager\\BimAPI_Core\\BimAPI_Core.csproj",
       "packagesPath": "C:\\Users\\fouad5657\\.nuget\\packages\\",
-      "outputPath": "C:\\PerformanceFolder\\Private Codes\\z_G_Project\\CodeManagers\\ApiCodeManager\\BimAPI_Core\\obj\\",
+      "outputPath": "C:\\PerformanceFolder\\BIMgo-GP\\ApiCodeManager\\BimAPI_Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
