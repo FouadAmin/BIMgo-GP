@@ -103,7 +103,7 @@ var IsPointselectionCase = false;
 
 var bimSelectedMaterial;
 var bimSelectedProfile;
-
+var bimSupportType;
 //-----------------------------------------------------------------------------------------------------------------------------
 
 
@@ -121,6 +121,9 @@ var currentCase;
 // write here used cases
 var Free_Display_Extrusion_View = "Free_Display_Extrusion_View";
 var Free_Display_Standard_View = "Free_Display_Standard_View";
+
+var DrawingPointElement_WaitingForPointSelection_PointSelectionActivated = "Drawing Point Element / Waiting For Point Selection / Point Selection Activated";
+
 var DrawingLineElement_WaitingForFirstPoint_PointSelectionActivated = "Drawing Line Element / Waiting For First Point / Point Selection Activated";
 var DrawingLineElement_WaitingForSecondPoint_PointSelectionActivated = "Drawing Line Element / Waiting For Second Point / Point Selection Activated";
 

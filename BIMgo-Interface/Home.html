@@ -337,6 +337,40 @@
 
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 
+
+    <!-- Button :button Add Point Support -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Point-Support-Data" id="Add-Point-Support-Button">Add Point Data</button>
+    <!-- Modal Data Add Point Support -->
+    <div class="modal fade" id="Take-Point-Support-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Point Support Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Quick-Point-Support-DDL">Choose Quick Support Type :</label>
+                            <select name="SupportTypes" class="form-control" id="Quick-Point-Support-DDL">
+                                <option value=0>None</option>
+                                <option value=1>Fixed</option>
+                                <option value=2>Hinged</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Add-Point-Support" type="button" class="btn btn-primary" data-dismiss="modal">Select Point</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+
+
     <!-- Button :button Add Line Element -->
     <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Line-Element-Data" id="Add-Line-Element">Add Line Element</button>
     <!-- Modal Data Add Line Element -->
