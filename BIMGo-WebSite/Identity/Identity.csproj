@@ -5,6 +5,122 @@
     <UserSecretsId>aspnet-Identity-C9781BC5-E25B-4E8C-ACB8-668A1A175F10</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Include="Data\wwwroot\contactform\contactform.js" />
+    <Content Include="Data\wwwroot\contactform\readme.txt" />
+    <Content Include="Data\wwwroot\css\bootstrap.min.css" />
+    <Content Include="Data\wwwroot\css\bootstrap1.min.css" />
+    <Content Include="Data\wwwroot\css\scss-files.txt" />
+    <Content Include="Data\wwwroot\css\site.css" />
+    <Content Include="Data\wwwroot\css\site.min.css" />
+    <Content Include="Data\wwwroot\css\style.css" />
+    <Content Include="Data\wwwroot\css\style3.css" />
+    <Content Include="Data\wwwroot\favicon.ico" />
+    <Content Include="Data\wwwroot\images\banner1.svg" />
+    <Content Include="Data\wwwroot\images\banner2.svg" />
+    <Content Include="Data\wwwroot\images\banner3.svg" />
+    <Content Include="Data\wwwroot\images\banner4.svg" />
+    <Content Include="Data\wwwroot\img\cover.jpg" />
+    <Content Include="Data\wwwroot\img\gadgets.png" />
+    <Content Include="Data\wwwroot\img\logo-nav.png" />
+    <Content Include="Data\wwwroot\img\logo.png" />
+    <Content Include="Data\wwwroot\img\parallax-bg.jpg" />
+    <Content Include="Data\wwwroot\img\porf-1.jpg" />
+    <Content Include="Data\wwwroot\img\porf-2.jpg" />
+    <Content Include="Data\wwwroot\img\porf-3.jpg" />
+    <Content Include="Data\wwwroot\img\porf-4.jpg" />
+    <Content Include="Data\wwwroot\img\porf-5.jpg" />
+    <Content Include="Data\wwwroot\img\porf-6.jpg" />
+    <Content Include="Data\wwwroot\img\porf-7.jpg" />
+    <Content Include="Data\wwwroot\img\porf-8.jpg" />
+    <Content Include="Data\wwwroot\img\team-1.jpg" />
+    <Content Include="Data\wwwroot\img\team-2.jpg" />
+    <Content Include="Data\wwwroot\img\team-3.jpg" />
+    <Content Include="Data\wwwroot\img\team-4.jpg" />
+    <Content Include="Data\wwwroot\index.html" />
+    <Content Include="Data\wwwroot\js\custom.js" />
+    <Content Include="Data\wwwroot\js\site.js" />
+    <Content Include="Data\wwwroot\js\site.min.js" />
+    <Content Include="Data\wwwroot\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="Data\wwwroot\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Data\wwwroot\lib\bootstrap\dist\js\npm.js" />
+    <Content Include="Data\wwwroot\lib\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Data\wwwroot\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Data\wwwroot\lib\bootstrap\LICENSE" />
+    <Content Include="Data\wwwroot\lib\counterup\counterup.min.js" />
+    <Content Include="Data\wwwroot\lib\easing\easing.js" />
+    <Content Include="Data\wwwroot\lib\easing\easing.min.js" />
+    <Content Include="Data\wwwroot\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="Data\wwwroot\lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Data\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Data\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Data\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Data\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Data\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Data\wwwroot\lib\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Data\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <Content Include="Data\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Data\wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <Content Include="Data\wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <Content Include="Data\wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="Data\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="Data\wwwroot\lib\jquery-validation\LICENSE.md" />
+    <Content Include="Data\wwwroot\lib\jquery\dist\jquery.js" />
+    <Content Include="Data\wwwroot\lib\jquery\dist\jquery.min.js" />
+    <Content Include="Data\wwwroot\lib\jquery\dist\jquery.min.map" />
+    <Content Include="Data\wwwroot\lib\jquery\jquery-migrate.min.js" />
+    <Content Include="Data\wwwroot\lib\jquery\jquery.min.js" />
+    <Content Include="Data\wwwroot\lib\jquery\LICENSE.txt" />
+    <Content Include="Data\wwwroot\lib\lockfixed\lockfixed.min.js" />
+    <Content Include="Data\wwwroot\lib\parallax\parallax.js" />
+    <Content Include="Data\wwwroot\lib\stellar\stellar.min.js" />
+    <Content Include="Data\wwwroot\lib\stickyjs\sticky.js" />
+    <Content Include="Data\wwwroot\lib\superfish\hoverIntent.js" />
+    <Content Include="Data\wwwroot\lib\superfish\superfish.js" />
+    <Content Include="Data\wwwroot\lib\superfish\superfish.min.js" />
+    <Content Include="Data\wwwroot\lib\tether\css\tether-theme-arrows-dark.css" />
+    <Content Include="Data\wwwroot\lib\tether\css\tether-theme-arrows-dark.min.css" />
+    <Content Include="Data\wwwroot\lib\tether\css\tether-theme-arrows.css" />
+    <Content Include="Data\wwwroot\lib\tether\css\tether-theme-arrows.min.css" />
+    <Content Include="Data\wwwroot\lib\tether\css\tether-theme-basic.css" />
+    <Content Include="Data\wwwroot\lib\tether\css\tether-theme-basic.min.css" />
+    <Content Include="Data\wwwroot\lib\tether\css\tether.css" />
+    <Content Include="Data\wwwroot\lib\tether\css\tether.min.css" />
+    <Content Include="Data\wwwroot\lib\tether\js\tether.js" />
+    <Content Include="Data\wwwroot\lib\tether\js\tether.min.js" />
+    <Content Include="Data\wwwroot\lib\waypoints\waypoints.min.js" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m.abouelfotoh%40gmail.com\20180617_083547\29153e4fb7.ifc" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m.abouelfotoh%40gmail.com\20180617_083751\f9cfacfe83.ifc" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m.abouelfotoh%40gmail.com\20180617_084202\f98383159e.ifc" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m.abouelfotoh%40gmail.com\20180617_084411\bbb3f13e9a.ifc" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m.abouelfotoh%40gmail.com\20180617_085252\63b3bb720f.ifc" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m.abouelfotoh%40gmail.com\20180617_090004\c28caaf1a1.ifc" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m.abouelfotoh%40gmail.com\20180617_091134\انجازات الخط الثالث مايو 2018.ifc" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m.abouelfotoh%40gmail.com\20180617_091810\كتاب المكتب الفني.ifc" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m.abouelfotoh%40gmail.com\20180618_012159\انجازات الخط الثالث مايو 2018.ifc" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m.abouelfotoh%40gmail.com\20180618_053125\Result1.ifc" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m.abouelfotoh%40gmail.com\20180618_125720\بطاطس.ifc" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m.abouelfotoh%40gmail.com\20180619_010100\انجازات الخط الثالث مايو 2018.ifc" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m1.abouelfotoh%40gmail.com\20180618_053324\بطاطس.ifc" />
+    <Content Include="Data\wwwroot\NewUsers\eng.m2.abouelfotoh%40gmail.com\20180618_053006\amego.ifc" />
+    <Content Include="Data\wwwroot\readme.txt" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
@@ -16,31 +132,6 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
     <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.2" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\js\site.js" />
-    <None Include="wwwroot\js\site.min.js" />
-    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
-    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
-    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
-    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
-    <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
-    <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
-    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
-    <None Include="wwwroot\lib\bootstrap\dist\js\npm.js" />
-    <None Include="wwwroot\lib\bootstrap\LICENSE" />
-    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
-    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
-    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
-    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
-    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
-    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
-    <None Include="wwwroot\lib\jquery-validation\LICENSE.md" />
-    <None Include="wwwroot\lib\jquery\dist\jquery.js" />
-    <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
-    <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
   </ItemGroup>
 
 </Project>
