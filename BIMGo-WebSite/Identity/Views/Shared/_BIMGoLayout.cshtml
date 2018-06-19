@@ -374,7 +374,7 @@
       height: 60px;" onclick="openNav2()">&#9776; Element Properties</div>
                 <script>
                     function openNav() {
-                        document.getElementById("mySidenav").style.width = "250px";
+                        document.getElementById("mySidenav").stylfe.width = "250px";
                     }
                     function openNav2() {
                         document.getElementById("mySidenav2").style.width = "250px";
@@ -388,16 +388,16 @@
                     }
                     $("#SaveBtn").click(function () {
                         var mdata = {
-                            FK_ApplicatioUserId: "sfsfds",
+                            //FK_ApplicatioUserId: 11,
                             StaticFilePath: "abo elftooh"
 
                         };
 
 
                         $.ajax({
-                            url: './create/',
+                            url: '@Url.Action("Create", "IFCFiles")',
                             type: "POST",
-                            data: mdata,
+                            data:  mdata,
                             //contentType: "application/json; charset=utf-8",
                             //crossDomain:true,
                             // dataType: 'json',
