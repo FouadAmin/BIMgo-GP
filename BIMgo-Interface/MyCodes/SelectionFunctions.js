@@ -194,6 +194,27 @@ function UpdatePointSelectionCases() {
 
 
         }
+        else if (currentCase == DrawingPointElement_WaitingForPointSelection_PointSelectionActivated) {
+
+
+            //var selectedThreePoint = ArrayOfSelectedGridPoints[0];
+            if (threeSelectedElement) {
+
+                //this function will create new bimPoint if didn`t find created one 
+                var bimSelectedPoint = GetBimPointByThreePointObject(threeSelectedElement);
+
+                AssignBimPointDataToBimPoint(bimSelectedPoint);
+
+                // the following fuctions will run the program from start ,
+                // this is a high cost process needs to be updated for better performance
+                ReSetAllDeclarations();
+                RunMainProgram();
+
+            }
+
+
+
+        }
 
     }
 }

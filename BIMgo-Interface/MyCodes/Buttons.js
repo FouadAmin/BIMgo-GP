@@ -89,6 +89,7 @@ function EditGridDataButtonClick() {
 
     document.getElementById("Grid-X-Values").value = "";
     document.getElementById("Grid-Y-Values").value = "";
+    GetOldEditGridClick();
 
 }
 
@@ -100,6 +101,26 @@ function GetOldEditGridClick() {
 
 }
 
+
+document.getElementById("Start-Add-Point-Support").onclick = StartAddPointSupportClick;
+function StartAddPointSupportClick() {
+
+    bimSupportType =parseInt($('#Quick-Point-Support-DDL').find(":selected").val());
+    
+    if (bimSupportType != undefined) {
+        IsGridVisible = false;
+        ShowHideGrid();
+        IsViewExtruded = true;
+        ShowExtrudedToggle();
+        SetSelectionForGridPoints();
+        SetCurrentCaseTo(DrawingPointElement_WaitingForPointSelection_PointSelectionActivated);
+
+
+    } else {
+        alert("Some Definitions Are Missing (Support Type)");
+    }
+
+}
 
 document.getElementById("Add-Line-Element").onclick = AddLineElementClick;
 function AddLineElementClick() {
@@ -626,3 +647,4 @@ function StartSetModelBackupClick() {
     alert("Import Done Sucessfully");
 
 }
+

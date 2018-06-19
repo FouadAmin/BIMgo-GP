@@ -57,10 +57,10 @@ function GetBimStoreyByMappingId(storeyMappingId) {
 
 }
 
-function CreateNewBimStorey(name,elevation) {
+function CreateNewBimStorey(name, elevation) {
 
-    var newStorey={
-        "Elevation":elevation,
+    var newStorey = {
+        "Elevation": elevation,
         "Location": null,
         "LocationRelativeTo": null,
         "Color": null,
@@ -165,7 +165,7 @@ function CreateBimPlaneBySelectingPoints(ArrayOfSelectedGridPoints) {
 
 function CreateBimPointByThreePointObject(threePoint) {
 
-   var newMappingId = GetNewMappingId();
+    var newMappingId = GetNewMappingId();
 
 
     var bimPoint = {
@@ -198,24 +198,45 @@ function CreateBimPointByThreePointObject(threePoint) {
     return bimPoint;
 }
 
+function AssignBimPointDataToBimPoint(bimPoint) {
+    var pointRestarints;
+    switch (bimSupportType) {
+        case 0://none
+            pointRestarints = [false, false, false, false, false, false];
+            break;
+        case 1://fixed
+            pointRestarints = [true, true, true, true, true, true];
+            break;
+        case 2://hinged
+            pointRestarints = [true, true, true, false, false, false];
+            break;
+
+        default:
+            break;
+    }
+
+    bimPoint.Restrains = pointRestarints;
+
+    var check=55;
+}
 
 function CreateNewBimProfile(profName, width, length) {
     var bimProfile = {
         "Width": width,
         "Length": length,
         "Guid": GetNewGUID(),
-        "MappingId":  GetNewMappingId(),
+        "MappingId": GetNewMappingId(),
         "Name": profName,
         "ClassesHierarchy": "BimObject.BimDBObject.BimProfileArea.BimProfileAreaRectangular"
     };
 
     bimModelJS.Profiles.push(bimProfile);
-    
+
     return bimProfile;
 }
 
-function  CreateNewBimMaterial(MaterialName,CompressiveStrength,MassDensity,PoissonRatio,ThermalExpansionCoefficient,YoungModulus,R,G,B) {
-    var bimMaterial={
+function CreateNewBimMaterial(MaterialName, CompressiveStrength, MassDensity, PoissonRatio, ThermalExpansionCoefficient, YoungModulus, R, G, B) {
+    var bimMaterial = {
         "Color": {
             "R": R,
             "G": G,
@@ -249,14 +270,14 @@ function  CreateNewBimMaterial(MaterialName,CompressiveStrength,MassDensity,Pois
                 "ClassesHierarchy": "BimObject.BimPropertySingleValue"
             }
         ],
-        "Guid":  GetNewGUID(),
-        "MappingId":GetNewMappingId(),
+        "Guid": GetNewGUID(),
+        "MappingId": GetNewMappingId(),
         "Name": MaterialName,
         "ClassesHierarchy": "BimObject.BimDBObject.BimMaterial"
     };
 
     bimModelJS.Materials.push(bimMaterial);
-    
+
     return bimMaterial;
 
 }
