@@ -175,18 +175,30 @@ function SetOrthographicCameraWithRange(cameraDirection, cameraLocation, left, r
     camera = new THREE.OrthographicCamera(left, right, top, bottom, near, far);
     switch (cameraDirection) {
         case "X":
-            camera.position.set(cameraLocation - CrossSectionRange / 2, 0, 0);
-            camera.lookAt(cameraLocation + CrossSectionRange / 2, 0, 0);
+            if (cameraLocation < 0) {
+                camera.position.set(cameraLocation - CrossSectionRange / 2, 0, 0);
+            } else {
+                camera.position.set(cameraLocation + CrossSectionRange / 2, 0, 0);
+            }
+            camera.lookAt(cameraLocation, 0, 0);
             camera.up.set(0, 0, 1);
             break;
         case "Y":
-            camera.position.set(0, cameraLocation - CrossSectionRange / 2, 0);
-            camera.lookAt(0, cameraLocation + CrossSectionRange / 2, 0);
+            if (cameraLocation < 0) {
+                camera.position.set(0, cameraLocation - CrossSectionRange / 2, 0);
+            } else {
+                camera.position.set(0, cameraLocation + CrossSectionRange / 2, 0);
+            }
+            camera.lookAt(0, cameraLocation, 0);
             camera.up.set(0, 0, 1);
             break;
         case "Z":
-            camera.position.set(0, 0, cameraLocation + CrossSectionRange / 2);
-            camera.lookAt(0, 0, cameraLocation - CrossSectionRange / 2);
+            if (cameraLocation < 0) {
+                camera.position.set(0, 0, cameraLocation - CrossSectionRange / 2);
+            } else {
+                camera.position.set(0, 0, cameraLocation + CrossSectionRange / 2);
+            }
+            camera.lookAt(0, 0, cameraLocation);
             camera.up.set(0, 1, 0);
             break;
 
@@ -208,5 +220,5 @@ function SetOrthographicCameraWithRange(cameraDirection, cameraLocation, left, r
     var cameraTarget = new THREE.Vector3();
     camera.getWorldDirection(cameraTarget);
 
-    //onWindowResize();
+    var check = 5;
 };
