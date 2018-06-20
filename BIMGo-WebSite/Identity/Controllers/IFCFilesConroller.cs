@@ -297,10 +297,6 @@ namespace Identity.Controllers
             //ViewData["FK_ApplicatioUserId"] = new SelectList(User.Identity.Name, "Id", "Id", ifcFile.FK_ApplicatioUserId);
             return Ok(ifcFile);
         }
-
-
     }
-            
-
         }
 

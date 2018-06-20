@@ -3,7 +3,7 @@
 
 <html>
 <head>
-
+    <!-- Template Stuff  -->
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
@@ -38,36 +38,6 @@
 
     <!-- Main Stylesheet File -->
     <link href="~/css/style.css" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">*@
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="~/css/style3.css">
-    <!-- Scrollbar Custom CSS -->
-    @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">*@
-    <!-- Bootstrap Js CDN -->
-
-    <style>
-        .Myunselectedhear {
-            cursor: context-menu;
-            -moz-user-select: none; /* Firefox */
-            -ms-user-select: none; /* Internet Explorer */
-            -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
-            -webkit-user-select: none; /* Chrome, Safari, and Opera */
-            -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
-        }
-
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            padding: 5px;
-            text-align: left;
-        }
-    </style>
 
     <!-- =======================================================
       Theme Name: Bell
@@ -75,31 +45,28 @@
       Author: BootstrapMade.com
       Author URL: https://bootstrapmade.com
     ======================================================= -->
+    <!--BIMGo Stuff-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="~/css/style3.css">
+    <link rel="stylesheet" href="~/CSS/InputStyling.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    </style>
 
-    <script src="~/lib/jquery/jquery.min.js"></script>
-    <script src="~/lib/jquery/jquery-migrate.min.js"></script>
-    <script src="~/lib/superfish/hoverIntent.js"></script>
-    <script src="~/lib/superfish/superfish.min.js"></script>
-    <script src="~/lib/tether/js/tether.min.js"></script>
-    <script src="~/lib/stellar/stellar.min.js"></script>
-    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="~/lib/counterup/counterup.min.js"></script>
-    <script src="~/lib/waypoints/waypoints.min.js"></script>
-    <script src="~/lib/easing/easing.js"></script>
-    <script src="~/lib/stickyjs/sticky.js"></script>
-    <script src="~/lib/parallax/parallax.js"></script>
-    <script src="~/lib/lockfixed/lockfixed.min.js"></script>
 
-    <!-- Template Specisifc Custom Javascript File -->
-    <script src="~/js/custom.js"></script>
 
-    <script src="contactform/contactform.js"></script>
+
+
+
 
     @RenderSection("Scripts", required: false)
 </head>
 <body>
-    <!-- Page Content
-    ================================================== -->
     <!-- Header -->
     <header id="header">
         <div class="container">
@@ -112,37 +79,10 @@
 
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                   
-                    <li class="menu-has-children">
-                        <a href="">Drop Down</a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="menu-has-children">
-                                <a href="#">Drop Down 2</a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="#">Drop Down 4</a></li>
-                            <li><a href="#">Drop Down 5</a></li>
-                        </ul>
-                    </li>
-                    <li><a asp-area="" asp-controller="IFCFiles" asp-action="index">Files</a></li>
-                    <li><a asp-area="" asp-controller="IFCFiles" asp-action="upload">Upload Files</a></li>
-                    <li><a asp-area="" asp-controller="IFCFiles" asp-action="BIMGo">BIMGo </a></li>
-
-                    <li><a asp-area="" asp-controller="Categories" asp-action="index">Categories</a></li>
-                    <li><a asp-area="" asp-controller="Posts" asp-action="index">Posts</a></li>
-
-
-
-
-
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Team</a></li>
 
                     <li><a href="#contact">Contact Us</a></li>
 
@@ -160,28 +100,44 @@
         </div>
     </header>
     <!-- #header -->
+    <!-- ********************************************************************************************************* -->
 
 
-
-
-
-
-    <section class="container-fluid"style="padding:0">
+    <div class="container-fluid">
 
         <div class="row align-items-start">
 
-            <div class="panel panel-default" style="margin-bottom:30px;">
+            <div class="panel panel-default" style=" width:100%;margin-bottom:30px;">
                 <div class="panel-heading" style="padding:0px 0px;">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
-                        <li class="active"><a href="#home" role="tab" data-toggle="tab">Main</a></li>
-                        <li><a href="#Architecture" role="tab" data-toggle="tab">Architecture</a></li>
-                        <li><a href="#Structure" role="tab" data-toggle="tab">Structure</a></li>
-                        <li><a href="#Insert" role="tab" data-toggle="tab">Insert</a></li>
-                        <li><a href="#Annotate" role="tab" data-toggle="tab">Annotate</a></li>
-                        <li><a href="#Analyze" role="tab" data-toggle="tab">Analyze</a></li>
-                        <li><a href="#View" role="tab" data-toggle="tab">View</a></li>
-                        <li><a href="#Add-ins" role="tab" data-toggle="tab">Add-ins</a></li>
+                        <li class="active">
+                            <a href="#home" role="tab" data-toggle="tab">Main</a>
+                        </li>
+                        <li>
+                            <a href="#Architecture" role="tab" data-toggle="tab">Architecture</a>
+                        </li>
+                        <li>
+                            <a href="#Structure" role="tab" data-toggle="tab">Structure</a>
+                        </li>
+                        <li>
+                            <a href="#Insert" role="tab" data-toggle="tab">Insert</a>
+                        </li>
+                        <li>
+                            <a href="#Annotate" role="tab" data-toggle="tab">Annotate</a>
+                        </li>
+                        <li>
+                            <a href="#Analyze" role="tab" data-toggle="tab">Analyze</a>
+                        </li>
+                        <li>
+                            <a href="#View" role="tab" data-toggle="tab">View</a>
+                        </li>
+                        <li>
+                            <a href="#Manage" role="tab" data-toggle="tab">Manage</a>
+                        </li>
+                        <li>
+                            <a href="#Add-ins" role="tab" data-toggle="tab">Add-ins</a>
+                        </li>
                     </ul>
 
                 </div>
@@ -191,7 +147,7 @@
                         <button type="button" class="btn btn-primary">New</button>
                         <button type="button" class="btn btn-primary">Open</button>
                         <button type="button" class="btn btn-primary">Save</button>
-                        <button id="SaveBtn" type="button" class="btn btn-primary">Save As</button>
+                        <button type="button" class="btn btn-primary">Save As</button>
                         <button type="button" class="btn btn-primary">Print</button>
                         <button type="button" class="btn btn-primary">Export</button>
                         <button type="button" class="btn btn-primary">Print</button>
@@ -246,133 +202,697 @@
                         <button type="button" class="btn btn-primary">Functions</button>
                         <button type="button" class="btn btn-primary">Load Patterns</button>
                         <button type="button" class="btn btn-primary">Load Cases</button>
-                        <button type="button" class="btn btn-primary">Load Combinations</button>
-                        <button type="button" class="btn btn-primary">Run Analysis</button>
-
-
 
                     </div>
 
-                    <div class="tab-pane" id="View">
-                        <button type="button" class="btn btn-primary">3D View</button>
-                        <button type="button" class="btn btn-primary">2D View</button>
-                        <button type="button" class="btn btn-primary">Zoom(Menu)</button>
-                        <button type="button" class="btn btn-primary">Selection(Menu)</button>
-                        <button type="button" class="btn btn-primary">Display(Menu)</button>
-
-                    </div>
+                    <div class="tab-pane" id="View"></div>
                     <div class="tab-pane" id="Manage"></div>
-                    <div class="tab-pane" id="Add-ins">
-                        <button type="button" class="btn btn-primary"> Add Plugin</button>
-                    </div>
+                    <div class="tab-pane" id="Add-ins"></div>
 
                 </div>
             </div>
         </div>
-       
-        
         <div class="row align-items-center">
 
             <div id="mySidenav" class="sidenav">
-                <div class="Side-bar Header" style="padding:25px;">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                    <h4>Project Explorer</h4>
-
-                </div>
-
-                <ul class="list-unstyled components">
-                    <p>Dummy Heading</p>
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><h5>Structural Plans</h5></a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#">Level 1</a></li>
-                            <li><a href="#">Level 2</a></li>
-                            <li><a href="#">Level 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><h5>Elevations</h5> </a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#">East</a></li>
-                            <li><a href="#">North</a></li>
-                            <li><a href="#">South</a></li>
-                            <li><a href="#">West</a></li>
-
-                        </ul>
-                    </li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><h5>Floor Plans</h5></a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li><a href="#">Level 1</a></li>
-                        <li><a href="#">Level 2</a></li>
-                    </ul>
-                    </li>
-                    <li>
-                        <a href="#"><h5>View</h5> </a>
-                    </li>
-
-                </ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
             </div>
             <div id="mySidenav2" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
-                <table style="width:100%">
-                    <a href="#">Element Properties</a>
-                    <tr>
-                        <td>Height</td>
-                        <td>
-                            <form>
-                                <input type="text" name="firstname" size="5">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Width</td>
-                        <td>
-                            <form>
-                                <input type="text" name="firstname" size="5">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Length</td>
-                        <td>
-                            <form>
-                                <input type="text" name="firstname" size="5">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Material</td>
-                        <td>
-                            <form>
-                                <input type="text" name="firstname" size="5">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Loads(Menu)</td>
-                        <td>
-                            <form>
-                                <input type="text" name="firstname" size="5">
-                            </form>
-                        </td>
-                    </tr>
-                </table>
-
-
+                <a href="#">xxxxxxxxx</a>
+                <a href="#">xxxxxxxxxxxxxxxxxxxxx</a>
+                <a href="#">xxxxxxxxxxxxxxxxxx</a>
+                <a href="#">xxxxxxx</a>
             </div>
-            <img src="data:image/jpeg;base64,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" alt="Fjords" style="width:100%">
+
         </div>
-        <div style="font-size:15px;cursor:pointer;transform:translate(-163px, -800px) rotate(90deg);
-      width: 300px;
-      height: 60px;display: inline-block;" onclick="openNav()">&#9776; Project Explorer<br></br></div>
+        <div style="font-size:15px;cursor:pointer;transform:translate(-163px, -500px) rotate(90deg);
+          width: 300px;
+          height: 60px;display: inline-block;" onclick="openNav()">
+            &#9776; Project Explorer
+            <br></br>
+        </div>
         <div class="row">
             <div class="column">
 
-                <div style="font-size:15px;cursor:pointer;transform:translate(-147px, -700px) rotate(90deg);
-      width: 300px;
-      height: 60px;" onclick="openNav2()">&#9776; Element Properties</div>
+                <div style="font-size:15px;cursor:pointer;transform:translate(-147px, -400px) rotate(90deg);
+          width: 300px;
+          height: 60px;" onclick="openNav2()">&#9776; Element Properties</div>
                 <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                    }
+                    function openNav2() {
+                        document.getElementById("mySidenav2").style.width = "250px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
+                    function closeNav2() {
+                        document.getElementById("mySidenav2").style.width = "0";
+                    }
+                </script>
+
+
+
+            </div>
+
+        </div>
+
+        <!-- ********************************************************************************************************* -->
+        <!-- <div style="clear: both;"></div> -->
+        <!-- <div id="SetToResetModelingContainerYEvent" style="height: 10px;"> Editor </div> -->
+        <div id="modelingContainer">
+            <!-- iAlert-For-Server failure-->
+            <div class="alert alert-danger alert-dismissible" id="Alert-For-Server">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Alert !</strong> Loading Failed From Server : A Sample Model Will Be loaded.
+            </div>
+            <div id="threeContainer" style="width: 100%;height: 600px;"></div>
+            <div id="threeLabels">
+                <!-- Three Labels Add Labels Here -->
+                <h5>
+                    Current Status =>
+                    <span id="Current_Status" class="label label-info">Loading</span>
+                </h5>
+                <p id="SelectedElementDataTypeHeader" style="display: inline"> Selected Element Data Type : </p>
+                <p id="SelectedElementDataTypeText" style="display: inline"></p>
+                <p id="SelectedElementTypeHeader" style="display: inline"> / Selected Element Type : </p>
+                <p id="SelectedElementTypeText" style="display: inline"></p>
+                <br>
+                <p id="SelectedElementIdHeader" style="display: inline"> / Selected ElementId : </p>
+                <p id="SelectedElementIdText" style="display: inline"></p>
+                <p id="SelectedElementNameHeader" style="display: inline"> / Selected ElementName : </p>
+                <p id="SelectedElementNameText" style="display: inline"></p>
+                <br>
+                <p id="MouseXHeader" style="display: inline"> / MouseX : </p>
+                <p id="MouseXText" style="display: inline"></p>
+                <p id="MouseYHeader" style="display: inline"> / MouseY : </p>
+                <p id="MouseYText" style="display: inline"></p>
+                <p id="EventXHeader" style="display: inline"> / EventX : </p>
+                <p id="EventXText" style="display: inline"></p>
+                <p id="EventYHeader" style="display: inline"> / EventY : </p>
+                <p id="EventYText" style="display: inline"></p>
+                <p id="ThreeContainerWidthHeader" style="display: inline"> / ThreeContainerWidth : </p>
+                <p id="ThreeContainerWidthText" style="display: inline"></p>
+                <p id="ThreeContainerHeightHeader" style="display: inline"> / ThreeContainerHeight : </p>
+                <p id="ThreeContainerHeightText" style="display: inline"></p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- ********************************************************************************************************* -->
+    <!-- Button :button View Extruded / Standard Toggle -->
+    <button id="Extruded_Standard" type="button" class="btn btn-primary btn-md">Extruded/Standard View</button>
+    <!-- Modal Data View 3D  -->
+    <!-- No Modal Needed  -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button View Extruded / Standard Toggle -->
+    <button id="Show_Hide_Grid" type="button" class="btn btn-primary btn-md">Show/Hide Grid</button>
+    <!-- Modal Data View 3D  -->
+    <!-- No Modal Needed  -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button : Edit Grid -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditGridDataModal" id="EditGridDataButton">Edit Grid</button>
+    <!-- Modal Data : Edit Grid-->
+    <div class="modal fade" id="EditGridDataModal" role="dialog">
+        <div class="modal-dialog .modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Insert Line Element Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="usr">X Values ( comma separated ):</label>
+                            <input id="Grid-X-Values" type="text" class="form-control .input-lg" id="usr">
+                        </div>
+                        <div class="form-group">
+                            <label for="usr">Y Values ( comma separated ):</label>
+                            <input id="Grid-Y-Values" type="text" class="form-control .input-lg" id="usr">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Apply-Edit-Grid" type="button" class="btn btn-primary" data-dismiss="modal">Apply</button>
+                    <button id="Get-Old-Edit-Grid" type="button" class="btn btn-secondary">Current Values</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button : Edit Storeys -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditStoreyDataModal" id="EditStoreyDataButton">Edit Storeys</button>
+    <!-- Modal Data : Edit Storeys-->
+    <div class="modal fade" id="EditStoreyDataModal" role="dialog">
+        <div class="modal-dialog .modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Insert Storey Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <table id="Edit-Storeys-Table" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Storey Name</th>
+                                    <th>Storey Elevation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr>
+                                  <td><input type="text" class="form-control .input-md" ></td>
+                                  <td><input type="number" class="form-control .input-md" ></td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Apply-Edit-Storey" type="button" class="btn btn-primary" data-dismiss="modal">Apply</button>
+                    <button id="Apply-Add-Storey-To-Table" type="button" class="btn btn-secondary">Add Storey</button>
+                    <button id="Apply-Delete-Storey-From-Table" type="button" class="btn btn-secondary">Delete Storey</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Add Point Support -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Point-Support-Data" id="Add-Point-Support-Button">Add Point Data</button>
+    <!-- Modal Data Add Point Support -->
+    <div class="modal fade" id="Take-Point-Support-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Point Support Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Quick-Point-Support-DDL">Choose Quick Support Type :</label>
+                            <select name="SupportTypes" class="form-control" id="Quick-Point-Support-DDL">
+                                <option value=0>None</option>
+                                <option value=1>Fixed</option>
+                                <option value=2>Hinged</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Add-Point-Support" type="button" class="btn btn-primary" data-dismiss="modal">Select Point</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Add Line Element -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Line-Element-Data" id="Add-Line-Element">Add Line Element</button>
+    <!-- Modal Data Add Line Element -->
+    <div class="modal fade" id="Take-Line-Element-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Insert Line Element Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Elm-Name-Selected">Element Name:</label>
+                            <input type="text" class="form-control" id="Line-Elm-Name-Selected" value="Line Element">
+                        </div>
+                        <div class="form-group">
+                            <label for="InsertionPoint-DDL">Insertion Point :</label>
+                            <select name="InsertionPoints" class="form-control" id="InsertionPoint-DDL">
+                                <option value=1>Bottom Left</option>
+                                <option value=2>Bottom Centre</option>
+                                <option value=3>Bottom Right</option>
+                                <option value=4>MidDepth Left</option>
+                                <option value=5>MidDepth Centre</option>
+                                <option value=6>MidDepth Right</option>
+                                <option value=7>Top Left</option>
+                                <option value=8>Top Centre</option>
+                                <option value=9>Top Right</option>
+                                <option value=10>Geometric Centroid</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Elm-New-Rotation-Selected">Rotation About Axis:</label>
+                            <input type="number" class="form-control" id="Elm-New-Rotation-Selected" value="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="LineElmType-DDL">Line Elment Type :</label>
+                            <select name="LineElmTypes" class="form-control" id="LineElmType-DDL">
+                                <option value=1>Beam</option>
+                                <option value=2>Column</option>
+                                <option value=3>Unknown</option>
+                                <option value=4>Other</option>
+
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Materials-DDL">Material :</label>
+                            <select name="Materials" class="form-control" id="Materials-DDL">
+                                <!-- <option value="Default">Default</option> -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Profiles-DDL">Profile :</label>
+                            <select name="Profiles" class="form-control" id="Profiles-DDL">
+                                <!-- <option value="Default">Default</option> -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="NewLine-Color">Color :</label>
+                            <input type="color" class="form-control" id="NewLine-Color" value="#b4b4b4">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Create-Line-Element" type="button" class="btn btn-primary" data-dismiss="modal">Start</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Add Plane Element -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Plane-Element-Data" id="Add-Plane-Element">Add Plane Element</button>
+    <!-- Modal Data Add Plane Element -->
+    <div class="modal fade" id="Take-Plane-Element-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Insert Plane Element Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Elm-Name-Selected">Element Name:</label>
+                            <input type="text" class="form-control" id="Plane-Elm-Name-Selected" value="Plane Element">
+                        </div>
+                        <div class="form-group">
+                            <label for="Materials-DDL">Material :</label>
+                            <select name="Materials" class="form-control" id="Materials-DDL-2">
+                                <!-- <option value="Default">Default</option> -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="plane-New-Thickness-Selected">Thickness:</label>
+                            <input type="number" class="form-control" id="plane-New-Thickness-Selected" value="200">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewPlane-Color">Color :</label>
+                            <input type="color" class="form-control" id="NewPlane-Color" value="#b4b4b4">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Create-Plane-Element" type="button" class="btn btn-primary" data-dismiss="modal">Start</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Delete Selected Element -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Delete-Selected-Element-Data" id="Delete-Selected-Element">Delete Selected Element</button>
+    <!-- Modal Data Delete Selected Element -->
+    <div class="modal fade" id="Delete-Selected-Element-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Delete Selected Element , Are You Sure !!</h4>
+                    <h4 class="modal-title">Selected Element Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="SelectedElementDataTypeText_2">Selected Element Data Type :</label>
+                            <input type="text" class="form-control" id="SelectedElementDataTypeText_2" readonly="readonly">
+                        </div>
+                        <div class="form-group">
+                            <label for="SelectedElementTypeText_2">Selected Element Type (Beam / Column / Other) :</label>
+                            <input type="text" class="form-control" id="SelectedElementTypeText_2" readonly="readonly">
+                        </div>
+                        <div class="form-group">
+                            <label for="SelectedElementIdText_2">Selected ElementId :</label>
+                            <input type="text" class="form-control" id="SelectedElementIdText_2" readonly="readonly">
+                        </div>
+                        <div class="form-group">
+                            <label for="SelectedElementNameText_2">Selected ElementName :</label>
+                            <input type="text" class="form-control" id="SelectedElementNameText_2" readonly="readonly">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Delete-Selected-Element" type="button" class="btn btn-primary" data-dismiss="modal">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Add New Material -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-New-Material-Data" id="Add-New-Material">Add New Material</button>
+    <!-- Modal Data Add New Material -->
+    <div class="modal fade" id="Take-New-Material-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Insert Material Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="New-Material-Name">Material Name:</label>
+                            <input type="text" class="form-control" id="New-Material-Name" value="New Material 1">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewMaterial-CompressiveStrength">Compressive Strength :</label>
+                            <input type="number" class="form-control" id="NewMaterial-CompressiveStrength" value="0.025">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewMaterial-MassDensity">Mass Density :</label>
+                            <input type="number" class="form-control" id="NewMaterial-MassDensity" value="2.5e-12">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewMaterial-PoissonRatio">Poisson Ratio :</label>
+                            <input type="number" class="form-control" id="NewMaterial-PoissonRatio" value="0.2">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewMaterial-ThermalExpansionCoefficient">Thermal Expansion Coefficient :</label>
+                            <input type="number" class="form-control" id="NewMaterial-ThermalExpansionCoefficient" value="9.9e-6">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewMaterial-YoungModulus">YoungModulus :</label>
+                            <input type="number" class="form-control" id="NewMaterial-YoungModulus" value="22">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewMaterial-Color">Color :</label>
+                            <input type="color" class="form-control" id="NewMaterial-Color" value="#b4b4b4">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Create-New-Material" type="button" class="btn btn-primary" data-dismiss="modal">ADD</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Add New RECProfile -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-New-Profile-Data" id="Add-New-Profile">Add New Profile</button>
+    <!-- Modal Data Add New RECProfile -->
+    <div class="modal fade" id="Take-New-Profile-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Insert Rectangular Profile Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="New-Rec-Profile-Name">Profile Name:</label>
+                            <input type="text" class="form-control" id="New-Rec-Profile-Name" value="New Profile 1">
+                        </div>
+                        <div class="form-group">
+                            <label for="Rec-Profile-New-Width">Width :</label>
+                            <input type="number" class="form-control" id="Rec-Profile-New-Width" value="300">
+                        </div>
+                        <div class="form-group">
+                            <label for="Rec-Profile-New-Length">Length :</label>
+                            <input type="number" class="form-control" id="Rec-Profile-New-Length" value="600">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Create-New-REC-Profile" type="button" class="btn btn-primary" data-dismiss="modal">ADD</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button View 3D -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="" id="View-3D-Button">View 3D</button>
+    <!-- Modal Data View 3D  -->
+    <!-- No Modal Needed  -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button View XY Plane -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-XY-Plane-Data" id="View-XY-Plane-Button">View XY Plane</button>
+    <!-- Modal Data View XY Plane  -->
+    <div class="modal fade" id="View-XY-Plane-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Set XY View</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Set-XY-View-DDL">Select Level Required :</label>
+                            <select name="Views" class="form-control" id="Set-XY-View-DDL">
+                                <!-- <option value="Default">Default</option> -->
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Set-View-XY-Plane-Button" type="button" class="btn btn-primary" data-dismiss="modal">Set View</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button View XZ Plane -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-XZ-Plane-Data" id="View-XZ-Plane-Button">View XZ Plane</button>
+    <!-- Modal Data View XZ Plane  -->
+    <div class="modal fade" id="View-XZ-Plane-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Set XZ View</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Set-XZ-View-DDL">Select Y Coordinate Required :</label>
+                            <select name="Views" class="form-control" id="Set-XZ-View-DDL">
+                                <!-- <option value="Default">Default</option> -->
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Set-View-XZ-Plane-Button" type="button" class="btn btn-primary" data-dismiss="modal">Set View</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button View  YZ Plane -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-YZ-Plane-Data" id="View-YZ-Plane-Button">View YZ Plane</button>
+    <!-- Modal Data View YZ Plane  -->
+    <div class="modal fade" id="View-YZ-Plane-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Set YZ View</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Set-YZ-View-DDL">Select X Coordinate Required :</label>
+                            <select name="Views" class="form-control" id="Set-YZ-View-DDL">
+                                <!-- <option value="Default">Default</option> -->
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Set-View-YZ-Plane-Button" type="button" class="btn btn-primary" data-dismiss="modal">Set View</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Save -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Save-Model-Modal" id="Save-Model-Button">Save Model</button>
+    <!-- Modal Data Save -->
+    <div class="modal fade" id="Save-Model-Modal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Save Model</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="New-File-Required-Name">File Name:</label>
+                            <input type="text" class="form-control" id="New-File-Required-Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="SaveAs-DDL">Save As :</label>
+                            <select name="SaveAsOptions" class="form-control" id="SaveAs-DDL">
+                                <option value=1>Architecture</option>
+                                <option value=2>Structure</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Save-As" type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="SavingPath" id="Saving-Path-Hidden" value="D:\\IFCSamples\\">
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Analyze Model-->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Analyze-Model-Modal" id="Analyze-Model-Button">Analyze Model</button>
+    <!-- Modal Data analyze Model -->
+    <div class="modal fade" id="Analyze-Model-Modal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Analyze Model</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Points-Tolerance">Points Tolerance :</label>
+                            <input type="number" class="form-control" id="Points-Tolerance" value="0.001">
+                        </div>
+                        <div class="form-group">
+                            <label for="Maximum-Mesh-Size">Maximum Mesh Size:</label>
+                            <input type="number" class="form-control" id="Maximum-Mesh-Size" value="1000">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Analyze-Model" type="button" class="btn btn-primary" data-dismiss="modal">Analyze</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Get Model Json-->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Get-Model-Json" id="Get-Model-Json-Button">Get Model Backup</button>
+    <!-- Modal Data Get Model Json -->
+    <div class="modal fade" id="Get-Model-Json" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Copy Model Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Model-Data-OutPut">Model Data :</label>
+                            <input type="text" class="form-control" id="Model-Data-OutPut" value="" readonly="readonly">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Set Model Json-->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Set-Model-Json" id="Set-Model-Json-Button">Set Model From Backup</button>
+    <!-- Modal Data Set Model Json -->
+    <div class="modal fade" id="Set-Model-Json" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Set Model Backup</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Model-Data-OutPut">Model Data :</label>
+                            <input type="text" class="form-control" id="Model-Data-InPut" value="">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Set-Model-Backup" type="button" class="btn btn-primary" data-dismiss="modal">Set Backup</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <div id="WebSiteNewFolder_id" style="display: none;">0</div>
+    <div id="WebSiteFilePath_id" style="display: none;">D:\\IFCSamples\\</div>
+    <div id="WebSiteFileName_id" style="display: none;">New_Str_New_Arch</div>
+    <div id="WebSiteUserId_id" style="display: none;">123456789</div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- ********************************************************************************************************* -->
+
+
+
+
+
+
+
+
+    <script>
                     function openNav() {
                         document.getElementById("mySidenav").stylfe.width = "250px";
                     }
@@ -424,21 +944,39 @@ $("#SaveBtn").click(function () {
 
                     })
                     })
-                </script>
-
-
-
-            </div>
-
-        </div>
-
-        <footer>
-            <p>&copy; 2018 - Identity</p>
-        </footer>
-    </section>
+    </script>
 
     <!-- Required JavaScript Libraries -->
-    
+    <!-- BIMGo Dependencies-->
+    <script src="~/node_modules/mathjs/dist/math.js"></script>
+    <script src="~/node_modules\/ngular/angular.js"></script>
+    <script src="~/node_modules\jquery\dist\jquery.js"></script>
+    <script src="~/node_modules\jslinq\build\jslinq.min.js"></script>
+    <script src="~/node_modules\bootstrap\dist\js\bootstrap.js"></script>
+    <script src="~/node_modules\three\build\three.js"></script>
+    <script src="~/node_modules\three-orbit-controls\OrbitControls.js"></script>
+    <script src="~/node_modules\detector-webgl\Detector.js"></script>
+    <script src="~/node_modules\stats.js\build\stats.min.js"></script>
+    <script src="~/MyModels\BimModelNewModel.js"></script>
+    <script src="~/MyModels\BimModel.js"></script>
+    <script src="~/MyModels\BimModelG.js"></script>
+    <script src="~/MyModels\BimModelAnalyzed.js"></script>
+    <script src="~/MyModels\BimModel_TwoFloors_1STR_2Arch_Theta.js"></script>
+    <script src="~/MyModels\BimModel_TwoFloors_1STR_2Arch.js"></script>
+    <script src="~/MyModels\BimModelNewSlantedBeamG.js"></script>
+    <script src="~/MyModels\BimModelNewSlantedBeamNG.js"></script>
+    <script src="~/MyCodes\DeclareVariables.js"></script>
+    <script src="~/MyCodes\UserInterface.js"></script>
+    <script src="~/MyCodes\ThreeFunctions.js"></script>
+    <script src="~/MyCodes\BimFunctions.js"></script>
+    <script src="~/MyCodes\ThreeBimFunctions.js"></script>
+    <script src="~/MyCodes\AnalysisResultsDisplay.js"></script>
+    <script src="~/MyCodes\SelectionFunctions.js"></script>
+    <script src="~/MyCodes\ApiFunctions.js"></script>
+    <script src="~/MyCodes\Buttons.js"></script>
+    <script src="~/MyCodes\StartApplication.js"></script>
     @RenderBody()
 </body>
+
+
 </html>
