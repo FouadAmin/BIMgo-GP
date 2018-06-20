@@ -393,6 +393,13 @@
 
                         };
 
+$("#SaveBtn").click(function () {
+                        var mdata = {
+                            //FK_ApplicatioUserId: 11,
+                            StaticFilePath: "abo elftooh"
+
+                        };
+
 
                         $.ajax({
                             url: '@Url.Action("Create", "IFCFiles")',
@@ -414,6 +421,7 @@
                             }
                         });
 
+                    })
                     })
                 </script>
 
