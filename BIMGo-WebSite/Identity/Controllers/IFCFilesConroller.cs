@@ -34,12 +34,6 @@ namespace Identity.Controllers
             _userManager = userManager;
         }
 
-        // GET: ObjFiles
-        //public async Task<IActionResult> Index()
-        //{
-        //    var applicationDbContext = repo.GetAllFiles();
-        //    return View(await applicationDbContext.ToListAsync());
-        //}
         public async Task<IActionResult> Index()
         {
             var currentUser = await _userManager.FindByNameAsync(User.Identity.Name);
@@ -293,11 +287,20 @@ namespace Identity.Controllers
         //            //_signInManager.UserManager.GetUserId()
         //        }
 
-
-
-               
+        public IActionResult AccesDbfromAjax([Bind("Id,FileName,FK_ApplicatioUserId,StaticFilePath,RelativeFilePath,UploadedTime")] IFCFile ifcFile)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(ifcFile);
+                return RedirectToAction(nameof(Index));
             }
+            //ViewData["FK_ApplicatioUserId"] = new SelectList(User.Identity.Name, "Id", "Id", ifcFile.FK_ApplicatioUserId);
+            return Ok(ifcFile);
+        }
+
+
+    }
             
 
         }
-    
+

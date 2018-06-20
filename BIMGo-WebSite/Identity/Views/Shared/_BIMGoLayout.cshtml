@@ -395,14 +395,15 @@
 
 $("#SaveBtn").click(function () {
                         var mdata = {
-                            //FK_ApplicatioUserId: 11,
-                            StaticFilePath: "abo elftooh"
+                            FK_ApplicatioUserId: "46c065d0-512c-4bdd-9f14-5c43e55f357d",
+                            StaticFilePath: "abo elftooh",
+                            FileName:"Test"
 
                         };
 
 
                         $.ajax({
-                            url: '@Url.Action("Create", "IFCFiles")',
+                            url: '@Url.Action("AccesDbfromAjax", "IFCFiles")',
                             type: "POST",
                             data:  mdata,
                             //contentType: "application/json; charset=utf-8",
