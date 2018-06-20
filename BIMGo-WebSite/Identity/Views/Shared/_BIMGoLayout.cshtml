@@ -309,89 +309,6 @@
     </div>
 
 
-    <!-- ********************************************************************************************************* -->
-    <!-- Button :button View Extruded / Standard Toggle -->
-    <button id="Extruded_Standard" type="button" class="btn btn-primary btn-md">Extruded/Standard View</button>
-    <!-- Modal Data View 3D  -->
-    <!-- No Modal Needed  -->
-    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-    <!-- Button :button View Extruded / Standard Toggle -->
-    <button id="Show_Hide_Grid" type="button" class="btn btn-primary btn-md">Show/Hide Grid</button>
-    <!-- Modal Data View 3D  -->
-    <!-- No Modal Needed  -->
-    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-    <!-- Button : Edit Grid -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditGridDataModal" id="EditGridDataButton">Edit Grid</button>
-    <!-- Modal Data : Edit Grid-->
-    <div class="modal fade" id="EditGridDataModal" role="dialog">
-        <div class="modal-dialog .modal-dialog-centered">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Insert Line Element Data</h4>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="usr">X Values ( comma separated ):</label>
-                            <input id="Grid-X-Values" type="text" class="form-control .input-lg" id="usr">
-                        </div>
-                        <div class="form-group">
-                            <label for="usr">Y Values ( comma separated ):</label>
-                            <input id="Grid-Y-Values" type="text" class="form-control .input-lg" id="usr">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button id="Apply-Edit-Grid" type="button" class="btn btn-primary" data-dismiss="modal">Apply</button>
-                    <button id="Get-Old-Edit-Grid" type="button" class="btn btn-secondary">Current Values</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Button : Edit Storeys -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditStoreyDataModal" id="EditStoreyDataButton">Edit Storeys</button>
-    <!-- Modal Data : Edit Storeys-->
-    <div class="modal fade" id="EditStoreyDataModal" role="dialog">
-        <div class="modal-dialog .modal-dialog-centered">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Insert Storey Data</h4>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <table id="Edit-Storeys-Table" class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Storey Name</th>
-                                    <th>Storey Elevation</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- <tr>
-                                  <td><input type="text" class="form-control .input-md" ></td>
-                                  <td><input type="number" class="form-control .input-md" ></td>
-                                </tr> -->
-                            </tbody>
-                        </table>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button id="Apply-Edit-Storey" type="button" class="btn btn-primary" data-dismiss="modal">Apply</button>
-                    <button id="Apply-Add-Storey-To-Table" type="button" class="btn btn-secondary">Add Storey</button>
-                    <button id="Apply-Delete-Storey-From-Table" type="button" class="btn btn-secondary">Delete Storey</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 
 
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
@@ -876,6 +793,13 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Button :button View Extruded / Standard Toggle -->
+    <button id="Generate-New-Model" type="button" class="btn btn-primary btn-md">New Model</button>
+    <!-- Modal Data View 3D  -->
+    <!-- No Modal Needed  -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <div id="WebSiteNewFolder_id" style="display: none;">0</div>
@@ -883,7 +807,7 @@
     <div id="WebSiteFileName_id" style="display: none;">New_Str_New_Arch</div>
     <div id="WebSiteUserId_id" style="display: none;">123456789</div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-    <!-- ********************************************************************************************************* -->
+
 
 
 
@@ -949,32 +873,35 @@ $("#SaveBtn").click(function () {
     <!-- Required JavaScript Libraries -->
     <!-- BIMGo Dependencies-->
     <script src="~/node_modules/mathjs/dist/math.js"></script>
-    <script src="~/node_modules\/ngular/angular.js"></script>
-    <script src="~/node_modules\jquery\dist\jquery.js"></script>
-    <script src="~/node_modules\jslinq\build\jslinq.min.js"></script>
-    <script src="~/node_modules\bootstrap\dist\js\bootstrap.js"></script>
-    <script src="~/node_modules\three\build\three.js"></script>
-    <script src="~/node_modules\three-orbit-controls\OrbitControls.js"></script>
-    <script src="~/node_modules\detector-webgl\Detector.js"></script>
-    <script src="~/node_modules\stats.js\build\stats.min.js"></script>
-    <script src="~/MyModels\BimModelNewModel.js"></script>
-    <script src="~/MyModels\BimModel.js"></script>
-    <script src="~/MyModels\BimModelG.js"></script>
-    <script src="~/MyModels\BimModelAnalyzed.js"></script>
-    <script src="~/MyModels\BimModel_TwoFloors_1STR_2Arch_Theta.js"></script>
-    <script src="~/MyModels\BimModel_TwoFloors_1STR_2Arch.js"></script>
-    <script src="~/MyModels\BimModelNewSlantedBeamG.js"></script>
-    <script src="~/MyModels\BimModelNewSlantedBeamNG.js"></script>
-    <script src="~/MyCodes\DeclareVariables.js"></script>
-    <script src="~/MyCodes\UserInterface.js"></script>
-    <script src="~/MyCodes\ThreeFunctions.js"></script>
-    <script src="~/MyCodes\BimFunctions.js"></script>
-    <script src="~/MyCodes\ThreeBimFunctions.js"></script>
-    <script src="~/MyCodes\AnalysisResultsDisplay.js"></script>
-    <script src="~/MyCodes\SelectionFunctions.js"></script>
-    <script src="~/MyCodes\ApiFunctions.js"></script>
-    <script src="~/MyCodes\Buttons.js"></script>
-    <script src="~/MyCodes\StartApplication.js"></script>
+    <script src="~/node_modules/angular/angular.js"></script>
+    <script src="~/node_modules/jquery/dist/jquery.js"></script>
+    <script src="~/node_modules/jslinq/build/jslinq.min.js"></script>
+    <script src="~/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/node_modules/three/build/three.js"></script>
+    <script src="~/node_modules/three-orbit-controls/OrbitControls.js"></script>
+    <script src="~/node_modules/detector-webgl/Detector.js"></script>
+    <script src="~/node_modules/stats.js/build/stats.min.js"></script>
+    <script src="~/MyModels/BimModelNewModel.js"></script>
+    <script src="~/MyModels/BimModel_SapGeneralSample.js"></script>
+    <script src="~/MyModels/BimModel.js"></script>
+    <script src="~/MyModels/BimModelG.js"></script>
+    <script src="~/MyModels/BimModelAnalyzed.js"></script>
+    <script src="~/MyModels/BimModel_TwoFloors_1STR_2Arch_Theta.js"></script>
+    <script src="~/MyModels/BimModel_TwoFloors_1STR_2Arch.js"></script>
+    <script src="~/MyModels/BimModelNewSlantedBeamG.js"></script>
+    <script src="~/MyModels/BimModelNewSlantedBeamNG.js"></script>
+    <script src="~/MyCodes/DeclareVariables.js"></script>
+    <script src="~/MyCodes/UserInterface.js"></script>
+    <script src="~/MyCodes/ThreeFunctions.js"></script>
+    <script src="~/MyCodes/BimFunctions.js"></script>
+    <script src="~/MyCodes/ThreeBimFunctions.js"></script>
+    <script src="~/MyCodes/AnalysisResultsDisplay.js"></script>
+    <script src="~/MyCodes/SelectionFunctions.js"></script>
+    <script src="~/MyCodes/ApiFunctions.js"></script>
+    <script src="~/MyCodes/Buttons.js"></script>
+    <script src="~/MyCodes/StartApplication.js"></script>
+
+
     @RenderBody()
 </body>
 
