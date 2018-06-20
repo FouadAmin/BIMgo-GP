@@ -648,3 +648,10 @@ function StartSetModelBackupClick() {
 
 }
 
+
+document.getElementById("Generate-New-Model").onclick = GenerateNewModelClick;
+function GenerateNewModelClick() {
+
+    OpenNewFile();
+}
+
