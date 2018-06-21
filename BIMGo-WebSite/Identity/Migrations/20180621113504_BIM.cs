@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Identity.Migrations
 {
-    public partial class BIMGo : Migration
+    public partial class BIM : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

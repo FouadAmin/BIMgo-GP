@@ -11,8 +11,8 @@ using System;
 namespace Identity.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180619195733_Fouad")]
-    partial class Fouad
+    [Migration("20180621113504_BIM")]
+    partial class BIM
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
