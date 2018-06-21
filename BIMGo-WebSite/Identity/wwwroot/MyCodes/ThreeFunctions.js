@@ -171,34 +171,42 @@ function SetPrespectiveCameraWithParameters(cameraEye, cameraUp, cameraFOV, came
 }
 
 function SetOrthographicCameraWithRange(cameraDirection, cameraLocation, left, right, top, bottom, near, far) {
-
-    camera = new THREE.OrthographicCamera(left, right, top, bottom, near, far);
+    //var heightAverage = (top + bottom) / 2;
+    var heightAverage = 0;
+    //var widthAverage = (left + right) / 2;
+    var widthAverage = 0;
     switch (cameraDirection) {
         case "X":
             if (cameraLocation < 0) {
-                camera.position.set(cameraLocation - CrossSectionRange / 2, 0, 0);
+                camera = new THREE.OrthographicCamera(right, left, top, bottom, near, far);
+                camera.position.set(cameraLocation - CrossSectionRange / 2, widthAverage, heightAverage);
             } else {
-                camera.position.set(cameraLocation + CrossSectionRange / 2, 0, 0);
+                camera = new THREE.OrthographicCamera(left, right, top, bottom, near, far);
+                camera.position.set(cameraLocation + CrossSectionRange / 2, widthAverage, heightAverage);
             }
-            camera.lookAt(cameraLocation, 0, 0);
+            camera.lookAt(cameraLocation, widthAverage, heightAverage);
             camera.up.set(0, 0, 1);
             break;
         case "Y":
             if (cameraLocation < 0) {
-                camera.position.set(0, cameraLocation - CrossSectionRange / 2, 0);
+                camera = new THREE.OrthographicCamera(left, right, top, bottom, near, far);
+                camera.position.set(widthAverage, cameraLocation - CrossSectionRange / 2, heightAverage);
             } else {
-                camera.position.set(0, cameraLocation + CrossSectionRange / 2, 0);
+                camera = new THREE.OrthographicCamera(right, left, top, bottom, near, far);
+                camera.position.set(widthAverage, cameraLocation + CrossSectionRange / 2, heightAverage);
             }
-            camera.lookAt(0, cameraLocation, 0);
+            camera.lookAt(widthAverage, cameraLocation, heightAverage);
             camera.up.set(0, 0, 1);
             break;
         case "Z":
             if (cameraLocation < 0) {
-                camera.position.set(0, 0, cameraLocation - CrossSectionRange / 2);
+                camera = new THREE.OrthographicCamera(right, left, top, bottom, near, far);
+                camera.position.set(widthAverage, heightAverage, cameraLocation - CrossSectionRange / 2);
             } else {
-                camera.position.set(0, 0, cameraLocation + CrossSectionRange / 2);
+                camera = new THREE.OrthographicCamera(left, right, top, bottom, near, far);
+                camera.position.set(widthAverage, heightAverage, cameraLocation + CrossSectionRange / 2);
             }
-            camera.lookAt(0, 0, cameraLocation);
+            camera.lookAt(widthAverage, 0, cameraLocation);
             camera.up.set(0, 1, 0);
             break;
 

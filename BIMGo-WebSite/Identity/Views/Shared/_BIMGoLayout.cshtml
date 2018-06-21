@@ -81,7 +81,9 @@
     <header id="header">
         <div class="container">
             <div id="logo" class="pull-left">
-                <a href="index.html"><img src="~/img/logo-nav.png" alt="" title="" /></img></a>
+                <a href="index.html">
+                    <img src="~/img/logo-nav.png" />
+                </a>
                 <!-- Uncomment below if you prefer to use a text image -->
                 <!--<h1><a href="#hero">Bell</a></h1>-->
             </div>
@@ -124,7 +126,7 @@
                             <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;" href="#home" role="tab" data-toggle="tab" type="button" class="btn btn-info">Main</button>
                         </li>
                         <li>
-                            <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;"href="#Architecture" role="tab" data-toggle="tab" type="button" class="btn btn-info">Architecture</button>
+                            <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;" href="#Architecture" role="tab" data-toggle="tab" type="button" class="btn btn-info">Architecture</button>
                         </li>
                         <li>
                             <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;" href="#Structure" role="tab" data-toggle="tab" type="button" class="btn btn-info">Structure</button>
@@ -133,19 +135,19 @@
                             <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;" href="#Insert" role="tab" data-toggle="tab" type="button" class="btn btn-info">Insert</button>
                         </li>
                         <li>
-                            <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;"href="#Annotate" role="tab" data-toggle="tab" type="button" class="btn btn-info">Annotate</button>
+                            <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;" href="#Annotate" role="tab" data-toggle="tab" type="button" class="btn btn-info">Annotate</button>
                         </li>
                         <li>
-                            <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;"href="#Analyze" role="tab" data-toggle="tab" type="button" class="btn btn-info">Analyze</button>
+                            <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;" href="#Analyze" role="tab" data-toggle="tab" type="button" class="btn btn-info">Analyze</button>
                         </li>
                         <li>
-                            <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;"href="#View" role="tab" data-toggle="tab" type="button" class="btn btn-info">View</button>
+                            <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;" href="#View" role="tab" data-toggle="tab" type="button" class="btn btn-info">View</button>
                         </li>
                         <li>
-                            <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;"href="#Manage" role="tab" data-toggle="tab" type="button" class="btn btn-info">Manage</button>
+                            <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;" href="#Manage" role="tab" data-toggle="tab" type="button" class="btn btn-info">Manage</button>
                         </li>
                         <li>
-                            <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;"href="#Manage" role="tab" data-toggle="tab" type="button" class="btn btn-info">Manage</button>
+                            <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;" href="#Manage" role="tab" data-toggle="tab" type="button" class="btn btn-info">Manage</button>
                         </li>
                     </ul>
 
@@ -240,9 +242,9 @@
 
         </div>
 
-           
 
-       
+
+
         <script>
             function openNav() {
                 document.getElementById("mySidenav").style.width = "250px";
@@ -268,631 +270,637 @@
 
 
 
-        <!-- ********************************************************************************************************* -->
-        <!-- <div style="clear: both;"></div> -->
-        <!-- <div id="SetToResetModelingContainerYEvent" style="height: 10px;"> Editor </div> -->
-        <div id="modelingContainer">
-            <!-- iAlert-For-Server failure-->
-            <div class="alert alert-danger alert-dismissible" id="Alert-For-Server">
+    <!-- ********************************************************************************************************* -->
+    <!-- <div style="clear: both;"></div> -->
+    <!-- <div id="SetToResetModelingContainerYEvent" style="height: 10px;"> Editor </div> -->
+    <div id="modelingContainer">
+        <!-- iAlert-For-Server failure-->
+        @*<div class="alert alert-danger alert-dismissible" id="Alert-For-Server">
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                 <strong>Alert !</strong> Loading Failed From Server : A Sample Model Will Be loaded.
-            </div>
-            <div id="threeContainer" style="width: 100%;height: 600px;"></div>
-            <div id="threeLabels">
-                <!-- Three Labels Add Labels Here -->
-                <h5>
-                    Current Status =>
-                    <span id="Current_Status" class="label label-info">Loading</span>
-                </h5>
-                <p id="SelectedElementDataTypeHeader" style="display: inline"> Selected Element Data Type : </p>
-                <p id="SelectedElementDataTypeText" style="display: inline"></p>
-                <p id="SelectedElementTypeHeader" style="display: inline"> / Selected Element Type : </p>
-                <p id="SelectedElementTypeText" style="display: inline"></p>
-                <br>
-                <p id="SelectedElementIdHeader" style="display: inline"> / Selected ElementId : </p>
-                <p id="SelectedElementIdText" style="display: inline"></p>
-                <p id="SelectedElementNameHeader" style="display: inline"> / Selected ElementName : </p>
-                <p id="SelectedElementNameText" style="display: inline"></p>
-                <br>
-                <p id="MouseXHeader" style="display: inline"> / MouseX : </p>
-                <p id="MouseXText" style="display: inline"></p>
-                <p id="MouseYHeader" style="display: inline"> / MouseY : </p>
-                <p id="MouseYText" style="display: inline"></p>
-                <p id="EventXHeader" style="display: inline"> / EventX : </p>
-                <p id="EventXText" style="display: inline"></p>
-                <p id="EventYHeader" style="display: inline"> / EventY : </p>
-                <p id="EventYText" style="display: inline"></p>
-                <p id="ThreeContainerWidthHeader" style="display: inline"> / ThreeContainerWidth : </p>
-                <p id="ThreeContainerWidthText" style="display: inline"></p>
-                <p id="ThreeContainerHeightHeader" style="display: inline"> / ThreeContainerHeight : </p>
-                <p id="ThreeContainerHeightText" style="display: inline"></p>
-            </div>
-
-
+            </div>*@
+        <div id="threeContainer" style="width: 100%;height: 600px;"></div>
+        <div id="threeLabels">
+            <!-- Three Labels Add Labels Here -->
+            <h5>
+                Current Status =>
+                <span id="Current_Status" class="label label-info">Loading</span>
+            </h5>
+            <p id="SelectedElementDataTypeHeader" style="display: inline"> Selected Element Data Type : </p>
+            <p id="SelectedElementDataTypeText" style="display: inline"></p>
+            <p id="SelectedElementTypeHeader" style="display: inline"> / Selected Element Type : </p>
+            <p id="SelectedElementTypeText" style="display: inline"></p>
+            <br>
+            <p id="SelectedElementIdHeader" style="display: inline"> / Selected ElementId : </p>
+            <p id="SelectedElementIdText" style="display: inline"></p>
+            <p id="SelectedElementNameHeader" style="display: inline"> / Selected ElementName : </p>
+            <p id="SelectedElementNameText" style="display: inline"></p>
+            <br>
+            <p id="MouseXHeader" style="display: inline"> / MouseX : </p>
+            <p id="MouseXText" style="display: inline"></p>
+            <p id="MouseYHeader" style="display: inline"> / MouseY : </p>
+            <p id="MouseYText" style="display: inline"></p>
+            <p id="EventXHeader" style="display: inline"> / EventX : </p>
+            <p id="EventXText" style="display: inline"></p>
+            <p id="EventYHeader" style="display: inline"> / EventY : </p>
+            <p id="EventYText" style="display: inline"></p>
+            <p id="ThreeContainerWidthHeader" style="display: inline"> / ThreeContainerWidth : </p>
+            <p id="ThreeContainerWidthText" style="display: inline"></p>
+            <p id="ThreeContainerHeightHeader" style="display: inline"> / ThreeContainerHeight : </p>
+            <p id="ThreeContainerHeightText" style="display: inline"></p>
         </div>
 
 
-        <!-- Button :button View Extruded / Standard Toggle -->
-        <button id="Extruded_Standard" type="button" class="btn btn-primary btn-md">Extruded/Standard View</button>
-        <!-- Modal Data View 3D  -->
-        <!-- No Modal Needed  -->
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button View Extruded / Standard Toggle -->
-        <button id="Show_Hide_Grid" type="button" class="btn btn-primary btn-md">Show/Hide Grid</button>
-        <!-- Modal Data View 3D  -->
-        <!-- No Modal Needed  -->
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button : Edit Grid -->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditGridDataModal" id="EditGridDataButton">Edit Grid</button>
-        <!-- Modal Data : Edit Grid-->
-        <div class="modal fade" id="EditGridDataModal" role="dialog">
-            <div class="modal-dialog .modal-dialog-centered">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Insert Line Element Data</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="usr">X Values ( comma separated ):</label>
-                                <input id="Grid-X-Values" type="text" class="form-control .input-lg" id="usr">
-                            </div>
-                            <div class="form-group">
-                                <label for="usr">Y Values ( comma separated ):</label>
-                                <input id="Grid-Y-Values" type="text" class="form-control .input-lg" id="usr">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Apply-Edit-Grid" type="button" class="btn btn-primary" data-dismiss="modal">Apply</button>
-                        <button id="Get-Old-Edit-Grid" type="button" class="btn btn-secondary">Current Values</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    </div>
+
+
+    <!-- Button :button View Extruded / Standard Toggle -->
+    <button id="Extruded_Standard" type="button" class="btn btn-primary btn-md">Extruded/Standard View</button>
+    <!-- Modal Data View 3D  -->
+    <!-- No Modal Needed  -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button View Extruded / Standard Toggle -->
+    <button id="Show_Hide_Grid" type="button" class="btn btn-primary btn-md">Show/Hide Grid</button>
+    <!-- Modal Data View 3D  -->
+    <!-- No Modal Needed  -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button : Edit Grid -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditGridDataModal" id="EditGridDataButton">Edit Grid</button>
+    <!-- Modal Data : Edit Grid-->
+    <div class="modal fade" id="EditGridDataModal" role="dialog">
+        <div class="modal-dialog .modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Insert Line Element Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="usr">X Values ( comma separated ):</label>
+                            <input id="Grid-X-Values" type="text" class="form-control .input-lg" id="usr">
+                        </div>
+                        <div class="form-group">
+                            <label for="usr">Y Values ( comma separated ):</label>
+                            <input id="Grid-Y-Values" type="text" class="form-control .input-lg" id="usr">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Apply-Edit-Grid" type="button" class="btn btn-primary" data-dismiss="modal">Apply</button>
+                    <button id="Get-Old-Edit-Grid" type="button" class="btn btn-secondary">Current Values</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Button : Edit Storeys -->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditStoreyDataModal" id="EditStoreyDataButton">Edit Storeys</button>
-        <!-- Modal Data : Edit Storeys-->
-        <div class="modal fade" id="EditStoreyDataModal" role="dialog">
-            <div class="modal-dialog .modal-dialog-centered">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Insert Storey Data</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <table id="Edit-Storeys-Table" class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Storey Name</th>
-                                        <th>Storey Elevation</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- <tr>
+    <!-- Button : Edit Storeys -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditStoreyDataModal" id="EditStoreyDataButton">Edit Storeys</button>
+    <!-- Modal Data : Edit Storeys-->
+    <div class="modal fade" id="EditStoreyDataModal" role="dialog">
+        <div class="modal-dialog .modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Insert Storey Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <table id="Edit-Storeys-Table" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Storey Name</th>
+                                    <th>Storey Elevation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr>
                                   <td><input type="text" class="form-control .input-md" ></td>
                                   <td><input type="number" class="form-control .input-md" ></td>
                                 </tr> -->
-                                </tbody>
-                            </table>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Apply-Edit-Storey" type="button" class="btn btn-primary" data-dismiss="modal">Apply</button>
-                        <button id="Apply-Add-Storey-To-Table" type="button" class="btn btn-secondary">Add Storey</button>
-                        <button id="Apply-Delete-Storey-From-Table" type="button" class="btn btn-secondary">Delete Storey</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Apply-Edit-Storey" type="button" class="btn btn-primary" data-dismiss="modal">Apply</button>
+                    <button id="Apply-Add-Storey-To-Table" type="button" class="btn btn-secondary">Add Storey</button>
+                    <button id="Apply-Delete-Storey-From-Table" type="button" class="btn btn-secondary">Delete Storey</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
 
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button Add Point Support -->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Point-Support-Data" id="Add-Point-Support-Button">Add Point Data</button>
-        <!-- Modal Data Add Point Support -->
-        <div class="modal fade" id="Take-Point-Support-Data" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Point Support Data</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="Quick-Point-Support-DDL">Choose Quick Support Type :</label>
-                                <select name="SupportTypes" class="form-control " id="Quick-Point-Support-DDL">
-                                    <option value=0>None</option>
-                                    <option value=1>Fixed</option>
-                                    <option value=2>Hinged</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Start-Add-Point-Support" type="button" class="btn btn-primary" data-dismiss="modal">Select Point</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Add Point Support -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Point-Support-Data" id="Add-Point-Support-Button">Add Point Data</button>
+    <!-- Modal Data Add Point Support -->
+    <div class="modal fade" id="Take-Point-Support-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Point Support Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Quick-Point-Support-DDL">Choose Quick Support Type :</label>
+                            <select name="SupportTypes" class="form-control " id="Quick-Point-Support-DDL">
+                                <option value=0>None</option>
+                                <option value=1>Fixed</option>
+                                <option value=2>Hinged</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Add-Point-Support" type="button" class="btn btn-primary" data-dismiss="modal">Select Point</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button Add Line Element -->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Line-Element-Data" id="Add-Line-Element">Add Line Element</button>
-        <!-- Modal Data Add Line Element -->
-        <div class="modal fade" id="Take-Line-Element-Data" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Insert Line Element Data</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="Elm-Name-Selected">Element Name:</label>
-                                <input type="text" class="form-control" id="Line-Elm-Name-Selected" value="Line Element">
-                            </div>
-                            <div class="form-group">
-                                <label for="InsertionPoint-DDL">Insertion Point :</label>
-                                <select name="InsertionPoints" class="form-control" id="InsertionPoint-DDL">
-                                    <option value=1>Bottom Left</option>
-                                    <option value=2>Bottom Centre</option>
-                                    <option value=3>Bottom Right</option>
-                                    <option value=4>MidDepth Left</option>
-                                    <option value=5>MidDepth Centre</option>
-                                    <option value=6>MidDepth Right</option>
-                                    <option value=7>Top Left</option>
-                                    <option value=8>Top Centre</option>
-                                    <option value=9>Top Right</option>
-                                    <option value=10>Geometric Centroid</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="Elm-New-Rotation-Selected">Rotation About Axis:</label>
-                                <input type="number" class="form-control" id="Elm-New-Rotation-Selected" value="0">
-                            </div>
-                            <div class="form-group">
-                                <label for="LineElmType-DDL">Line Elment Type :</label>
-                                <select name="LineElmTypes" class="form-control" id="LineElmType-DDL">
-                                    <option value=1>Beam</option>
-                                    <option value=2>Column</option>
-                                    <option value=3>Unknown</option>
-                                    <option value=4>Other</option>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Add Line Element -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Line-Element-Data" id="Add-Line-Element">Add Line Element</button>
+    <!-- Modal Data Add Line Element -->
+    <div class="modal fade" id="Take-Line-Element-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Insert Line Element Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Elm-Name-Selected">Element Name:</label>
+                            <input type="text" class="form-control" id="Line-Elm-Name-Selected" value="Line Element">
+                        </div>
+                        <div class="form-group">
+                            <label for="InsertionPoint-DDL">Insertion Point :</label>
+                            <select name="InsertionPoints" class="form-control" id="InsertionPoint-DDL">
+                                <option value=1>Bottom Left</option>
+                                <option value=2>Bottom Centre</option>
+                                <option value=3>Bottom Right</option>
+                                <option value=4>MidDepth Left</option>
+                                <option value=5>MidDepth Centre</option>
+                                <option value=6>MidDepth Right</option>
+                                <option value=7>Top Left</option>
+                                <option value=8>Top Centre</option>
+                                <option value=9>Top Right</option>
+                                <option value=10>Geometric Centroid</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Elm-New-Rotation-Selected">Rotation About Axis:</label>
+                            <input type="number" class="form-control" id="Elm-New-Rotation-Selected" value="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="LineElmType-DDL">Line Elment Type :</label>
+                            <select name="LineElmTypes" class="form-control" id="LineElmType-DDL">
+                                <option value=1>Beam</option>
+                                <option value=2>Column</option>
+                                <option value=3>Unknown</option>
+                                <option value=4>Other</option>
 
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="Materials-DDL">Material :</label>
-                                <select name="Materials" class="form-control" id="Materials-DDL">
-                                    <!-- <option value="Default">Default</option> -->
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="Profiles-DDL">Profile :</label>
-                                <select name="Profiles" class="form-control" id="Profiles-DDL">
-                                    <!-- <option value="Default">Default</option> -->
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="NewLine-Color">Color :</label>
-                                <input type="color" class="form-control" id="NewLine-Color" value="#b4b4b4">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Start-Create-Line-Element" type="button" class="btn btn-primary" data-dismiss="modal">Start</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Materials-DDL">Material :</label>
+                            <select name="Materials" class="form-control" id="Materials-DDL">
+                                <!-- <option value="Default">Default</option> -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Profiles-DDL">Profile :</label>
+                            <select name="Profiles" class="form-control" id="Profiles-DDL">
+                                <!-- <option value="Default">Default</option> -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="NewLine-Color">Color :</label>
+                            <input type="color" class="form-control" id="NewLine-Color" value="#b4b4b4">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Create-Line-Element" type="button" class="btn btn-primary" data-dismiss="modal">Start</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button Add Plane Element -->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Plane-Element-Data" id="Add-Plane-Element">Add Plane Element</button>
-        <!-- Modal Data Add Plane Element -->
-        <div class="modal fade" id="Take-Plane-Element-Data" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Insert Plane Element Data</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="Elm-Name-Selected">Element Name:</label>
-                                <input type="text" class="form-control" id="Plane-Elm-Name-Selected" value="Plane Element">
-                            </div>
-                            <div class="form-group">
-                                <label for="Materials-DDL">Material :</label>
-                                <select name="Materials" class="form-control" id="Materials-DDL-2">
-                                    <!-- <option value="Default">Default</option> -->
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="plane-New-Thickness-Selected">Thickness:</label>
-                                <input type="number" class="form-control" id="plane-New-Thickness-Selected" value="200">
-                            </div>
-                            <div class="form-group">
-                                <label for="NewPlane-Color">Color :</label>
-                                <input type="color" class="form-control" id="NewPlane-Color" value="#b4b4b4">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Start-Create-Plane-Element" type="button" class="btn btn-primary" data-dismiss="modal">Start</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Add Plane Element -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Plane-Element-Data" id="Add-Plane-Element">Add Plane Element</button>
+    <!-- Modal Data Add Plane Element -->
+    <div class="modal fade" id="Take-Plane-Element-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Insert Plane Element Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Elm-Name-Selected">Element Name:</label>
+                            <input type="text" class="form-control" id="Plane-Elm-Name-Selected" value="Plane Element">
+                        </div>
+                        <div class="form-group">
+                            <label for="Materials-DDL">Material :</label>
+                            <select name="Materials" class="form-control" id="Materials-DDL-2">
+                                <!-- <option value="Default">Default</option> -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="plane-New-Thickness-Selected">Thickness:</label>
+                            <input type="number" class="form-control" id="plane-New-Thickness-Selected" value="200">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewPlane-Color">Color :</label>
+                            <input type="color" class="form-control" id="NewPlane-Color" value="#b4b4b4">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Create-Plane-Element" type="button" class="btn btn-primary" data-dismiss="modal">Start</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button Delete Selected Element -->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Delete-Selected-Element-Data" id="Delete-Selected-Element">Delete Selected Element</button>
-        <!-- Modal Data Delete Selected Element -->
-        <div class="modal fade" id="Delete-Selected-Element-Data" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Delete Selected Element , Are You Sure !!</h4>
-                        <h4 class="modal-title">Selected Element Data</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="SelectedElementDataTypeText_2">Selected Element Data Type :</label>
-                                <input type="text" class="form-control" id="SelectedElementDataTypeText_2" readonly="readonly">
-                            </div>
-                            <div class="form-group">
-                                <label for="SelectedElementTypeText_2">Selected Element Type (Beam / Column / Other) :</label>
-                                <input type="text" class="form-control" id="SelectedElementTypeText_2" readonly="readonly">
-                            </div>
-                            <div class="form-group">
-                                <label for="SelectedElementIdText_2">Selected ElementId :</label>
-                                <input type="text" class="form-control" id="SelectedElementIdText_2" readonly="readonly">
-                            </div>
-                            <div class="form-group">
-                                <label for="SelectedElementNameText_2">Selected ElementName :</label>
-                                <input type="text" class="form-control" id="SelectedElementNameText_2" readonly="readonly">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Start-Delete-Selected-Element" type="button" class="btn btn-primary" data-dismiss="modal">Delete</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Delete Selected Element -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Delete-Selected-Element-Data" id="Delete-Selected-Element">Delete Selected Element</button>
+    <!-- Modal Data Delete Selected Element -->
+    <div class="modal fade" id="Delete-Selected-Element-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Delete Selected Element , Are You Sure !!</h4>
+                    <h4 class="modal-title">Selected Element Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="SelectedElementDataTypeText_2">Selected Element Data Type :</label>
+                            <input type="text" class="form-control" id="SelectedElementDataTypeText_2" readonly="readonly">
+                        </div>
+                        <div class="form-group">
+                            <label for="SelectedElementTypeText_2">Selected Element Type (Beam / Column / Other) :</label>
+                            <input type="text" class="form-control" id="SelectedElementTypeText_2" readonly="readonly">
+                        </div>
+                        <div class="form-group">
+                            <label for="SelectedElementIdText_2">Selected ElementId :</label>
+                            <input type="text" class="form-control" id="SelectedElementIdText_2" readonly="readonly">
+                        </div>
+                        <div class="form-group">
+                            <label for="SelectedElementNameText_2">Selected ElementName :</label>
+                            <input type="text" class="form-control" id="SelectedElementNameText_2" readonly="readonly">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Delete-Selected-Element" type="button" class="btn btn-primary" data-dismiss="modal">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button Add New Material -->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-New-Material-Data" id="Add-New-Material">Add New Material</button>
-        <!-- Modal Data Add New Material -->
-        <div class="modal fade" id="Take-New-Material-Data" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Insert Material Data</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="New-Material-Name">Material Name:</label>
-                                <input type="text" class="form-control" id="New-Material-Name" value="New Material 1">
-                            </div>
-                            <div class="form-group">
-                                <label for="NewMaterial-CompressiveStrength">Compressive Strength :</label>
-                                <input type="number" class="form-control" id="NewMaterial-CompressiveStrength" value="0.025">
-                            </div>
-                            <div class="form-group">
-                                <label for="NewMaterial-MassDensity">Mass Density :</label>
-                                <input type="number" class="form-control" id="NewMaterial-MassDensity" value="2.5e-12">
-                            </div>
-                            <div class="form-group">
-                                <label for="NewMaterial-PoissonRatio">Poisson Ratio :</label>
-                                <input type="number" class="form-control" id="NewMaterial-PoissonRatio" value="0.2">
-                            </div>
-                            <div class="form-group">
-                                <label for="NewMaterial-ThermalExpansionCoefficient">Thermal Expansion Coefficient :</label>
-                                <input type="number" class="form-control" id="NewMaterial-ThermalExpansionCoefficient" value="9.9e-6">
-                            </div>
-                            <div class="form-group">
-                                <label for="NewMaterial-YoungModulus">YoungModulus :</label>
-                                <input type="number" class="form-control" id="NewMaterial-YoungModulus" value="22">
-                            </div>
-                            <div class="form-group">
-                                <label for="NewMaterial-Color">Color :</label>
-                                <input type="color" class="form-control" id="NewMaterial-Color" value="#b4b4b4">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Start-Create-New-Material" type="button" class="btn btn-primary" data-dismiss="modal">ADD</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Add New Material -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-New-Material-Data" id="Add-New-Material">Add New Material</button>
+    <!-- Modal Data Add New Material -->
+    <div class="modal fade" id="Take-New-Material-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Insert Material Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="New-Material-Name">Material Name:</label>
+                            <input type="text" class="form-control" id="New-Material-Name" value="New Material 1">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewMaterial-CompressiveStrength">Compressive Strength :</label>
+                            <input type="number" class="form-control" id="NewMaterial-CompressiveStrength" value="0.025">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewMaterial-MassDensity">Mass Density :</label>
+                            <input type="number" class="form-control" id="NewMaterial-MassDensity" value="2.5e-12">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewMaterial-PoissonRatio">Poisson Ratio :</label>
+                            <input type="number" class="form-control" id="NewMaterial-PoissonRatio" value="0.2">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewMaterial-ThermalExpansionCoefficient">Thermal Expansion Coefficient :</label>
+                            <input type="number" class="form-control" id="NewMaterial-ThermalExpansionCoefficient" value="9.9e-6">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewMaterial-YoungModulus">YoungModulus :</label>
+                            <input type="number" class="form-control" id="NewMaterial-YoungModulus" value="22">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewMaterial-Color">Color :</label>
+                            <input type="color" class="form-control" id="NewMaterial-Color" value="#b4b4b4">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Create-New-Material" type="button" class="btn btn-primary" data-dismiss="modal">ADD</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button Add New RECProfile -->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-New-Profile-Data" id="Add-New-Profile">Add New Profile</button>
-        <!-- Modal Data Add New RECProfile -->
-        <div class="modal fade" id="Take-New-Profile-Data" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Insert Rectangular Profile Data</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="New-Rec-Profile-Name">Profile Name:</label>
-                                <input type="text" class="form-control" id="New-Rec-Profile-Name" value="New Profile 1">
-                            </div>
-                            <div class="form-group">
-                                <label for="Rec-Profile-New-Width">Width :</label>
-                                <input type="number" class="form-control" id="Rec-Profile-New-Width" value="300">
-                            </div>
-                            <div class="form-group">
-                                <label for="Rec-Profile-New-Length">Length :</label>
-                                <input type="number" class="form-control" id="Rec-Profile-New-Length" value="600">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Start-Create-New-REC-Profile" type="button" class="btn btn-primary" data-dismiss="modal">ADD</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Add New RECProfile -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-New-Profile-Data" id="Add-New-Profile">Add New Profile</button>
+    <!-- Modal Data Add New RECProfile -->
+    <div class="modal fade" id="Take-New-Profile-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Insert Rectangular Profile Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="New-Rec-Profile-Name">Profile Name:</label>
+                            <input type="text" class="form-control" id="New-Rec-Profile-Name" value="New Profile 1">
+                        </div>
+                        <div class="form-group">
+                            <label for="Rec-Profile-New-Width">Width :</label>
+                            <input type="number" class="form-control" id="Rec-Profile-New-Width" value="300">
+                        </div>
+                        <div class="form-group">
+                            <label for="Rec-Profile-New-Length">Length :</label>
+                            <input type="number" class="form-control" id="Rec-Profile-New-Length" value="600">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Create-New-REC-Profile" type="button" class="btn btn-primary" data-dismiss="modal">ADD</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button View 3D -->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="" id="View-3D-Button">View 3D</button>
-        <!-- Modal Data View 3D  -->
-        <!-- No Modal Needed  -->
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button View XY Plane -->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-XY-Plane-Data" id="View-XY-Plane-Button">View XY Plane</button>
-        <!-- Modal Data View XY Plane  -->
-        <div class="modal fade" id="View-XY-Plane-Data" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Set XY View</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="Set-XY-View-DDL">Select Level Required :</label>
-                                <select name="Views" class="form-control" id="Set-XY-View-DDL">
-                                    <!-- <option value="Default">Default</option> -->
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Set-View-XY-Plane-Button" type="button" class="btn btn-primary" data-dismiss="modal">Set View</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button View 3D -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="" id="View-3D-Button">View 3D</button>
+    <!-- Modal Data View 3D  -->
+    <!-- No Modal Needed  -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button View XY Plane -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-XY-Plane-Data" id="View-XY-Plane-Button">View XY Plane</button>
+    <!-- Modal Data View XY Plane  -->
+    <div class="modal fade" id="View-XY-Plane-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Set XY View</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Set-XY-View-DDL">Select Level Required :</label>
+                            <select name="Views" class="form-control" id="Set-XY-View-DDL">
+                                <!-- <option value="Default">Default</option> -->
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Set-View-XY-Plane-Button" type="button" class="btn btn-primary" data-dismiss="modal">Set View</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button View XZ Plane -->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-XZ-Plane-Data" id="View-XZ-Plane-Button">View XZ Plane</button>
-        <!-- Modal Data View XZ Plane  -->
-        <div class="modal fade" id="View-XZ-Plane-Data" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Set XZ View</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="Set-XZ-View-DDL">Select Y Coordinate Required :</label>
-                                <select name="Views" class="form-control" id="Set-XZ-View-DDL">
-                                    <!-- <option value="Default">Default</option> -->
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Set-View-XZ-Plane-Button" type="button" class="btn btn-primary" data-dismiss="modal">Set View</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button View XZ Plane -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-XZ-Plane-Data" id="View-XZ-Plane-Button">View XZ Plane</button>
+    <!-- Modal Data View XZ Plane  -->
+    <div class="modal fade" id="View-XZ-Plane-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Set XZ View</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Set-XZ-View-DDL">Select Y Coordinate Required :</label>
+                            <select name="Views" class="form-control" id="Set-XZ-View-DDL">
+                                <!-- <option value="Default">Default</option> -->
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Set-View-XZ-Plane-Button" type="button" class="btn btn-primary" data-dismiss="modal">Set View</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button View  YZ Plane -->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-YZ-Plane-Data" id="View-YZ-Plane-Button">View YZ Plane</button>
-        <!-- Modal Data View YZ Plane  -->
-        <div class="modal fade" id="View-YZ-Plane-Data" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Set YZ View</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="Set-YZ-View-DDL">Select X Coordinate Required :</label>
-                                <select name="Views" class="form-control" id="Set-YZ-View-DDL">
-                                    <!-- <option value="Default">Default</option> -->
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Set-View-YZ-Plane-Button" type="button" class="btn btn-primary" data-dismiss="modal">Set View</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button View  YZ Plane -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-YZ-Plane-Data" id="View-YZ-Plane-Button">View YZ Plane</button>
+    <!-- Modal Data View YZ Plane  -->
+    <div class="modal fade" id="View-YZ-Plane-Data" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Set YZ View</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Set-YZ-View-DDL">Select X Coordinate Required :</label>
+                            <select name="Views" class="form-control" id="Set-YZ-View-DDL">
+                                <!-- <option value="Default">Default</option> -->
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Set-View-YZ-Plane-Button" type="button" class="btn btn-primary" data-dismiss="modal">Set View</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button Save -->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Save-Model-Modal" id="Save-Model-Button">Save Model</button>
-        <!-- Modal Data Save -->
-        <div class="modal fade" id="Save-Model-Modal" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Save Model</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="New-File-Required-Name">File Name:</label>
-                                <input type="text" class="form-control" id="New-File-Required-Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="SaveAs-DDL">Save As :</label>
-                                <select name="SaveAsOptions" class="form-control" id="SaveAs-DDL">
-                                    <option value=1>Architecture</option>
-                                    <option value=2>Structure</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Start-Save-As" type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Save -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Save-Model-Modal" id="Save-Model-Button">Save Model</button>
+    <!-- Modal Data Save -->
+    <div class="modal fade" id="Save-Model-Modal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Save Model</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="New-File-Required-Name">File Name:</label>
+                            <input type="text" class="form-control" id="New-File-Required-Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="SaveAs-DDL">Save As :</label>
+                            <select name="SaveAsOptions" class="form-control" id="SaveAs-DDL">
+                                <option value=1>Architecture</option>
+                                <option value=2>Structure</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Save-As" type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <input type="hidden" name="SavingPath" id="Saving-Path-Hidden" value="D:\\IFCSamples\\">
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button Analyze Model-->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Analyze-Model-Modal" id="Analyze-Model-Button">Analyze Model</button>
-        <!-- Modal Data analyze Model -->
-        <div class="modal fade" id="Analyze-Model-Modal" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Analyze Model</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="Points-Tolerance">Points Tolerance :</label>
-                                <input type="number" class="form-control" id="Points-Tolerance" value="0.001">
-                            </div>
-                            <div class="form-group">
-                                <label for="Maximum-Mesh-Size">Maximum Mesh Size:</label>
-                                <input type="number" class="form-control" id="Maximum-Mesh-Size" value="1000">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Start-Analyze-Model" type="button" class="btn btn-primary" data-dismiss="modal">Analyze</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    </div>
+    <input type="hidden" name="SavingPath" id="Saving-Path-Hidden" value="D:\\IFCSamples\\">
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Analyze Model-->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Analyze-Model-Modal" id="Analyze-Model-Button">Analyze Model</button>
+    <!-- Modal Data analyze Model -->
+    <div class="modal fade" id="Analyze-Model-Modal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Analyze Model</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Points-Tolerance">Points Tolerance :</label>
+                            <input type="number" class="form-control" id="Points-Tolerance" value="0.001">
+                        </div>
+                        <div class="form-group">
+                            <label for="Maximum-Mesh-Size">Maximum Mesh Size:</label>
+                            <input type="number" class="form-control" id="Maximum-Mesh-Size" value="1000">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Analyze-Model" type="button" class="btn btn-primary" data-dismiss="modal">Analyze</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button Get Model Json-->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Get-Model-Json" id="Get-Model-Json-Button">Get Model Backup</button>
-        <!-- Modal Data Get Model Json -->
-        <div class="modal fade" id="Get-Model-Json" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Copy Model Data</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="Model-Data-OutPut">Model Data :</label>
-                                <input type="text" class="form-control" id="Model-Data-OutPut" value="" readonly="readonly">
-                            </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Get Model Json-->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Get-Model-Json" id="Get-Model-Json-Button">Get Model Backup</button>
+    <!-- Modal Data Get Model Json -->
+    <div class="modal fade" id="Get-Model-Json" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Copy Model Data</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Model-Data-OutPut">Model Data :</label>
+                            <input type="text" class="form-control" id="Model-Data-OutPut" value="" readonly="readonly">
+                        </div>
 
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- Button :button Set Model Json-->
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Set-Model-Json" id="Set-Model-Json-Button">Set Model From Backup</button>
-        <!-- Modal Data Set Model Json -->
-        <div class="modal fade" id="Set-Model-Json" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Set Model Backup</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="Model-Data-OutPut">Model Data :</label>
-                                <input type="text" class="form-control" id="Model-Data-InPut" value="">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="Start-Set-Model-Backup" type="button" class="btn btn-primary" data-dismiss="modal">Set Backup</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Set Model Json-->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Set-Model-Json" id="Set-Model-Json-Button">Set Model From Backup</button>
+    <!-- Modal Data Set Model Json -->
+    <div class="modal fade" id="Set-Model-Json" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Set Model Backup</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Model-Data-OutPut">Model Data :</label>
+                            <input type="text" class="form-control" id="Model-Data-InPut" value="">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Set-Model-Backup" type="button" class="btn btn-primary" data-dismiss="modal">Set Backup</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <!-- Button :button View Extruded / Standard Toggle -->
-        <button id="Generate-New-Model" type="button" class="btn btn-primary btn-md">New Model</button>
-        <!-- Modal Data View 3D  -->
-        <!-- No Modal Needed  -->
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button View Extruded / Standard Toggle -->
+    <button id="Generate-New-Model" type="button" class="btn btn-primary btn-md">New Model</button>
+    <!-- Modal Data View 3D  -->
+    <!-- No Modal Needed  -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button View 3D -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="" id="Refresh-Model-Button">Refresh Model</button>
+    <!-- Modal Data View 3D  -->
+    <!-- No Modal Needed  -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 
-        <div id="WebSiteNewFolder_id" style="display: none;">0</div>
-        <div id="WebSiteFilePath_id" style="display: none;">D:\\IFCSamples\\</div>
-        <div id="WebSiteFileName_id" style="display: none;">New_Str_New_Arch</div>
-        <div id="WebSiteUserId_id" style="display: none;">123456789</div>
-        <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <div id="WebSiteNewFolder_id" style="display: none;">0</div>
+    <div id="WebSiteFilePath_id" style="display: none;">D:\\IFCSamples\\</div>
+    <div id="WebSiteFileName_id" style="display: none;">New_Str_SlantedG</div>
+    @*<div id="WebSiteFileName_id" style="display: none;">New_Str_New_Arch</div>*@
+    <div id="WebSiteUserId_id" style="display: none;">123456789</div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 
 
 
@@ -902,7 +910,7 @@
 
 
 
-        <script>
+    <script>
                     function openNav() {
                         document.getElementById("mySidenav").stylfe.width = "250px";
                     }
@@ -954,41 +962,41 @@ $("#SaveBtn").click(function () {
 
                     })
                     })
-        </script>
+    </script>
 
-        <!-- Required JavaScript Libraries -->
-        <!-- BIMGo Dependencies-->
-        <script src="~/node_modules/mathjs/dist/math.js"></script>
-        <script src="~/node_modules/angular/angular.js"></script>
-        <script src="~/node_modules/jquery/dist/jquery.js"></script>
-        <script src="~/node_modules/jslinq/build/jslinq.min.js"></script>
-        <script src="~/node_modules/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/node_modules/three/build/three.js"></script>
-        <script src="~/node_modules/three-orbit-controls/OrbitControls.js"></script>
-        <script src="~/node_modules/detector-webgl/Detector.js"></script>
-        <script src="~/node_modules/stats.js/build/stats.min.js"></script>
-        <script src="~/MyModels/BimModelNewModel.js"></script>
-        <script src="~/MyModels/BimModel_SapGeneralSample.js"></script>
-        <script src="~/MyModels/BimModel.js"></script>
-        <script src="~/MyModels/BimModelG.js"></script>
-        <script src="~/MyModels/BimModelAnalyzed.js"></script>
-        <script src="~/MyModels/BimModel_TwoFloors_1STR_2Arch_Theta.js"></script>
-        <script src="~/MyModels/BimModel_TwoFloors_1STR_2Arch.js"></script>
-        <script src="~/MyModels/BimModelNewSlantedBeamG.js"></script>
-        <script src="~/MyModels/BimModelNewSlantedBeamNG.js"></script>
-        <script src="~/MyCodes/DeclareVariables.js"></script>
-        <script src="~/MyCodes/UserInterface.js"></script>
-        <script src="~/MyCodes/ThreeFunctions.js"></script>
-        <script src="~/MyCodes/BimFunctions.js"></script>
-        <script src="~/MyCodes/ThreeBimFunctions.js"></script>
-        <script src="~/MyCodes/AnalysisResultsDisplay.js"></script>
-        <script src="~/MyCodes/SelectionFunctions.js"></script>
-        <script src="~/MyCodes/ApiFunctions.js"></script>
-        <script src="~/MyCodes/Buttons.js"></script>
-        <script src="~/MyCodes/StartApplication.js"></script>
+    <!-- Required JavaScript Libraries -->
+    <!-- BIMGo Dependencies-->
+    <script src="~/node_modules/mathjs/dist/math.js"></script>
+    <script src="~/node_modules/angular/angular.js"></script>
+    <script src="~/node_modules/jquery/dist/jquery.js"></script>
+    <script src="~/node_modules/jslinq/build/jslinq.min.js"></script>
+    <script src="~/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/node_modules/three/build/three.js"></script>
+    <script src="~/node_modules/three-orbit-controls/OrbitControls.js"></script>
+    <script src="~/node_modules/detector-webgl/Detector.js"></script>
+    <script src="~/node_modules/stats.js/build/stats.min.js"></script>
+    <script src="~/MyModels/BimModelNewModel.js"></script>
+    <script src="~/MyModels/BimModel_SapGeneralSample.js"></script>
+    <script src="~/MyModels/BimModel.js"></script>
+    <script src="~/MyModels/BimModelG.js"></script>
+    <script src="~/MyModels/BimModelAnalyzed.js"></script>
+    <script src="~/MyModels/BimModel_TwoFloors_1STR_2Arch_Theta.js"></script>
+    <script src="~/MyModels/BimModel_TwoFloors_1STR_2Arch.js"></script>
+    <script src="~/MyModels/BimModelNewSlantedBeamG.js"></script>
+    <script src="~/MyModels/BimModelNewSlantedBeamNG.js"></script>
+    <script src="~/MyCodes/DeclareVariables.js"></script>
+    <script src="~/MyCodes/UserInterface.js"></script>
+    <script src="~/MyCodes/ThreeFunctions.js"></script>
+    <script src="~/MyCodes/BimFunctions.js"></script>
+    <script src="~/MyCodes/ThreeBimFunctions.js"></script>
+    <script src="~/MyCodes/AnalysisResultsDisplay.js"></script>
+    <script src="~/MyCodes/SelectionFunctions.js"></script>
+    <script src="~/MyCodes/ApiFunctions.js"></script>
+    <script src="~/MyCodes/Buttons.js"></script>
+    <script src="~/MyCodes/StartApplication.js"></script>
 
 
-        @RenderBody()
+    @RenderBody()
 </body>
 
 

@@ -1,5 +1,5 @@
 var bimModelJS; // tha main Object containing all data retreived from server also all 3d objects created will be assigned to it
-document.getElementById("Alert-For-Server").style.display =  "none"; //reserved as backup
+//document.getElementById("Alert-For-Server").style.display =  "none"; //reserved as backup
 // WebSite Variables __________________________________________________________________________________________________________________
 var WebSiteUserId=document.getElementById("WebSiteUserId_id").innerHTML;
 var WebSiteFileName=document.getElementById("WebSiteFileName_id").innerHTML;
