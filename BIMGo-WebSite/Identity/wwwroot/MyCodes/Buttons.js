@@ -655,3 +655,8 @@ function GenerateNewModelClick() {
     OpenNewFile();
 }
 
+document.getElementById("Refresh-Model-Button").onclick = RefreshModelClick;
+function RefreshModelClick() {
+    ReSetAllDeclarations();
+    RunMainProgram();
+}

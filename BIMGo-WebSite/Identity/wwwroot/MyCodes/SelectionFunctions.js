@@ -209,7 +209,8 @@ function UpdatePointSelectionCases() {
                 // this is a high cost process needs to be updated for better performance
                 ReSetAllDeclarations();
                 RunMainProgram();
-
+                //IsViewExtruded = true;
+                ShowExtrudedToggle();
             }
 
 

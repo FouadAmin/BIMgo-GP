@@ -40,8 +40,8 @@ function LoadingFailed() {
     //document.getElementById("Alert-For-Server").style.display = "block";
     //document.getElementById("Alert-For-Server-Modal").modal('show');
     
-    bimModelJS = BimModel_SapGeneralSample;
-    //bimModelJS = BimModelNewSlantedBeamNG;
+    //bimModelJS = BimModel_SapGeneralSample;
+    bimModelJS = BimModelNewSlantedBeamNG;
     //bimModelJS = BimModelNewSlantedBeamG;
     //bimModelJS = BimModel_TwoFloors_1STR_2Arch_Theta;
     //bimModelJS=BimModelG;
