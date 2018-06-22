@@ -6448,7 +6448,7 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "65eXTvevMGCKPIglJskm6kv7HfEYIaUf6JwcgNSm8meTCbma8HN+Gn5gpfRuRu6H1RDVEAb1JdNksOf5EEUmDw==",
+      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "files": [
@@ -9769,7 +9769,7 @@
       ]
     },
     "System.Diagnostics.Process/4.1.0": {
-      "sha512": "Tt37GyNF7eMAjz7VSj4RKD89zoeLwT44CZDPmiVnrQYHKmK3u00iokG7FmrLXZUAwia5EUa7PDWrLGCpDx7lSA==",
+      "sha512": "mpVZ5bnlSs3tTeJ6jYyDJEIa6tavhAd88lxq1zbYhkkCu0Pno2+gHXcvZcoygq2d8JxW3gojXqNJMTAshduqZA==",
       "type": "package",
       "path": "system.diagnostics.process/4.1.0",
       "files": [
@@ -13156,7 +13156,7 @@
       ]
     },
     "System.Threading.Overlapped/4.0.1": {
-      "sha512": "HEjHgM5KCJfrcEZ80NQ8b8n28MBA1qt11yujN9wWPs91iBhM0R0ncdn+7CwrRo5UXljvHj1mSlr74ai1oSI7CQ==",
+      "sha512": "f7aLuLkBoCQM2kng7zqLFBXz9Gk48gDK8lk1ih9rH/1arJJzZK9gJwNvPDhL6Ps/l6rwOr8jw+4FCHL0KKWiEg==",
       "type": "package",
       "path": "system.threading.overlapped/4.0.1",
       "files": [
@@ -13886,7 +13886,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mohammed\\.nuget\\packages\\": {},
+    "C:\\Users\\fouad5657\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13895,14 +13895,14 @@
       "projectUniqueName": "C:\\PerformanceFolder\\BIMgo-GP\\ApiCodeManager\\BimAPI_Core\\BimAPI_Core.csproj",
       "projectName": "BimAPI_Core",
       "projectPath": "C:\\PerformanceFolder\\BIMgo-GP\\ApiCodeManager\\BimAPI_Core\\BimAPI_Core.csproj",
-      "packagesPath": "C:\\Users\\Mohammed\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\fouad5657\\.nuget\\packages\\",
       "outputPath": "C:\\PerformanceFolder\\BIMgo-GP\\ApiCodeManager\\BimAPI_Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Mohammed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fouad5657\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

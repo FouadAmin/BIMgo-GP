@@ -139,7 +139,7 @@
                         <li>
                             <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;" href="#Define" role="tab" data-toggle="tab" type="button" class="btn btn-info">Define</button>
                         </li>
-                       
+
 
                         <li>
                             <button style="padding-left:10px;padding-right:10px;margin-right:5px;margin-top:2px;margin-left:2px;" href="#View" role="tab" data-toggle="tab" type="button" class="btn btn-info">View</button>
@@ -205,7 +205,7 @@
 
                         <!-- Button :button Add Plane Element -->
                         <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Plane-Element-Data" id="Add-Plane-Element">Add Plane Element</button>
-                       
+
                         <button type="button" class="btn btn-primary">Add DXF file</button>
 
 
@@ -231,7 +231,7 @@
                         <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-New-Profile-Data" id="Add-New-Profile">Add New Profile</button>
 
                     </div>
-                    
+
 
 
                     <div class="tab-pane" id="View">
@@ -255,7 +255,6 @@
                         <!-- Modal Data View 3D  -->
                         <!-- No Modal Needed  -->
                         <!-- No Modal Needed  -->
-                       
                         <!-- Button :button View Extruded / Standard Toggle -->
                         <button id="Show_Hide_Grid" type="button" class="btn btn-primary btn-md">Show/Hide Grid</button>
 
@@ -385,8 +384,7 @@
     <!-- No Modal Needed  -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button : Edit Grid -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditGridDataModal" id="EditGridDataButton">
-    </button>
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditGridDataModal" id="EditGridDataButton"></button>
     <!-- Modal Data : Edit Grid-->
     <div class="modal fade" id="EditGridDataModal" role="dialog">
         <div class="modal-dialog .modal-dialog-centered">
@@ -954,6 +952,50 @@
     <!-- No Modal Needed  -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Button :button Diplay Analysis Result -->
+    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Diplay-Analysis-Result-Modal" id="Diplay-Analysis-Result">Diplay Analysis Result</button>
+    <!-- Modal Diplay Analysis Result -->
+    <div class="modal fade" id="Diplay-Analysis-Result-Modal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Select Results To Display</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Diplay-Analysis-Result-Scale">Display Scale :</label>
+                            <input type="number" class="form-control" id="Diplay-Analysis-Result-Scale" value="10">
+                        </div>
+                        <div class="form-group">
+                            <label for="DisplayAnalysis-LoadCases-DLL">Select Load Case :</label>
+                            <select name="DisplayAnalysisLoadCasesDLL" class="form-control" id="DisplayAnalysis-LoadCases-DLL">
+                                <!-- <option value=1>Architecture</option> -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="DisplayAnalysis-SatrainingAction-DLL">Select Straining Action :</label>
+                            <select name="SaveAsOptions" class="form-control" id="DisplayAnalysis-SatrainingAction-DLL">
+                                <option value=P>P</option>
+                                <option value=V2>V2</option>
+                                <option value=V3>V3</option>
+                                <option value=T>T</option>
+                                <option value=M2>M2</option>
+                                <option value=M3>M3</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="Start-Diplay-Analysis-Result" type="button" class="btn btn-primary" data-dismiss="modal">Display</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 
     <div id="WebSiteNewFolder_id" style="display: none;">0</div>
@@ -983,16 +1025,16 @@
 
                         };
 
-$("#SaveBtn").click(function () {
-                        var mdata = {
+                        $("#SaveBtn").click(function () {
+                            var mdata = {
                             FK_ApplicatioUserId: "46c065d0-512c-4bdd-9f14-5c43e55f357d",
                             StaticFilePath: "abo elftooh",
                             FileName:"Test"
 
-                        };
+                            };
 
 
-                        $.ajax({
+                            $.ajax({
                             url: '@Url.Action("AccesDbfromAjax", "IFCFiles")',
                             type: "POST",
                             data:  mdata,
@@ -1036,6 +1078,8 @@ $("#SaveBtn").click(function () {
     <script src="~/MyModels/BimModel_TwoFloors_1STR_2Arch.js"></script>
     <script src="~/MyModels/BimModelNewSlantedBeamG.js"></script>
     <script src="~/MyModels/BimModelNewSlantedBeamNG.js"></script>
+    <script src="~/MyModels/BimModelSapSampleNotAnalyzed.js"></script>
+    <script src="~/MyModels/BimModelSapSampleAnalyzed.js"></script>
     <script src="~/MyCodes/DeclareVariables.js"></script>
     <script src="~/MyCodes/UserInterface.js"></script>
     <script src="~/MyCodes/ThreeFunctions.js"></script>

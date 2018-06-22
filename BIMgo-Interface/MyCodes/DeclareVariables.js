@@ -1,5 +1,5 @@
 var bimModelJS; // tha main Object containing all data retreived from server also all 3d objects created will be assigned to it
-document.getElementById("Alert-For-Server").style.display =  "none"; //reserved as backup
+//document.getElementById("Alert-For-Server").style.display =  "none"; //reserved as backup
 // WebSite Variables __________________________________________________________________________________________________________________
 var WebSiteUserId=document.getElementById("WebSiteUserId_id").innerHTML;
 var WebSiteFileName=document.getElementById("WebSiteFileName_id").innerHTML;
@@ -26,7 +26,7 @@ var ArrayOfAnalysisVisualObject = new Array();
 
 
 var OverAllShininess = 4;
-var SimpleRepresentationColor = new THREE.Color(0x1411ce);
+var SimpleRepresentationColor = new THREE.Color(0x4080ff);
 var SupportsColor = new THREE.Color(0x08d84d);
 var supportB = 400;
 var supportH = 300;
@@ -53,6 +53,12 @@ var CrossSectionRange=2000;
 var CrossSectionMargin=2000;
 //-----------------------------------------------------------------------------------------------------------------------------
 
+// Analysis Variables __________________________________________________________________________________________________________________
+var DisplayAnalysisScale=15;
+var DisplayAnalysisRepresentationColorNegative = new THREE.Color(0xe60815);
+var DisplayAnalysisRepresentationColorPositive = new THREE.Color(0x1411ce);
+var ListOfAnalysisResultShapes=new Array();
+//-----------------------------------------------------------------------------------------------------------------------------
 
 // Selection __________________________________________________________________________________________________________________
 
@@ -167,50 +173,9 @@ function ReSetAllDeclarations() {
     ArrayOfAnalysisVisualObject = new Array();
     //-----------------------------------------------------------------------------------------------------------------------------
 
-    // Grids And Colors _______________________________________________________________________________________________________________________
 
 
-    OverAllShininess = 4;
-    SimpleRepresentationColor = new THREE.Color(0x1411ce);
-    SupportsColor = new THREE.Color(0x08d84d);
-    supportB = 400;
-    supportH = 300;
-
-    GridXColoredMaterial = new THREE.LineBasicMaterial({ color: 0x7a7a7a });
-    GridYColoredMaterial = new THREE.LineBasicMaterial({ color: 0x7a7a7a });
-    GridZColoredMaterial = new THREE.LineBasicMaterial({ color: 0x7a7a7a });
-
-    GridPointColoredMaterial = new THREE.MeshPhongMaterial({ color: 0x57e2ff });
-    GridPointGeometry = new THREE.SphereGeometry(40, 8, 8);
-
-    BimPointColoredMaterial = new THREE.MeshPhongMaterial({ color: 0x000000 });
-    BimPointGeometry = new THREE.SphereGeometry(10, 8, 8);
-
-    SimpleMetalness = 0.1;
-    Simpleroughness = 0.9;
-
-    ExtrudedMetalness = 0.1;
-    Extrudedroughness = 0.9;
-    //-----------------------------------------------------------------------------------------------------------------------------
-
-
-    // Selection __________________________________________________________________________________________________________________
-
-
-    bimElementColorR = 0.7;
-    bimElementColorG = 0.7;
-    bimElementColorB = 0.7;
-
-    HighLightExrudedSelectionColor = new THREE.Color(0x2194ce);
-    HighLightSimpleSelectionColor = new THREE.Color(0xff9800);
-    HighLightExrudedSelectionColorHex = "0x2194ce";
-    HighLightSimpleSelectionColorHex = "0xff9800";
-
-    EnlargementsScale = 1.002;
-    ResettingScale = 1 / EnlargementsScale;
-
-    //-----------------------------------------------------------------------------------------------------------------------------
-
+   
     // Containers __________________________________________________________________________________________________________________
 
 
@@ -242,7 +207,6 @@ function ReSetAllDeclarations() {
 
     // BimConstructor ______________________________________________________________________________________________________________
 
-    bimPointsTolerance = 0.001;
 
     //-----------------------------------------------------------------------------------------------------------------------------
 
@@ -251,16 +215,5 @@ function ReSetAllDeclarations() {
     // Helpers ______________________________________________________________________________________________________________
 
     // write here used cases
-    Free_Display_Extrusion_View = "Free_Display_Extrusion_View";
-    Free_Display_Standard_View = "Free_Display_Standard_View";
-    DrawingLineElement_WaitingForFirstPoint_PointSelectionActivated = "Drawing Line Element / Waiting For First Point / Point Selection Activated";
-    DrawingLineElement_WaitingForSecondPoint_PointSelectionActivated = "Drawing Line Element / Waiting For Second Point / Point Selection Activated";
-
-    DrawingPlaneElement_WaitingForFirstPoint_PointSelectionActivated = "Drawing plane Element / Waiting For FirstPoint / Point Selection Activated";
-    DrawingPlaneElement_WaitingForSecondPoint_PointSelectionActivated = "Drawing plane Element / Waiting For SecondPoint / Point Selection Activated";
-    DrawingPlaneElement_WaitingForThirdPoint_PointSelectionActivated = "Drawing plane Element / Waiting For ThirdPoint / Point Selection Activated";
-    DrawingPlaneElement_WaitingForNextPoint_PointSelectionActivated = "Drawing plane Element / Waiting For NextPoint(Optional) / To finish select last point again_Point Selection Activated";
-
-    //-----------------------------------------------------------------------------------------------------------------------------
 
 }

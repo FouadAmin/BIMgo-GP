@@ -393,6 +393,15 @@ function Create3DObjectsForBimLine(bimLine) {
     cube.AxisDirection = AxisDirection;
     cube.ReferenceX = ReferenceX;
     cube.ReferenceY = ReferenceY;
+
+    //line.AxisDirection = AxisDirection;
+    //line.ReferenceX = ReferenceX;
+    //line.ReferenceY = ReferenceY;
+
+    bimLine.AxisDirection = AxisDirection;
+    bimLine.ReferenceX = ReferenceX;
+    bimLine.ReferenceY = ReferenceY;
+
     //line.up.set(ReferenceY.x,ReferenceY.y,ReferenceY.z);
 
     RotateThreeElementAndUpdateItsReference(cube, bimLine.RotationAboutAxis);
@@ -648,4 +657,212 @@ function RotateThreeElementAndUpdateItsReference(theeMeshObject, theta) {
 
 
 
+}
+
+
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+
+function ClearAnalysisResults() {
+    RemoveArrayOfObjectsFromScene(ListOfAnalysisResultShapes);
+    ListOfAnalysisResultShapes = new Array();
+}
+
+function DisplayAnalysisResultForALLBimLines(loadCase, ForceName) {
+
+    ClearAnalysisResults();
+
+    
+    for (let i = 0; i < bimModelJS.Lines.length; i++) {
+        const bimLine = bimModelJS.Lines[i];
+        var check = DisplayAnalysisResultForBimLine(bimLine, loadCase, ForceName);
+        if (check==undefined) {
+            break;
+        }
+    }
+
+    AddArrayOfObjectsToScene(ListOfAnalysisResultShapes);
+
+}
+
+function DisplayAnalysisResultForBimLine(bimLine, loadCase, ForceName) {
+    var analysisResults = bimLine.AnalysisResults;
+    if (analysisResults != undefined) {
+        var analysisResult = GetAnalysisResultByName(analysisResults, loadCase);
+        var stations = analysisResult.FrameObjStation;
+        var values = analysisResult[ForceName];
+
+
+
+        // Create plane Surface for Negative Values
+        var PlaneSurfaceN = new THREE.Shape();
+        PlaneSurfaceN.moveTo(0, 0);
+        var x;
+        var y;
+        var lastValue = 0;
+        var lastStation = 0;
+        for (let i = 0; i < stations.length; i++) {
+
+            x = stations[i];
+            y = values[i] * DisplayAnalysisScale;
+
+            if (i != 0 && lastValue * y < 0) { // adding intersection Point
+                var xZero = (lastValue) * (x - lastStation) / (lastValue - y) + lastStation;
+                PlaneSurfaceN.lineTo(xZero, 0);
+
+            }
+
+            finalY = math.min(y, 0);
+            PlaneSurfaceN.lineTo(x, finalY);
+            lastValue = y;
+            lastStation = x;
+        }
+        PlaneSurfaceN.lineTo(x, 0);
+
+        // flat shape for Negative Values
+        var geometryN = new THREE.ShapeBufferGeometry(PlaneSurfaceN);
+        var flatMaterialN = new THREE.MeshStandardMaterial({ color: DisplayAnalysisRepresentationColorNegative, roughness: Simpleroughness, metalness: SimpleMetalness, side: THREE.DoubleSide });
+        var flatMeshN = new THREE.Mesh(geometryN, flatMaterialN);
+
+
+        // Create plane Surface for Positive Values
+        var PlaneSurfaceP = new THREE.Shape();
+        PlaneSurfaceP.moveTo(0, 0);
+        var x;
+        var y;
+        var lastValue = 0;
+        var lastStation = 0;
+        for (let i = 0; i < stations.length; i++) {
+
+            x = stations[i];
+            y = values[i] * DisplayAnalysisScale;
+
+            if (i != 0 && lastValue * y < 0) { // adding intersection Point
+                var xZero = (lastValue) * (x - lastStation) / (lastValue - y) + lastStation;
+                PlaneSurfaceP.lineTo(xZero, 0);
+
+            }
+
+            finalY = math.max(y, 0);
+            PlaneSurfaceP.lineTo(x, finalY);
+            lastValue = y;
+            lastStation = x;
+        }
+        PlaneSurfaceP.lineTo(x, 0);
+
+        // flat shape for Positive Values
+        var geometryP = new THREE.ShapeBufferGeometry(PlaneSurfaceP);
+        var flatMaterialP = new THREE.MeshStandardMaterial({ color: DisplayAnalysisRepresentationColorPositive, roughness: Simpleroughness, metalness: SimpleMetalness, side: THREE.DoubleSide });
+        var flatMeshP = new THREE.Mesh(geometryP, flatMaterialP);
+        flatMeshP.add(flatMeshN);
+
+        var location = bimLine.Point1.Location;
+
+        flatMeshP.position.set(location.X, location.Y, location.Z);
+        var flatMeshX = new THREE.Vector3(1, 0, 0); //will be used as local x
+        var flatMeshYInGlobal = new THREE.Vector3(0, 1, 0); // will be updated later
+        var LineAxis = bimLine.AxisDirection;
+        var LineReferenceX = bimLine.ReferenceX;
+        var LineReferenceY = bimLine.ReferenceY;
+
+
+
+
+
+        //******New Rotation Method */
+
+
+        var ProjectedReferenceX = new THREE.Vector3(LineAxis.x, LineAxis.y, 0).normalize();
+        var flatMeshXinGlobalNow;
+        if (ProjectedReferenceX.length() > 0) {
+
+            var anlgeOfRotationForX = Math.acos(ProjectedReferenceX.dot(new THREE.Vector3(1, 0, 0)));
+
+            flatMeshP.rotateOnAxis(new THREE.Vector3(0, 0, 1), anlgeOfRotationForX);
+
+            flatMeshXinGlobalNow = ProjectedReferenceX;
+        }
+        else {
+            flatMeshXinGlobalNow = new THREE.Vector3(1, 0, 0);
+        }
+
+
+
+
+
+        var vectorToRotateAboutForAllignment = new THREE.Vector3();
+        vectorToRotateAboutForAllignment.crossVectors(LineAxis, flatMeshXinGlobalNow).normalize();
+        var flatMeshYinGlobalNow;
+
+        if (vectorToRotateAboutForAllignment.length() > 0) {
+
+            var anlgeOfRotationForAllignment = Math.acos(LineAxis.dot(flatMeshXinGlobalNow));
+
+            flatMeshP.rotateOnWorldAxis(vectorToRotateAboutForAllignment, -anlgeOfRotationForAllignment);
+            flatMeshYinGlobalNow = vectorToRotateAboutForAllignment;
+        }
+        else {
+            // this means that the line Axis is Horizontal
+            flatMeshYinGlobalNow = new THREE.Vector3();
+            flatMeshYinGlobalNow.crossVectors(LineAxis, new THREE.Vector3(0, 0, 1)).normalize();
+        }
+
+        var anlgeOfRotationAboutLineAxis = Math.acos(flatMeshYinGlobalNow.dot(LineReferenceY));
+        flatMeshP.rotateOnWorldAxis(LineAxis, -anlgeOfRotationAboutLineAxis);
+
+
+        var extraRotationFortheta=0;
+        if (bimLine.RotationAboutAxis!=0) {
+            extraRotationFortheta=bimLine.RotationAboutAxis-90;
+        }
+        // Extra Rotation For Reasonable rotation about Axis
+        switch (ForceName) {
+            case "P":
+                flatMeshP.rotateOnWorldAxis(LineAxis, (180-(extraRotationFortheta)) * math.pi / 180);
+                break;
+            case "V2":
+                flatMeshP.rotateOnWorldAxis(LineAxis, (180-(extraRotationFortheta)) * math.pi / 180);
+                break;
+            case "V3":
+                flatMeshP.rotateOnWorldAxis(LineAxis, (-90-(extraRotationFortheta)) * math.pi / 180);
+                break;
+            case "T":
+                flatMeshP.rotateOnWorldAxis(LineAxis, (180-(extraRotationFortheta)) * math.pi / 180);
+                break;
+            case "M2":
+                flatMeshP.rotateOnWorldAxis(LineAxis, (90-(extraRotationFortheta)) * math.pi / 180);
+                break;
+            case "M3":
+                flatMeshP.rotateOnWorldAxis(LineAxis, (0-(extraRotationFortheta)) * math.pi / 180);
+                break;
+
+            default:
+                break;
+        }
+
+
+
+
+        ListOfAnalysisResultShapes.push(flatMeshP);
+
+        
+        return flatMeshP;
+    } else {
+        alert("No analysis Results");
+        return undefined;
+    }
+
+}
+
+function GetAnalysisResultByName(analysisResults, loadCase) {
+    var result;
+
+    analysisResults.forEach(analysisResult => {
+        if (analysisResult.LoadCaseNames[0] == loadCase) {
+            result = analysisResult;
+        }
+    });
+
+    return result;
 }
