@@ -227,7 +227,7 @@ namespace Identity.Controllers
                     {
                         FileName = FileNameObj,
                         StaticFilePath = StaticPathNameNoExtension + ObjFileExtension,
-                        RelativeFilePath = RelativePaths,
+                        RelativeFilePath = uploads,// Replaced with directory path
                         FK_ApplicatioUserId = currentUser.Id,
                         UploadedTime = CurrentDate
                     };

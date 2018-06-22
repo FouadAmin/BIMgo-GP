@@ -4,14 +4,38 @@
     Layout = "~/Views/Shared/_BIMGoLayout.cshtml";
 }
 <div>
+    <div id="WebSiteNewFolder_id" style="display: none;">0</div>
+
+    <div id="WebSiteFilePath_id">
+        @{
+            @Html.DisplayFor(model => model.RelativeFilePath) }
+       
+    </div>
+    <div id="WebSiteFilePath_id" >
+        @{
+            @Html.DisplayFor(model => model.StaticFilePath) }
+    </div>
+    <div id="WebSiteFileName_id">
+        @{
+            @Html.DisplayFor(model => model.FileName) }
+    </div>
+    <div id="WebSiteUserId_id" >
+        @{
+            @Html.DisplayFor(model => model.ApplicationUser.Id) }
+    </div>
     <h4>IFCFile</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.FileName)
-        </dt>
+
         <dd>
-            <div id="divCheckbox" >
+            <div id="WebSiteNewFolder_id" style="display: none;">0</div>
+
+
+        </dd>
+        <dd>
+
+            <div id="divCheckbox">
+
                 @{
                     @Html.DisplayFor(model => model.FileName) }
             </div>
@@ -20,7 +44,7 @@
             @Html.DisplayNameFor(model => model.StaticFilePath)
         </dt>
         <dd>
-            <div id="divCheckbox" >
+            <div id="divCheckbox">
                 @{
                     @Html.DisplayFor(model => model.StaticFilePath) }
             </div>
@@ -29,7 +53,7 @@
             @Html.DisplayNameFor(model => model.RelativeFilePath)
         </dt>
         <dd>
-            <div id="divCheckbox" >
+            <div id="divCheckbox">
                 @{
                     @Html.DisplayFor(model => model.RelativeFilePath) }
             </div>
@@ -37,22 +61,22 @@
         <dt>
             @Html.DisplayNameFor(model => model.UploadedTime)
         </dt>
-        <dd>   
+        <dd>
             <div id="divCheckbox" style="display: none;">
-            @{
-                @Html.DisplayFor(model => model.UploadedTime) }
-</div>
+                @{
+                    @Html.DisplayFor(model => model.UploadedTime) }
+            </div>
         </dd>
-<dt>
-    @Html.DisplayNameFor(model => model.ApplicationUser)
-</dt>
-<dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationUser)
+        </dt>
+        <dd>
 
-    <div id="divCheckbox" >
-        @{
-            @Html.DisplayFor(model => model.ApplicationUser.Id) }
-    </div>
-</dd>
+            <div id="divCheckbox">
+                @{
+                    @Html.DisplayFor(model => model.ApplicationUser.Id) }
+            </div>
+        </dd>
     </dl>
 </div>
 
