@@ -655,3 +655,35 @@ function GenerateNewModelClick() {
     OpenNewFile();
 }
 
+document.getElementById("Refresh-Model-Button").onclick = RefreshModelClick;
+function RefreshModelClick() {
+    ReSetAllDeclarations();
+    RunMainProgram();
+}
+
+
+
+
+
+document.getElementById("Diplay-Analysis-Result").onclick = DiplayAnalysisResultClick;
+function DiplayAnalysisResultClick() {
+    var loadCaseSelect = document.getElementById("DisplayAnalysis-LoadCases-DLL");
+    loadCaseSelect.innerHTML = "";
+
+    bimModelJS.LoadPatterns.forEach(loadCase => {
+        var opt = document.createElement('option');
+        opt.value = loadCase.Name;
+        opt.innerHTML = loadCase.Name;
+        loadCaseSelect.appendChild(opt);
+    }); 
+}
+
+
+document.getElementById("Start-Diplay-Analysis-Result").onclick = StartDiplayAnalysisResultClick;
+function StartDiplayAnalysisResultClick() {
+    DisplayAnalysisScale = parseFloat($('#Diplay-Analysis-Result-Scale').val());
+    var loadCase = $('#DisplayAnalysis-LoadCases-DLL').find(":selected").val();
+    var ForceName = $('#DisplayAnalysis-SatrainingAction-DLL').find(":selected").val();
+    DisplayAnalysisResultForALLBimLines(loadCase,ForceName);
+   // DisplayAnalysisResultForALLBimLines("deadLoad","P");
+}

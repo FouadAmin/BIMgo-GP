@@ -41,8 +41,11 @@ function LoadingFailed() {
     //document.getElementById("Alert-For-Server-Modal").modal('show');
     
     //bimModelJS = BimModel_SapGeneralSample;
-    bimModelJS = BimModelNewSlantedBeamNG;
+    //bimModelJS = BimModelNewSlantedBeamNG;
     //bimModelJS = BimModelNewSlantedBeamG;
+    //bimModelJS = BimModelAnalyzed;
+    //bimModelJS = BimModelSapSampleNotAnalyzed;
+    bimModelJS = BimModelSapSampleAnalyzed;
     //bimModelJS = BimModel_TwoFloors_1STR_2Arch_Theta;
     //bimModelJS=BimModelG;
     
@@ -155,7 +158,12 @@ function attachResponceToBimModelJS(data) {
 
 
 function OpenNewFile() {
-    bimModelJS=BimModelNewModel;
+    bimModelJS= jsonCopy(BimModelNewModel);
     ReSetAllDeclarations();
     RunMainProgram();
 }
+
+
+function jsonCopy(src) {
+    return JSON.parse(JSON.stringify(src));
+  }

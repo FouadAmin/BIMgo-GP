@@ -240,36 +240,36 @@ namespace Identity.Controllers
             //var ImageFileLocationArray = ImageFileLocationPaths.ToArray();
             return RedirectToAction("UploadCompelete");
         }
-    
 
-public async Task<IActionResult> Download(int? id)
-{
-    if (id == null)
-    {
-        return NotFound();
-    }
 
-    var objFile = await repo.GetAllFiles().SingleOrDefaultAsync(m => m.Id == id);
-    var path = objFile.StaticFilePath;
+        public async Task<IActionResult> Download(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
 
-    var memory = new MemoryStream();
-    using (var stream = new FileStream(path, FileMode.Open))
-    {
-        await stream.CopyToAsync(memory);
-    }
-    memory.Position = 0;
-    return File(memory, GetContentType(path), Path.GetFileName(path));
-}
+            var objFile = await repo.GetAllFiles().SingleOrDefaultAsync(m => m.Id == id);
+            var path = objFile.StaticFilePath;
 
-private string GetContentType(string path)
-{
-    var types = GetMimeTypes();
-    var ext = Path.GetExtension(path).ToLowerInvariant();
-    return types[ext];
-}
-private Dictionary<string, string> GetMimeTypes()
-{
-    return new Dictionary<string, string>
+            var memory = new MemoryStream();
+            using (var stream = new FileStream(path, FileMode.Open))
+            {
+                await stream.CopyToAsync(memory);
+            }
+            memory.Position = 0;
+            return File(memory, GetContentType(path), Path.GetFileName(path));
+        }
+
+        private string GetContentType(string path)
+        {
+            var types = GetMimeTypes();
+            var ext = Path.GetExtension(path).ToLowerInvariant();
+            return types[ext];
+        }
+        private Dictionary<string, string> GetMimeTypes()
+        {
+            return new Dictionary<string, string>
             {
                 {".txt", "text/plain"},
                 {".pdf", "application/pdf"},
@@ -287,49 +287,49 @@ private Dictionary<string, string> GetMimeTypes()
                 {".dxf","application/dxf" },
                 {".ifc","application/ifc" }
             };
-}
-public IActionResult UploadCompelete()
-{
-    return View();
-}
+        }
+        public IActionResult UploadCompelete()
+        {
+            return View();
+        }
 
-public IActionResult ErrorPage()
-{
-    ViewBag.Error = "Please upload an Image file with Proper Extension";
-    return View();
+        public IActionResult ErrorPage()
+        {
+            ViewBag.Error = "Please upload an Image file with Proper Extension";
+            return View();
 
-}
-//public IActionResult BIMGo()
-//{
-//    string Path = Convert.ToString(TempData["Path"]);// id will be 10;
-//    ViewBag.data1 = Path;
-//    return View();
+        }
+        //public IActionResult BIMGo()
+        //{
+        //    string Path = Convert.ToString(TempData["Path"]);// id will be 10;
+        //    ViewBag.data1 = Path;
+        //    return View();
 
-//}
-//public async Task<IActionResult> GetDataFromAPI(string FileName,string StaticFilePath,string RelativeFilePath, string ApplicationUserID)
-//{
+        //}
+        //public async Task<IActionResult> GetDataFromAPI(string FileName,string StaticFilePath,string RelativeFilePath, string ApplicationUserID)
+        //{
 
-//            var IFCFileDb = new IFCFile
-//            {
-//                FileName = FileName,
-//                StaticFilePath = StaticFilePath,
-//                RelativeFilePath = RelativeFilePath, // It is Folder Path
-//                FK_ApplicatioUserId = ApplicationUserID,
-//            };
-//            repo.Add(IFCFileDb);
-//            //_signInManager.UserManager.GetUserId()
-//        }
+        //            var IFCFileDb = new IFCFile
+        //            {
+        //                FileName = FileName,
+        //                StaticFilePath = StaticFilePath,
+        //                RelativeFilePath = RelativeFilePath, // It is Folder Path
+        //                FK_ApplicatioUserId = ApplicationUserID,
+        //            };
+        //            repo.Add(IFCFileDb);
+        //            //_signInManager.UserManager.GetUserId()
+        //        }
 
-public IActionResult AccesDbfromAjax([Bind("Id,FileName,FK_ApplicatioUserId,StaticFilePath,RelativeFilePath,UploadedTime")] IFCFile ifcFile)
-{
-    if (ModelState.IsValid)
-    {
-        repo.Add(ifcFile);
-        return RedirectToAction(nameof(Index));
-    }
-    //ViewData["FK_ApplicatioUserId"] = new SelectList(User.Identity.Name, "Id", "Id", ifcFile.FK_ApplicatioUserId);
-    return Ok(ifcFile);
-}
+        public IActionResult AccesDbfromAjax([Bind("Id,FileName,FK_ApplicatioUserId,StaticFilePath,RelativeFilePath,UploadedTime")] IFCFile ifcFile)
+        {
+            if (ModelState.IsValid)
+            {
+                repo.Add(ifcFile);
+                return RedirectToAction(nameof(Index));
+            }
+            //ViewData["FK_ApplicatioUserId"] = new SelectList(User.Identity.Name, "Id", "Id", ifcFile.FK_ApplicatioUserId);
+            return Ok(ifcFile);
+        }
     }
 }
 
