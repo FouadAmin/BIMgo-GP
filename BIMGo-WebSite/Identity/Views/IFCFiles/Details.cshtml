@@ -4,32 +4,11 @@
     Layout = "~/Views/Shared/_BIMGoLayout.cshtml";
 }
 <div>
-
-    <div id="WebSiteNewFolder_id" style="display: none;">1</div>
-
-    <div id="WebSiteFilePath_id"style="display: none;">
-
-        @{
-
-            @Html.DisplayFor(model => model.RelativeFilePath) }
-
-    </div>
-    <div id="divCheckbox"style="display: none;">
-
-        @{
-            @Html.DisplayFor(model => model.FileName) }
-    </div>
-    <div id="filename"style="display: none;">
-        @{
-            @Html.DisplayFor(model => model.FileName) };
-
-
-
-    </div>
-    <div id="WebSiteUserId_id"style="display: none;">
-        @{
-            @Html.DisplayFor(model => model.ApplicationUser.Id) }
-    </div>  
+    <div id="WebSiteNewFolder_id" style="display: none;">0</div>
+    <div id="WebSiteFilePath_id"style="display: none;">@{@Html.DisplayFor(model => model.RelativeFilePath)}</div>
+    <div id="divCheckbox"style="display: none;">@{@Html.DisplayFor(model => model.FileName)}</div>
+    <div id="WebSiteFileName_id"style="display: none;"></div>
+    <div id="WebSiteUserId_id"style="display: none;">@{@Html.DisplayFor(model => model.ApplicationUser.Id)}</div>  
 </div>
 <script>
     var sub;
@@ -37,7 +16,7 @@
     sub = document.getElementById("divCheckbox").innerHTML;
     sub = sub.split('.')[sub.split('.').length - 2];
     //var newsub = sub.slice(0, -4)
-    document.getElementById("filename").innerHTML = sub;
+    document.getElementById("WebSiteFileName_id").innerHTML = sub;
 
 </script>
 
