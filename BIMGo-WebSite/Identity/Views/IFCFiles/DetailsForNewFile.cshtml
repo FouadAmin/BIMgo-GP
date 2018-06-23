@@ -1,0 +1,12 @@
+﻿@model Identity.Models.Models.IFCFile
+@{
+    ViewData["Title"] = "BIMGo";
+    Layout = "~/Views/Shared/_BIMGoLayout.cshtml";
+}
+<div>
+    @TempData["data"]
+    <div id="WebSiteNewFolder_id"style="display: none;">0</div>
+    <div id="WebSiteFilePath_id"style="display: none;"> @TempData["FilePath"]</div>
+    <div id="WebSiteFileName_id" style="display: none;">New_Str_SlantedG</div>
+    <div id="WebSiteUserId_id"style="display: none;"> @TempData["UserId"]</div>
+   </div> 

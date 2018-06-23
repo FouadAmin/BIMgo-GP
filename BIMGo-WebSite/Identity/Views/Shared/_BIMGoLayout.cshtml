@@ -193,6 +193,9 @@
                         <button type="button" class="btn btn-primary">Load Patterns</button>
                         <button type="button" class="btn btn-primary">Load Cases</button>
 
+                        <!-- Button :button Diplay Analysis Result -->
+                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Diplay-Analysis-Result-Modal" id="Diplay-Analysis-Result">Diplay Analysis Result</button>
+
                     </div>
 
                     <div class="tab-pane" id="Insert">
@@ -291,13 +294,7 @@
                 <a href="#">Clients</a>
                 <a href="#">Contact</a>
             </div>
-            <div id="mySidenav2" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
-                <a href="#">xxxxxxxxx</a>
-                <a href="#">xxxxxxxxxxxxxxxxxxxxx</a>
-                <a href="#">xxxxxxxxxxxxxxxxxx</a>
-                <a href="#">xxxxxxx</a>
-            </div>
+
 
         </div>
 
@@ -953,7 +950,7 @@
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button Diplay Analysis Result -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Diplay-Analysis-Result-Modal" id="Diplay-Analysis-Result">Diplay Analysis Result</button>
+    @*<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Diplay-Analysis-Result-Modal" id="Diplay-Analysis-Result">Diplay Analysis Result</button>*@
     <!-- Modal Diplay Analysis Result -->
     <div class="modal fade" id="Diplay-Analysis-Result-Modal" role="dialog">
         <div class="modal-dialog">
@@ -997,6 +994,114 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    @*<div style="font-size:15px;cursor:pointer;transform:translate(-163px, -800px) rotate(90deg);
+          width: 300px;
+          height: 60px;display: inline-block;" onclick="openNav()">&#9776; Project Explorer<br></div>
+        <div class="column">*@
+
+    <div id="mySidenav" class="sidenav">
+        <div class="Side-bar Header" style="padding:25px;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <h4>Project Explorer</h4>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>Dummy Heading</p>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><h5>Structural Plans</h5></a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li><a href="#">Level 1</a></li>
+                    <li><a href="#">Level 2</a></li>
+                    <li><a href="#">Level 3</a></li>
+                </ul>
+            </li>
+            <li>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><h5>Elevations</h5> </a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li><a href="#">East</a></li>
+                    <li><a href="#">North</a></li>
+                    <li><a href="#">South</a></li>
+                    <li><a href="#">West</a></li>
+
+                </ul>
+            </li>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><h5>Floor Plans</h5></a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li><a href="#">Level 1</a></li>
+                <li><a href="#">Level 2</a></li>
+            </ul>
+            </li>
+            <li>
+                <a href="#"><h5>View</h5> </a>
+            </li>
+
+        </ul>
+    </div>
+    <div id="mySidenav2" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+        <table style="width:100%">
+            <a href="#">Element Properties</a>
+            <tr>
+                <td>Height</td>
+                <td>
+                    <form>
+                        <input type="text" name="firstname" size="5">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Width</td>
+                <td>
+                    <form>
+                        <input type="text" name="firstname" size="5">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Length</td>
+                <td>
+                    <form>
+                        <input type="text" name="firstname" size="5">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Material</td>
+                <td>
+                    <form>
+                        <input type="text" name="firstname" size="5">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Loads(Menu)</td>
+                <td>
+                    <form>
+                        @*<p id="SelectedElementDataTypeHeader" style="display: inline"> Selected Element Data Type : </p>*@
+                        <div>
+                            <p id="SelectedElementDataTypeText" style="display: inline"></p>
+                        </div>
+                        
+                        xxx
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+    <div class="column">
+        
+        <div style="font-size:15px;cursor:pointer;transform:translate(-147px, -700px) rotate(90deg);
+      width: 300px;
+      height: 60px;" onclick="openNav2()">&#9776; Element Properties</div>
+    </div>
+
+
+
+
+
 
     <div id="WebSiteNewFolder_id" style="display: none;">0</div>
     <div id="WebSiteFilePath_id" style="display: none;">D:\\IFCSamples\\</div>

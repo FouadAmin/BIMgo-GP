@@ -1,0 +1,35 @@
+﻿@model Identity.Models.Models.IFCFile
+@{
+    ViewData["Title"] = "BIMGo";
+    Layout = "~/Views/Shared/_BIMGoLayout.cshtml";
+}
+<div id="WebSiteNewFolder_id" style="display: none;">1</div>
+<div id="WebSiteFilePath_id" style="display: none;">
+    @{
+        @Html.DisplayFor(model => model.RelativeFilePath) }
+</div>
+<div id="WebSiteFileName">
+    file Name:
+    @{
+        @Html.DisplayFor(model => model.FileName) }
+</div>
+fileName without Extension
+<div id="WebSiteFileName_id" style="display: none;"></div>
+<div id="WebSiteUserId_id" style="display: none;">
+    @{
+        @Html.DisplayFor(model => model.ApplicationUser.Id) }
+</div>
+<div id="divCheckbox">
+    @{
+        @Html.DisplayFor(model => model.ApplicationUser.Id) }
+</div>
+file Name:
+<div id="filename"> </div>
+<script>
+    var sub;
+
+    sub = document.getElementById("WebSiteFileName").innerHTML;
+    sub = sub.split('.')[sub.split('.').length - 2];
+    document.getElementById("WebSiteFileName_id").innerHTML = sub;
+
+</script>

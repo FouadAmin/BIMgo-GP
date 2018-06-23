@@ -225,7 +225,7 @@ namespace Identity.Controllers
 
                     var ObjectFile = new IFCFile
                     {
-                        FileName = FileNameObj,
+                        FileName = filePathName,
                         StaticFilePath = StaticPathNameNoExtension + ObjFileExtension,
                         RelativeFilePath = uploads,// Replaced with directory path
                         FK_ApplicatioUserId = currentUser.Id,
@@ -330,6 +330,40 @@ namespace Identity.Controllers
             //ViewData["FK_ApplicatioUserId"] = new SelectList(User.Identity.Name, "Id", "Id", ifcFile.FK_ApplicatioUserId);
             return Ok(ifcFile);
         }
+
+        public async Task<IActionResult> NewUpload()
+        {
+
+            
+                var CurrentDate = DateTime.Now;
+                var UploadDate = CurrentDate.ToString("yyyyMMdd_hhmmss");
+                var userfileName = User.Identity.Name.ToString();
+                var RootFolder = _hostingEnvironment.WebRootPath;
+                var UsersFileLocation = "UsersDirectory";
+                var RootFfolderString = "wwwroot";
+                var ObjFileExtension = ".ifc";
+                var UserDirectory = $"{_hostingEnvironment.WebRootPath}/{UsersFileLocation}/{userfileName}/{UploadDate}";
+                //var UserFilesDirectoryRelative = $"{RootFfolderString}/{UsersFileLocation}/{userfileName}/{UploadDate}";
+                var UserFilesDirectoryRelative = $"{UsersFileLocation}/{userfileName}/{UploadDate}";
+                //var ImageFileLocationPaths = new List<String>();
+                //Check if user Directory exsists , if not creates new directory 
+                var exsits = Directory.Exists(UserDirectory);
+                if (!exsits)
+                {
+                    Directory.CreateDirectory(UserDirectory);
+                }
+            var currentUser = await _userManager.FindByNameAsync(User.Identity.Name);
+           var id= currentUser.Id;
+
+            TempData["FilePath"] = UserDirectory;
+            TempData["UserId"] = id;
+
+
+            return View("DetailsForNewFile");
+        }
+        
+
+
     }
 }
 

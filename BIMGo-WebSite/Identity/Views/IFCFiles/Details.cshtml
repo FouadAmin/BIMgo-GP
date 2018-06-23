@@ -4,83 +4,40 @@
     Layout = "~/Views/Shared/_BIMGoLayout.cshtml";
 }
 <div>
-    <div id="WebSiteNewFolder_id" style="display: none;">0</div>
 
-    <div id="WebSiteFilePath_id">
+    <div id="WebSiteNewFolder_id" style="display: none;">1</div>
+
+    <div id="WebSiteFilePath_id"style="display: none;">
+
         @{
+
             @Html.DisplayFor(model => model.RelativeFilePath) }
-       
+
     </div>
-    <div id="WebSiteFilePath_id" >
-        @{
-            @Html.DisplayFor(model => model.StaticFilePath) }
-    </div>
-    <div id="WebSiteFileName_id">
+    <div id="divCheckbox"style="display: none;">
+
         @{
             @Html.DisplayFor(model => model.FileName) }
     </div>
-    <div id="WebSiteUserId_id" >
+    <div id="filename"style="display: none;">
+        @{
+            @Html.DisplayFor(model => model.FileName) };
+
+
+
+    </div>
+    <div id="WebSiteUserId_id"style="display: none;">
         @{
             @Html.DisplayFor(model => model.ApplicationUser.Id) }
-    </div>
-    <h4>IFCFile</h4>
-    <hr />
-    <dl class="dl-horizontal">
-
-        <dd>
-            <div id="WebSiteNewFolder_id" style="display: none;">0</div>
-
-
-        </dd>
-        <dd>
-
-            <div id="divCheckbox">
-
-                @{
-                    @Html.DisplayFor(model => model.FileName) }
-            </div>
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.StaticFilePath)
-        </dt>
-        <dd>
-            <div id="divCheckbox">
-                @{
-                    @Html.DisplayFor(model => model.StaticFilePath) }
-            </div>
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.RelativeFilePath)
-        </dt>
-        <dd>
-            <div id="divCheckbox">
-                @{
-                    @Html.DisplayFor(model => model.RelativeFilePath) }
-            </div>
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.UploadedTime)
-        </dt>
-        <dd>
-            <div id="divCheckbox" style="display: none;">
-                @{
-                    @Html.DisplayFor(model => model.UploadedTime) }
-            </div>
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.ApplicationUser)
-        </dt>
-        <dd>
-
-            <div id="divCheckbox">
-                @{
-                    @Html.DisplayFor(model => model.ApplicationUser.Id) }
-            </div>
-        </dd>
-    </dl>
+    </div>  
 </div>
+<script>
+    var sub;
+   
+    sub = document.getElementById("divCheckbox").innerHTML;
+    sub = sub.split('.')[sub.split('.').length - 2];
+    //var newsub = sub.slice(0, -4)
+    document.getElementById("filename").innerHTML = sub;
 
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+</script>
+
