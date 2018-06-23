@@ -352,6 +352,11 @@
             <p id="SelectedElementNameHeader" style="display: inline"> / Selected ElementName : </p>
             <p id="SelectedElementNameText" style="display: inline"></p>
             <br>
+            <p id="SelectedFilePathHeader" style="display: inline"> / Selected FilePath : </p>
+            <p id="SelectedFilePathText" style="display: inline"></p>
+            <p id="SelectedFileNameHeader" style="display: inline"> / Selected FileName : </p>
+            <p id="SelectedFileNameText" style="display: inline"></p>
+            <br>
             <p id="MouseXHeader" style="display: inline"> / MouseX : </p>
             <p id="MouseXText" style="display: inline"></p>
             <p id="MouseYHeader" style="display: inline"> / MouseY : </p>
@@ -1082,7 +1087,7 @@
                         <div>
                             <p id="SelectedElementDataTypeText" style="display: inline"></p>
                         </div>
-                        
+
                         xxx
                     </form>
                 </td>
@@ -1092,7 +1097,7 @@
 
     </div>
     <div class="column">
-        
+
         <div style="font-size:15px;cursor:pointer;transform:translate(-147px, -700px) rotate(90deg);
       width: 300px;
       height: 60px;" onclick="openNav2()">&#9776; Element Properties</div>
@@ -1101,13 +1106,14 @@
 
 
 
-
+    @RenderBody()
 
     <div id="WebSiteNewFolder_id" style="display: none;">0</div>
     <div id="WebSiteFilePath_id" style="display: none;">D:\\IFCSamples\\</div>
     <div id="WebSiteFileName_id" style="display: none;">New_Str_SlantedG</div>
     @*<div id="WebSiteFileName_id" style="display: none;">New_Str_New_Arch</div>*@
     <div id="WebSiteUserId_id" style="display: none;">123456789</div>
+
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <script>
                     function openNav() {
@@ -1163,6 +1169,7 @@
                     })
     </script>
 
+
     <!-- Required JavaScript Libraries -->
     <!-- BIMGo Dependencies-->
     <script src="~/node_modules/mathjs/dist/math.js"></script>
@@ -1197,7 +1204,6 @@
     <script src="~/MyCodes/StartApplication.js"></script>
 
 
-    @RenderBody()
 </body>
 
 

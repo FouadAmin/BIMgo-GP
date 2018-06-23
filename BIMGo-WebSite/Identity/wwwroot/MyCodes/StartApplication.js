@@ -1,8 +1,6 @@
 switch (WebSiteNewFolder) {
     case 0://open old file
-        var fullPath = WebSiteFilePath + WebSiteFileName;
-        GetBimModelListedFromFullPath(fullPath);
-
+        GetBimModelListedFromPathAndName(WebSiteFilePath, WebSiteFileName);
         break;
     case 1://open new file
         OpenNewFile();

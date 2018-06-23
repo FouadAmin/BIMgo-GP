@@ -1,4 +1,32 @@
 
+
+
+function GetBimModelListedFromPathAndName(Path,Name) {
+    var APIURL = "http://localhost:2611/BimApi/BimIO/GetBimModelListedFromPathAndName?filePath=" + Path + "&&fileName=" + Name;
+
+    $.ajax({
+        url: APIURL,
+        type: "GET",
+        contentType: "application/json; charset=utf-8",
+        //crossDomain:true,
+        dataType: 'json',
+        //traditional:true,
+        //processData:true,
+        success: function (data) {
+            GetBimModelQuery_Success(data);
+            console.log(data);
+        },
+        done: function () {
+            console.log("Get BimModelListed From Path Done ... ");
+        },
+        error: function (err) {
+            console.log(err);
+            LoadingFailed();
+        }
+    });
+}
+
+
 function GetBimModelListedFromFullPath(fullPath) {
     var APIURL = "http://localhost:2611/BimApi/BimIO/GetBimModelListedFromFullPath?fullPath=" + fullPath;
 
