@@ -212,8 +212,8 @@ namespace Identity.Controllers
                     var fileName = Guid.NewGuid().ToString("N").Substring(0, 10);
                     var FileNameFull = fileName + fileExtention;
                     var FileNameObj = fileName + ObjFileExtension;
-                    var StaticPath = Path.Combine(uploads, FileNameFull);
-                    var StaticPathNameNoExtension = Path.Combine(uploads, fileName);
+                    var StaticPath = Path.Combine(uploads, filePathName);
+                    var StaticPathNameNoExtension = Path.Combine(uploads, filePathName);
                     var RelativePaths = $"{UserFilesDirectoryRelative}/{fileName}" + $"{ObjFileExtension}";
                     //the image will be saved with a unique filename
                     FileStream DestinationStream = new FileStream(StaticPath, FileMode.CreateNew);
@@ -226,7 +226,7 @@ namespace Identity.Controllers
                     var ObjectFile = new IFCFile
                     {
                         FileName = filePathName,
-                        StaticFilePath = StaticPathNameNoExtension + ObjFileExtension,
+                        StaticFilePath = StaticPathNameNoExtension,
                         RelativeFilePath = uploads,// Replaced with directory path
                         FK_ApplicatioUserId = currentUser.Id,
                         UploadedTime = CurrentDate
