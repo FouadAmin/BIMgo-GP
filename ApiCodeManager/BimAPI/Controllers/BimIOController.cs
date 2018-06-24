@@ -76,7 +76,7 @@ namespace BimAPI.Controllers
 
         public IHttpActionResult SaveBimModelListedAsStrByNameAndPath(string fileName, string filePath, [FromBody] BimModelListed bimModelListed)
         {
-            string fullPath = $"{filePath}{fileName}";
+            string fullPath = $"{filePath}\\{fileName}";
             Ifc_Bim_Model.SaveBimModelAsStructure(bimModelListed, fullPath);
 
             return Ok($"Model Saved Structural at => {fullPath} ");
@@ -85,7 +85,7 @@ namespace BimAPI.Controllers
 
         public IHttpActionResult SaveBimModelListedAsArchByNameAndPath(string fileName, string filePath, [FromBody] BimModelListed bimModelListed)
         {
-            string fullPath = $"{filePath}{fileName}";
+            string fullPath = $"{filePath}\\{fileName}";
             Ifc_Bim_Model.SaveBimModelAsArchitecture(bimModelListed, fullPath);
 
             return Ok($"Model Saved Architecture at => {fullPath} ");

@@ -294,3 +294,21 @@ function GetBimPointByThreePointObject(threePoint) {
 
     return result;
 }
+
+function ClearModelAnalysisResults() {
+
+    bimModelJS.Points.forEach(bimPoint => {
+        bimPoint.AnalysisResults= null;
+    });
+
+
+    bimModelJS.Lines.forEach(bimLine => {
+        bimLine.AnalysisResults= null;
+    });
+
+
+    bimModelJS.Planes.forEach(bimPlane => {
+        bimPlane.AnalysisResults= null;
+    });
+    
+}

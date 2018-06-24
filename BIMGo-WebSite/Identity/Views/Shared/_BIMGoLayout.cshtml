@@ -82,7 +82,7 @@
         <div class="container">
             <div id="logo" class="pull-left">
                 <a href="~/Views/Home/Index.cshtml">
-                    <img src="~/img/logo-nav.png" />
+                    <img src="~/img/LOGOWhite.png" />
                 </a>
                 <!-- Uncomment below if you prefer to use a text image -->
                 <!--<h1><a href="#hero">Bell</a></h1>-->
@@ -157,70 +157,72 @@
                 <div class="panel-body tab-content" style="padding:0px;">
                     <div class="tab-pane active" id="home">
                         <!-- Button :button View Extruded / Standard Toggle -->
-                        <button id="Generate-New-Model" type="button" class="btn btn-primary btn-md">New Model</button>
+                        <button id="Generate-New-Model" type="button" class="btn btn-info btn-md">New Model</button>
 
                         <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
                         <!-- Button :button Save -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Save-Model-Modal" id="Save-Model-Button">Save Model</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Save-Model-Modal" id="Save-Model-Button">Save Model</button>
 
                         <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
                         <!-- Button :button Get Model Json-->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Get-Model-Json" id="Get-Model-Json-Button">Get Model Backup</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Get-Model-Json" id="Get-Model-Json-Button">Get Model Backup</button>
 
                         <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
                         <!-- Button :button Set Model Json-->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Set-Model-Json" id="Set-Model-Json-Button">Set Model From Backup</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Set-Model-Json" id="Set-Model-Json-Button">Set Model From Backup</button>
 
 
 
                     </div>
                     <div class="tab-pane" id="Architecture">
-                        <button type="button" class="btn btn-primary">Modify</button>
-                        <button type="button" class="btn btn-primary">Wall</button>
-                        <button type="button" class="btn btn-primary">Door</button>
-                        <button type="button" class="btn btn-primary">Window</button>
-                        <button type="button" class="btn btn-primary">Column</button>
-                        <button type="button" class="btn btn-primary">Roof</button>
-                        <button type="button" class="btn btn-primary">Ceiling</button>
-                        <button type="button" class="btn btn-primary">Floor</button>
-                        <button type="button" class="btn btn-primary">Stair</button>
-                        <button type="button" class="btn btn-primary">Ramp</button>
+                        <button type="button" class="btn btn-info btn-md">Modify</button>
+                        <button type="button" class="btn btn-info btn-md">Wall</button>
+                        <button type="button" class="btn btn-info btn-md">Door</button>
+                        <button type="button" class="btn btn-info btn-md">Window</button>
+                        <button type="button" class="btn btn-info btn-md">Column</button>
+                        <button type="button" class="btn btn-info btn-md">Roof</button>
+                        <button type="button" class="btn btn-info btn-md">Ceiling</button>
+                        <button type="button" class="btn btn-info btn-md">Floor</button>
+                        <button type="button" class="btn btn-info btn-md">Stair</button>
+                        <button type="button" class="btn btn-info btn-md">Ramp</button>
                     </div>
                     <div class="tab-pane" id="Structure">
 
                         <!-- Button :button Analyze Model-->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Analyze-Model-Modal" id="Analyze-Model-Button">Analyze Model</button>
-                        <button type="button" class="btn btn-primary">Load Patterns</button>
-                        <button type="button" class="btn btn-primary">Load Cases</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Analyze-Model-Modal" id="Analyze-Model-Button">Analyze Model</button>
+                        <button type="button" class="btn btn-info btn-md">Load Patterns</button>
+                        <button type="button" class="btn btn-info btn-md">Load Cases</button>
 
                         <!-- Button :button Diplay Analysis Result -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Diplay-Analysis-Result-Modal" id="Diplay-Analysis-Result">Diplay Analysis Result</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Diplay-Analysis-Result-Modal" id="Diplay-Analysis-Result">Diplay Analysis Result</button>
 
+                        <!-- Button :button Clear Analysis Results-->
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="" id="Clear-Analysis-Results-Button">Clear Analysis Results</button>
                     </div>
 
                     <div class="tab-pane" id="Insert">
                         <!-- Button :button Add Point Support -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Point-Support-Data" id="Add-Point-Support-Button">Add Point Data</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Take-Point-Support-Data" id="Add-Point-Support-Button">Add Point Data</button>
 
                         <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
                         <!-- Button :button Add Line Element -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Line-Element-Data" id="Add-Line-Element">Add Line Element</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Take-Line-Element-Data" id="Add-Line-Element">Add Line Element</button>
 
                         <!-- Button :button Add Plane Element -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Plane-Element-Data" id="Add-Plane-Element">Add Plane Element</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Take-Plane-Element-Data" id="Add-Plane-Element">Add Plane Element</button>
 
-                        <button type="button" class="btn btn-primary">Add DXF file</button>
+                        <button type="button" class="btn btn-info btn-md">Add DXF file</button>
 
 
                     </div>
                     <div class="tab-pane" id="Modify">
                         <!-- Button : Edit Grid -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditGridDataModal" id="EditGridDataButton">Edit Grid</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#EditGridDataModal" id="EditGridDataButton">Edit Grid</button>
                         <!-- Modal Data : Edit Grid-->
                         <!-- Button : Edit Storeys -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditStoreyDataModal" id="EditStoreyDataButton">Edit Storeys</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#EditStoreyDataModal" id="EditStoreyDataButton">Edit Storeys</button>
                         <!-- Button :button Delete Selected Element -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Delete-Selected-Element-Data" id="Delete-Selected-Element">Delete Selected Element</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Delete-Selected-Element-Data" id="Delete-Selected-Element">Delete Selected Element</button>
 
 
 
@@ -229,9 +231,9 @@
                     </div>
                     <div class="tab-pane" id="Define">
                         <!-- Button :button Add New Material -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-New-Material-Data" id="Add-New-Material">Add New Material</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Take-New-Material-Data" id="Add-New-Material">Add New Material</button>
                         <!-- Button :button Add New RECProfile -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-New-Profile-Data" id="Add-New-Profile">Add New Profile</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Take-New-Profile-Data" id="Add-New-Profile">Add New Profile</button>
 
                     </div>
 
@@ -241,29 +243,29 @@
 
                         <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
                         <!-- Button :button View 3D -->
-                        <button type="button" class="btn btn-primary " data-toggle="modal" data-target="" id="View-3D-Button">View 3D</button>
+                        <button type="button" class="btn btn-info btn-md " data-toggle="modal" data-target="" id="View-3D-Button">View 3D</button>
 
                         <!-- Button :button View XY Plane -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-XY-Plane-Data" id="View-XY-Plane-Button">View XY Plane</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#View-XY-Plane-Data" id="View-XY-Plane-Button">View XY Plane</button>
 
                         <!-- Button :button View XZ Plane -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-XZ-Plane-Data" id="View-XZ-Plane-Button">View XZ Plane</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#View-XZ-Plane-Data" id="View-XZ-Plane-Button">View XZ Plane</button>
 
                         <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
                         <!-- Button :button View  YZ Plane -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-YZ-Plane-Data" id="View-YZ-Plane-Button">View YZ Plane</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#View-YZ-Plane-Data" id="View-YZ-Plane-Button">View YZ Plane</button>
                         <!-- Modal Data View 3D  -->
                         <!-- Button :button View Extruded / Standard Toggle -->
-                        <button id="Extruded_Standard" type="button" class="btn btn-primary btn-md">Extruded/Standard View</button>
+                        <button id="Extruded_Standard" type="button" class="btn btn-info btn-md">Extruded/Standard View</button>
                         <!-- Modal Data View 3D  -->
                         <!-- No Modal Needed  -->
                         <!-- No Modal Needed  -->
                         <!-- Button :button View Extruded / Standard Toggle -->
-                        <button id="Show_Hide_Grid" type="button" class="btn btn-primary btn-md">Show/Hide Grid</button>
+                        <button id="Show_Hide_Grid" type="button" class="btn btn-info btn-md">Show/Hide Grid</button>
 
                         <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
                         <!-- Button :button Refresh View -->
-                        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="" id="Refresh-Model-Button">Refresh Model</button>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="" id="Refresh-Model-Button">Refresh Model</button>
                         <!-- Modal Data Refresh View  -->
 
 
@@ -275,9 +277,9 @@
                     </div>
                     <div class="tab-pane" id="Extra-Features">
                         <p>Analyze with -></p>
-                        <button type="button" class="btn btn-primary">CSI SAP </button>
-                        <button type="button" class="btn btn-primary">Bentley STAAD Pro </button>
-                        <button type="button" class="btn btn-primary">Trimble Tekla Str </button>
+                        <button type="button" class="btn btn-info btn-md">CSI SAP </button>
+                        <button type="button" class="btn btn-info btn-md">Bentley STAAD Pro </button>
+                        <button type="button" class="btn btn-info btn-md">Trimble Tekla Str </button>
 
                     </div>
 
@@ -335,22 +337,22 @@
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                 <strong>Alert !</strong> Loading Failed From Server : A Sample Model Will Be loaded.
             </div>*@
-        <div id="threeContainer" style="width: 100%;height: 600px;"></div>
+        <div id="threeContainer" style="width: 100%;height: 550px;"></div>
         <div id="threeLabels">
             <!-- Three Labels Add Labels Here -->
             <h5>
                 Current Status =>
                 <span id="Current_Status" class="label label-info">Loading</span>
             </h5>
-            <p id="SelectedElementDataTypeHeader" style="display: inline"> Selected Element Data Type : </p>
-            <p id="SelectedElementDataTypeText" style="display: inline"></p>
             <p id="SelectedElementTypeHeader" style="display: inline"> / Selected Element Type : </p>
             <p id="SelectedElementTypeText" style="display: inline"></p>
-            <br>
             <p id="SelectedElementIdHeader" style="display: inline"> / Selected ElementId : </p>
             <p id="SelectedElementIdText" style="display: inline"></p>
             <p id="SelectedElementNameHeader" style="display: inline"> / Selected ElementName : </p>
             <p id="SelectedElementNameText" style="display: inline"></p>
+            <br>
+            <p id="SelectedElementDataTypeHeader" style="display: inline"> Selected Element Data Type : </p>
+            <p id="SelectedElementDataTypeText" style="display: inline"></p>
             <br>
             <p id="SelectedFilePathHeader" style="display: inline"> / Selected FilePath : </p>
             <p id="SelectedFilePathText" style="display: inline"></p>
@@ -376,17 +378,17 @@
 
 
     <!-- Button :button View Extruded / Standard Toggle -->
-    <button id="Extruded_Standard" type="button" class="btn btn-primary btn-md">Extruded/Standard View</button>
+    @*<button id="Extruded_Standard" type="button" class="btn btn-info btn-md">Extruded/Standard View</button>*@
     <!-- Modal Data View 3D  -->
     <!-- No Modal Needed  -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button View Extruded / Standard Toggle -->
-    <button id="Show_Hide_Grid" type="button" class="btn btn-primary btn-md">Show/Hide Grid</button>
+    @*<button id="Show_Hide_Grid" type="button" class="btn btn-info btn-md">Show/Hide Grid</button>*@
     <!-- Modal Data View 3D  -->
     <!-- No Modal Needed  -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button : Edit Grid -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditGridDataModal" id="EditGridDataButton"></button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#EditGridDataModal" id="EditGridDataButton"></button>*@
     <!-- Modal Data : Edit Grid-->
     <div class="modal fade" id="EditGridDataModal" role="dialog">
         <div class="modal-dialog .modal-dialog-centered">
@@ -418,7 +420,7 @@
     </div>
 
     <!-- Button : Edit Storeys -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#EditStoreyDataModal" id="EditStoreyDataButton">Edit Storeys</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#EditStoreyDataModal" id="EditStoreyDataButton">Edit Storeys</button>*@
     <!-- Modal Data : Edit Storeys-->
     <div class="modal fade" id="EditStoreyDataModal" role="dialog">
         <div class="modal-dialog .modal-dialog-centered">
@@ -461,7 +463,7 @@
 
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button Add Point Support -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Point-Support-Data" id="Add-Point-Support-Button">Add Point Data</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Take-Point-Support-Data" id="Add-Point-Support-Button">Add Point Data</button>*@
     <!-- Modal Data Add Point Support -->
     <div class="modal fade" id="Take-Point-Support-Data" role="dialog">
         <div class="modal-dialog">
@@ -492,7 +494,7 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button Add Line Element -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Line-Element-Data" id="Add-Line-Element">Add Line Element</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Take-Line-Element-Data" id="Add-Line-Element">Add Line Element</button>*@
     <!-- Modal Data Add Line Element -->
     <div class="modal fade" id="Take-Line-Element-Data" role="dialog">
         <div class="modal-dialog">
@@ -564,7 +566,7 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button Add Plane Element -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-Plane-Element-Data" id="Add-Plane-Element">Add Plane Element</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Take-Plane-Element-Data" id="Add-Plane-Element">Add Plane Element</button>*@
     <!-- Modal Data Add Plane Element -->
     <div class="modal fade" id="Take-Plane-Element-Data" role="dialog">
         <div class="modal-dialog">
@@ -605,7 +607,7 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button Delete Selected Element -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Delete-Selected-Element-Data" id="Delete-Selected-Element">Delete Selected Element</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Delete-Selected-Element-Data" id="Delete-Selected-Element">Delete Selected Element</button>*@
     <!-- Modal Data Delete Selected Element -->
     <div class="modal fade" id="Delete-Selected-Element-Data" role="dialog">
         <div class="modal-dialog">
@@ -645,7 +647,7 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button Add New Material -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-New-Material-Data" id="Add-New-Material">Add New Material</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Take-New-Material-Data" id="Add-New-Material">Add New Material</button>*@
     <!-- Modal Data Add New Material -->
     <div class="modal fade" id="Take-New-Material-Data" role="dialog">
         <div class="modal-dialog">
@@ -696,7 +698,7 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button Add New RECProfile -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Take-New-Profile-Data" id="Add-New-Profile">Add New Profile</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Take-New-Profile-Data" id="Add-New-Profile">Add New Profile</button>*@
     <!-- Modal Data Add New RECProfile -->
     <div class="modal fade" id="Take-New-Profile-Data" role="dialog">
         <div class="modal-dialog">
@@ -731,12 +733,12 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button View 3D -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="" id="View-3D-Button">View 3D</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="" id="View-3D-Button">View 3D</button>*@
     <!-- Modal Data View 3D  -->
     <!-- No Modal Needed  -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button View XY Plane -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-XY-Plane-Data" id="View-XY-Plane-Button">View XY Plane</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#View-XY-Plane-Data" id="View-XY-Plane-Button">View XY Plane</button>*@
     <!-- Modal Data View XY Plane  -->
     <div class="modal fade" id="View-XY-Plane-Data" role="dialog">
         <div class="modal-dialog">
@@ -765,7 +767,7 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button View XZ Plane -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-XZ-Plane-Data" id="View-XZ-Plane-Button">View XZ Plane</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#View-XZ-Plane-Data" id="View-XZ-Plane-Button">View XZ Plane</button>*@
     <!-- Modal Data View XZ Plane  -->
     <div class="modal fade" id="View-XZ-Plane-Data" role="dialog">
         <div class="modal-dialog">
@@ -794,7 +796,7 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button View  YZ Plane -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#View-YZ-Plane-Data" id="View-YZ-Plane-Button">View YZ Plane</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#View-YZ-Plane-Data" id="View-YZ-Plane-Button">View YZ Plane</button>*@
     <!-- Modal Data View YZ Plane  -->
     <div class="modal fade" id="View-YZ-Plane-Data" role="dialog">
         <div class="modal-dialog">
@@ -823,7 +825,7 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button Save -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Save-Model-Modal" id="Save-Model-Button">Save Model</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Save-Model-Modal" id="Save-Model-Button">Save Model</button>*@
     <!-- Modal Data Save -->
     <div class="modal fade" id="Save-Model-Modal" role="dialog">
         <div class="modal-dialog">
@@ -858,7 +860,7 @@
     <input type="hidden" name="SavingPath" id="Saving-Path-Hidden" value="D:\\IFCSamples\\">
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button Analyze Model-->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Analyze-Model-Modal" id="Analyze-Model-Button">Analyze Model</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Analyze-Model-Modal" id="Analyze-Model-Button">Analyze Model</button>*@
     <!-- Modal Data analyze Model -->
     <div class="modal fade" id="Analyze-Model-Modal" role="dialog">
         <div class="modal-dialog">
@@ -889,7 +891,7 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button Get Model Json-->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Get-Model-Json" id="Get-Model-Json-Button">Get Model Backup</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Get-Model-Json" id="Get-Model-Json-Button">Get Model Backup</button>*@
     <!-- Modal Data Get Model Json -->
     <div class="modal fade" id="Get-Model-Json" role="dialog">
         <div class="modal-dialog">
@@ -916,7 +918,7 @@
     </div>
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button Set Model Json-->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Set-Model-Json" id="Set-Model-Json-Button">Set Model From Backup</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Set-Model-Json" id="Set-Model-Json-Button">Set Model From Backup</button>*@
     <!-- Modal Data Set Model Json -->
     <div class="modal fade" id="Set-Model-Json" role="dialog">
         <div class="modal-dialog">
@@ -944,18 +946,18 @@
 
 
     <!-- Button :button View Extruded / Standard Toggle -->
-    <button id="Generate-New-Model" type="button" class="btn btn-primary btn-md">New Model</button>
+    @*<button id="Generate-New-Model" type="button" class="btn btn-info btn-md">New Model</button>*@
     <!-- Modal Data View 3D  -->
     <!-- No Modal Needed  -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button View 3D -->
-    <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="" id="Refresh-Model-Button">Refresh Model</button>
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="" id="Refresh-Model-Button">Refresh Model</button>*@
     <!-- Modal Data View 3D  -->
     <!-- No Modal Needed  -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <!-- Button :button Diplay Analysis Result -->
-    @*<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Diplay-Analysis-Result-Modal" id="Diplay-Analysis-Result">Diplay Analysis Result</button>*@
+    @*<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#Diplay-Analysis-Result-Modal" id="Diplay-Analysis-Result">Diplay Analysis Result</button>*@
     <!-- Modal Diplay Analysis Result -->
     <div class="modal fade" id="Diplay-Analysis-Result-Modal" role="dialog">
         <div class="modal-dialog">
@@ -1004,7 +1006,7 @@
           height: 60px;display: inline-block;" onclick="openNav()">&#9776; Project Explorer<br></div>
         <div class="column">*@
 
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav" style="display: none;">
         <div class="Side-bar Header" style="padding:25px;">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <h4>Project Explorer</h4>
@@ -1043,7 +1045,7 @@
 
         </ul>
     </div>
-    <div id="mySidenav2" class="sidenav">
+    <div id="mySidenav2" class="sidenav" style="display: none;">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
         <table style="width:100%">
             <a href="#">Element Properties</a>
@@ -1096,7 +1098,7 @@
 
 
     </div>
-    <div class="column">
+    <div class="column" style="display: none;">
 
         <div style="font-size:15px;cursor:pointer;transform:translate(-147px, -700px) rotate(90deg);
       width: 300px;
@@ -1105,14 +1107,15 @@
 
 
 
+    <script src="~/MyCodes/LayOutStyling.js"></script>
 
     @RenderBody()
 
-    <div id="WebSiteNewFolder_id" style="display: none;">0</div>
-    <div id="WebSiteFilePath_id" style="display: none;">D:\\IFCSamples\\</div>
-    <div id="WebSiteFileName_id" style="display: none;">New_Str_SlantedG</div>
+    @*<div id="WebSiteNewFolder_id" style="display: none;">0</div>*@
+    @*<div id="WebSiteFilePath_id" style="display: none;">D:\\IFCSamples\\</div>*@
+    @*<div id="WebSiteFileName_id" style="display: none;">New_Str_SlantedG</div>*@
     @*<div id="WebSiteFileName_id" style="display: none;">New_Str_New_Arch</div>*@
-    <div id="WebSiteUserId_id" style="display: none;">123456789</div>
+    @*<div id="WebSiteUserId_id" style="display: none;">123456789</div>*@
 
     <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
     <script>
@@ -1129,18 +1132,17 @@
                     function closeNav2() {
                         document.getElementById("mySidenav2").style.width = "0";
                     }
-                    $("#SaveBtn").click(function () {
-                        var mdata = {
-                            //FK_ApplicatioUserId: 11,
-                            StaticFilePath: "abo elftooh"
 
-                        };
 
-                        $("#SaveBtn").click(function () {
+                    function SaveFileDataAtDataBase(userId,FilePath,FileName) {
+
+
+
                             var mdata = {
-                            FK_ApplicatioUserId: "46c065d0-512c-4bdd-9f14-5c43e55f357d",
-                            StaticFilePath: "abo elftooh",
-                            FileName:"Test"
+                                FK_ApplicatioUserId: userId,
+                                RelativeFilePath: FilePath,
+                                FileName: FileName + ".ifc",
+                                StaticFilePath: FilePath + "\\" + FileName + ".ifc"
 
                             };
 
@@ -1155,18 +1157,19 @@
                             //traditional:true,
                             //processData:true,
                             success: function (data) {
-                                alert("data Saved");
+                                alert("data Saved at DB");
                             },
                             done: function () {
-                                console.log("data Saved");
+                                console.log("data Saved at DB");
                             },
                             error: function (err) {
-                                alert("data Not Saved");
-                            }
-                        });
+                                alert("data Not Saved at DB");
+                                }
 
-                    })
-                    })
+                            });
+
+                    }
+
     </script>
 
 
@@ -1192,6 +1195,8 @@
     <script src="~/MyModels/BimModelNewSlantedBeamNG.js"></script>
     <script src="~/MyModels/BimModelSapSampleNotAnalyzed.js"></script>
     <script src="~/MyModels/BimModelSapSampleAnalyzed.js"></script>
+    <script src="~/MyModels/BimModel_SAPGeneralSampleNew1_StrG.js"></script>
+    <script src="~/MyCodes/Api_Website.js"></script>
     <script src="~/MyCodes/DeclareVariables.js"></script>
     <script src="~/MyCodes/UserInterface.js"></script>
     <script src="~/MyCodes/ThreeFunctions.js"></script>

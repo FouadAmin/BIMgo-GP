@@ -1,0 +1,2193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ifcXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ifc="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1" xsi:schemaLocation="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1 http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1/IFC4_ADD1.xsd" id="uos_1" express="http://www.buildingsmart-tech.org/ifc/IFC4/Add1/IFC4_ADD1.exp" configuration="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1/IFC4_ADD1_config.xml" xmlns="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1">
+  <header>
+    <time_stamp>2018-06-23T23:49:47</time_stamp>
+    <preprocessor_version>Xbim File Processor version 4.0.0.0</preprocessor_version>
+    <originating_system>Xbim version 4.0.0.0</originating_system>
+  </header>
+  <IfcProject id="i1" GlobalId="0RjwnX5oj2hfvwZtFuEDwE" Name="BimProject" LongName="longName__BimProject" Phase="Modeling">
+    <OwnerHistory id="i2" xsi:type="IfcOwnerHistory" ChangeAction="added" CreationDate="0">
+      <OwningUser id="i5" xsi:type="IfcPersonAndOrganization">
+        <ThePerson id="i3" xsi:type="IfcPerson" FamilyName="Track" GivenName="CEI" MiddleNames="" PrefixTitles="" SuffixTitles="" />
+        <TheOrganization id="i4" xsi:type="IfcOrganization" Name="ITI" />
+      </OwningUser>
+      <OwningApplication id="i6" xsi:type="IfcApplication" Version="1.0" ApplicationFullName="BimProject" ApplicationIdentifier="BimProject.exe">
+        <ApplicationDeveloper id="i7" xsi:type="IfcOrganization" Name="Ghosts" />
+      </OwningApplication>
+    </OwnerHistory>
+    <IsDecomposedBy>
+      <IfcRelAggregates id="i50" pos="0" GlobalId="1E4ALPFIfCPQOIpyOs5vKW">
+        <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+        <RelatedObjects>
+          <IfcSite id="i46" pos="0" GlobalId="0h29vcIav12BDw5QDKeJzA" Name="simple Site" CompositionType="element" RefLatitude="42 21 31 181945" RefLongitude="-71 -3 -24 -263305" RefElevation="0">
+            <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+            <IsDecomposedBy>
+              <IfcRelAggregates id="i53" pos="0" GlobalId="1zvhSr4b18tw8adcpkntOP">
+                <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                <RelatedObjects>
+                  <IfcBuilding id="i51" pos="0" GlobalId="0BrR6UW4X9nABNrzf5aDbq" Name="simple building" CompositionType="element">
+                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                    <IsDecomposedBy>
+                      <IfcRelAggregates id="i56" pos="0" GlobalId="0SgUpOLAj89fBUAxoZTSI3">
+                        <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                        <RelatedObjects>
+                          <IfcBuildingStorey id="i54" pos="0" GlobalId="0XoNLF5y182wYwcfzV0t1L" Name="BASE LEVEL" LongName="BASE LEVEL" CompositionType="element" Elevation="0">
+                            <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                            <ObjectPlacement id="i55" xsi:type="IfcLocalPlacement">
+                              <RelativePlacement>
+                                <IfcAxis2Placement3D id="i47">
+                                  <Location id="i48" xsi:type="IfcCartesianPoint" Coordinates="0 0 0" />
+                                </IfcAxis2Placement3D>
+                              </RelativePlacement>
+                            </ObjectPlacement>
+                            <ContainsElements>
+                              <IfcRelContainedInSpatialStructure id="i94" pos="0" GlobalId="2vxxZdH8H3BRY3Y6E2RTIH">
+                                <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                <RelatedElements>
+                                  <IfcGrid id="i69" pos="0" GlobalId="2yz0ADFOH5zOiqK41iuzTi">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <UAxes>
+                                      <IfcGridAxis id="i84" pos="0" AxisTag="Y=-6000" SameSense="false">
+                                        <AxisCurve id="i85" xsi:type="IfcLine">
+                                          <Pnt id="i72" xsi:type="IfcCartesianPoint" Coordinates="-9000 -6000 0" />
+                                          <Dir id="i87" xsi:type="IfcVector" Magnitude="18000">
+                                            <Orientation id="i86" xsi:type="IfcDirection" DirectionRatios="1 0 0" />
+                                          </Dir>
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i88" pos="1" AxisTag="Y=0" SameSense="false">
+                                        <AxisCurve id="i89" xsi:type="IfcLine">
+                                          <Pnt id="i90" xsi:type="IfcCartesianPoint" Coordinates="-9000 0 0" />
+                                          <Dir ref="i87" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i91" pos="2" AxisTag="Y=6000" SameSense="false">
+                                        <AxisCurve id="i92" xsi:type="IfcLine">
+                                          <Pnt id="i93" xsi:type="IfcCartesianPoint" Coordinates="-9000 6000 0" />
+                                          <Dir ref="i87" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </UAxes>
+                                    <VAxes>
+                                      <IfcGridAxis id="i70" pos="0" AxisTag="X=-9000" SameSense="false">
+                                        <AxisCurve id="i71" xsi:type="IfcLine">
+                                          <Pnt ref="i72" xsi:type="IfcCartesianPoint" xsi:nil="true" />
+                                          <Dir id="i73" xsi:type="IfcVector" Magnitude="12000">
+                                            <Orientation id="i74" xsi:type="IfcDirection" DirectionRatios="0 1 0" />
+                                          </Dir>
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i75" pos="1" AxisTag="X=-3000" SameSense="false">
+                                        <AxisCurve id="i76" xsi:type="IfcLine">
+                                          <Pnt id="i77" xsi:type="IfcCartesianPoint" Coordinates="-3000 -6000 0" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i78" pos="2" AxisTag="X=3000" SameSense="false">
+                                        <AxisCurve id="i79" xsi:type="IfcLine">
+                                          <Pnt id="i80" xsi:type="IfcCartesianPoint" Coordinates="3000 -6000 0" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i81" pos="3" AxisTag="X=9000" SameSense="false">
+                                        <AxisCurve id="i82" xsi:type="IfcLine">
+                                          <Pnt id="i83" xsi:type="IfcCartesianPoint" Coordinates="9000 -6000 0" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </VAxes>
+                                  </IfcGrid>
+                                  <IfcColumn id="i364" pos="1" GlobalId="2wU9dHu51BwPUWLe2fvlA_" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties id="i379" pos="0" GlobalId="1fr7v5gI1EWOlTW5j7Zwxl">
+                                        <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                        <RelatingPropertyDefinition>
+                                          <IfcPropertySet id="i378" GlobalId="1vJO_EfXLFpO1kZWn3H1aw" Name="Rectangular Property Set">
+                                            <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                            <HasProperties>
+                                              <IfcPropertySingleValue id="i377" pos="0" Name="Reference">
+                                                <NominalValue>
+                                                  <IfcIdentifier-wrapper>RectProfile500x700</IfcIdentifier-wrapper>
+                                                </NominalValue>
+                                              </IfcPropertySingleValue>
+                                              <IfcPropertySingleValue id="i210" pos="1" Name="LoadBearing">
+                                                <NominalValue>
+                                                  <IfcBoolean-wrapper>true</IfcBoolean-wrapper>
+                                                </NominalValue>
+                                              </IfcPropertySingleValue>
+                                              <IfcPropertySingleValue id="i211" pos="2" Name="IsExternal">
+                                                <NominalValue>
+                                                  <IfcBoolean-wrapper>false</IfcBoolean-wrapper>
+                                                </NominalValue>
+                                              </IfcPropertySingleValue>
+                                              <IfcPropertySingleValue id="i212" pos="3" Name="Slope">
+                                                <NominalValue>
+                                                  <IfcPlaneAngleMeasure-wrapper>0</IfcPlaneAngleMeasure-wrapper>
+                                                </NominalValue>
+                                              </IfcPropertySingleValue>
+                                            </HasProperties>
+                                          </IfcPropertySet>
+                                        </RelatingPropertyDefinition>
+                                      </IfcRelDefinesByProperties>
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i367" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i365">
+                                          <Location id="i366" xsi:type="IfcCartesianPoint" Coordinates="-8750 -5650 0" />
+                                          <Axis id="i200" xsi:type="IfcDirection" DirectionRatios="0 0 1" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation id="i373" xsi:type="IfcProductDefinitionShape">
+                                      <Representations>
+                                        <IfcShapeRepresentation id="i371" pos="0" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                                          <ContextOfItems id="i205" xsi:type="IfcGeometricRepresentationSubContext" ContextIdentifier="Body" ContextType="Model" TargetView="model_view" />
+                                          <Items>
+                                            <IfcExtrudedAreaSolid id="i369" pos="0" Depth="3000">
+                                              <StyledByItem id="i370" xsi:type="IfcStyledItem">
+                                                <Styles>
+                                                  <IfcPresentationStyleAssignment id="i168" pos="0">
+                                                    <Styles>
+                                                      <IfcSurfaceStyle id="i165" pos="0" Name="surfaceStyle_R:0.699999988079071_G:0.699999988079071_B:0.699999988079071" Side="both">
+                                                        <Styles>
+                                                          <IfcSurfaceStyleRendering id="i166" pos="0" Transparency="0" ReflectanceMethod="notdefined">
+                                                            <SurfaceColour id="i167" xsi:type="IfcColourRgb" Red="0.699999988079071" Green="0.699999988079071" Blue="0.699999988079071" />
+                                                            <SpecularColour>
+                                                              <IfcNormalisedRatioMeasure-wrapper>0.5</IfcNormalisedRatioMeasure-wrapper>
+                                                            </SpecularColour>
+                                                            <SpecularHighlight>
+                                                              <IfcSpecularExponent-wrapper>128</IfcSpecularExponent-wrapper>
+                                                            </SpecularHighlight>
+                                                          </IfcSurfaceStyleRendering>
+                                                        </Styles>
+                                                      </IfcSurfaceStyle>
+                                                    </Styles>
+                                                  </IfcPresentationStyleAssignment>
+                                                </Styles>
+                                              </StyledByItem>
+                                              <SweptArea id="i368" xsi:type="IfcRectangleProfileDef" ProfileType="area" ProfileName="RectProfile500x700" XDim="500" YDim="700">
+                                                <Position id="i198" xsi:type="IfcAxis2Placement2D">
+                                                  <Location id="i191" xsi:type="IfcCartesianPoint" Coordinates="0 0" />
+                                                  <RefDirection id="i197" xsi:type="IfcDirection" DirectionRatios="1 0" />
+                                                </Position>
+                                              </SweptArea>
+                                              <Position id="i201" xsi:type="IfcAxis2Placement3D">
+                                                <Location ref="i48" xsi:type="IfcCartesianPoint" xsi:nil="true" />
+                                                <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                                <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                              </Position>
+                                              <ExtrudedDirection ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                            </IfcExtrudedAreaSolid>
+                                          </Items>
+                                        </IfcShapeRepresentation>
+                                      </Representations>
+                                    </Representation>
+                                  </IfcColumn>
+                                  <IfcColumn id="i384" pos="2" GlobalId="2vc0ThREvDiQ7B7Wnnl9GE" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i387" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i385">
+                                          <Location id="i386" xsi:type="IfcCartesianPoint" Coordinates="-8750 350 0" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i388" pos="3" GlobalId="0yqUsb1CjAuQlbk2miDIER" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i391" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i389">
+                                          <Location id="i390" xsi:type="IfcCartesianPoint" Coordinates="-8750 5650 0" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i394" pos="4" GlobalId="08L3ToKx1EOQbxDGO7Sb37" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i397" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i395">
+                                          <Location id="i396" xsi:type="IfcCartesianPoint" Coordinates="-2750 -5650 0" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i398" pos="5" GlobalId="3nQC5KZRjEY8SxSbGolbaF" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i401" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i399">
+                                          <Location id="i400" xsi:type="IfcCartesianPoint" Coordinates="-2750 350 0" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i402" pos="6" GlobalId="0GZMCrVV95$u7wxbqGp5zR" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i405" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i403">
+                                          <Location id="i404" xsi:type="IfcCartesianPoint" Coordinates="-2750 5650 0" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i406" pos="7" GlobalId="1Jy4RcNAb4qhHb4aZB6lIo" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i409" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i407">
+                                          <Location id="i408" xsi:type="IfcCartesianPoint" Coordinates="3250 -5650 0" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i410" pos="8" GlobalId="1Y3$7ZXLj1eg8lSVcMJ7Wd" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i413" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i411">
+                                          <Location id="i412" xsi:type="IfcCartesianPoint" Coordinates="3250 350 0" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i414" pos="9" GlobalId="0nVxhEZyvBwAomSd4iKedk" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i417" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i415">
+                                          <Location id="i416" xsi:type="IfcCartesianPoint" Coordinates="3250 5650 0" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i418" pos="10" GlobalId="1pCz8f5b50l9GShzW6IrDb" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i421" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i419">
+                                          <Location id="i420" xsi:type="IfcCartesianPoint" Coordinates="8750 -5650 0" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i424" pos="11" GlobalId="2OntCDYOH559WThhmJ6vhq" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i427" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i425">
+                                          <Location id="i426" xsi:type="IfcCartesianPoint" Coordinates="8750 350 0" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i428" pos="12" GlobalId="0RaHa2Ou5DgQz5kCa9ktGf" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i431" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i429">
+                                          <Location id="i430" xsi:type="IfcCartesianPoint" Coordinates="8750 5650 0" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                </RelatedElements>
+                              </IfcRelContainedInSpatialStructure>
+                            </ContainsElements>
+                          </IfcBuildingStorey>
+                          <IfcBuildingStorey id="i57" pos="1" GlobalId="0OR6m3XsX7EAlfoPxdHzxo" Name="LEVEL 2" LongName="LEVEL 2" CompositionType="element" Elevation="3000">
+                            <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                            <ObjectPlacement id="i58" xsi:type="IfcLocalPlacement">
+                              <RelativePlacement>
+                                <IfcAxis2Placement3D id="i59">
+                                  <Location id="i60" xsi:type="IfcCartesianPoint" Coordinates="0 0 3000" />
+                                </IfcAxis2Placement3D>
+                              </RelativePlacement>
+                            </ObjectPlacement>
+                            <ContainsElements>
+                              <IfcRelContainedInSpatialStructure id="i116" pos="0" GlobalId="1rJsBDLbP2wvj0fqpuUhXc">
+                                <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                <RelatedElements>
+                                  <IfcGrid id="i95" pos="0" GlobalId="3c8_fZBcD5o94tGYBTcGLh">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <UAxes>
+                                      <IfcGridAxis id="i108" pos="0" AxisTag="Y=-6000" SameSense="false">
+                                        <AxisCurve id="i109" xsi:type="IfcLine">
+                                          <Pnt id="i98" xsi:type="IfcCartesianPoint" Coordinates="-9000 -6000 3000" />
+                                          <Dir ref="i87" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i110" pos="1" AxisTag="Y=0" SameSense="false">
+                                        <AxisCurve id="i111" xsi:type="IfcLine">
+                                          <Pnt id="i112" xsi:type="IfcCartesianPoint" Coordinates="-9000 0 3000" />
+                                          <Dir ref="i87" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i113" pos="2" AxisTag="Y=6000" SameSense="false">
+                                        <AxisCurve id="i114" xsi:type="IfcLine">
+                                          <Pnt id="i115" xsi:type="IfcCartesianPoint" Coordinates="-9000 6000 3000" />
+                                          <Dir ref="i87" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </UAxes>
+                                    <VAxes>
+                                      <IfcGridAxis id="i96" pos="0" AxisTag="X=-9000" SameSense="false">
+                                        <AxisCurve id="i97" xsi:type="IfcLine">
+                                          <Pnt ref="i98" xsi:type="IfcCartesianPoint" xsi:nil="true" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i99" pos="1" AxisTag="X=-3000" SameSense="false">
+                                        <AxisCurve id="i100" xsi:type="IfcLine">
+                                          <Pnt id="i101" xsi:type="IfcCartesianPoint" Coordinates="-3000 -6000 3000" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i102" pos="2" AxisTag="X=3000" SameSense="false">
+                                        <AxisCurve id="i103" xsi:type="IfcLine">
+                                          <Pnt id="i104" xsi:type="IfcCartesianPoint" Coordinates="3000 -6000 3000" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i105" pos="3" AxisTag="X=9000" SameSense="false">
+                                        <AxisCurve id="i106" xsi:type="IfcLine">
+                                          <Pnt id="i107" xsi:type="IfcCartesianPoint" Coordinates="9000 -6000 3000" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </VAxes>
+                                  </IfcGrid>
+                                  <IfcBeam id="i187" pos="1" GlobalId="38svtPi5r6xuaulKj9kUUc" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties id="i207" pos="0" GlobalId="2m6BnKFVL1O9z7gegZBdL9">
+                                        <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                        <RelatingPropertyDefinition>
+                                          <IfcPropertySet id="i208" GlobalId="1xihRhrh193AszmDChaXF6" Name="Rectangular Property Set">
+                                            <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                            <HasProperties>
+                                              <IfcPropertySingleValue id="i209" pos="0" Name="Reference">
+                                                <NominalValue>
+                                                  <IfcIdentifier-wrapper>RectProfile300x700</IfcIdentifier-wrapper>
+                                                </NominalValue>
+                                              </IfcPropertySingleValue>
+                                              <IfcPropertySingleValue ref="i210" pos="1" xsi:nil="true" />
+                                              <IfcPropertySingleValue ref="i211" pos="2" xsi:nil="true" />
+                                              <IfcPropertySingleValue ref="i212" pos="3" xsi:nil="true" />
+                                              <IfcPropertySingleValue id="i213" pos="4" Name="Span">
+                                                <NominalValue>
+                                                  <IfcPositiveLengthMeasure-wrapper>6000</IfcPositiveLengthMeasure-wrapper>
+                                                </NominalValue>
+                                              </IfcPropertySingleValue>
+                                            </HasProperties>
+                                          </IfcPropertySet>
+                                        </RelatingPropertyDefinition>
+                                      </IfcRelDefinesByProperties>
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i190" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i188">
+                                          <Location id="i189" xsi:type="IfcCartesianPoint" Coordinates="-9000 -5850 2650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection id="i186" xsi:type="IfcDirection" DirectionRatios="0 -1 0" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation id="i206" xsi:type="IfcProductDefinitionShape">
+                                      <Representations>
+                                        <IfcShapeRepresentation id="i194" pos="0" RepresentationIdentifier="Axis" RepresentationType="Curve2D">
+                                          <ContextOfItems id="i195" xsi:type="IfcGeometricRepresentationSubContext" ContextIdentifier="Axis" ContextType="Model" TargetView="graph_view" />
+                                          <Items>
+                                            <IfcPolyline id="i193" pos="0">
+                                              <Points>
+                                                <IfcCartesianPoint ref="i191" pos="0" xsi:nil="true" />
+                                                <IfcCartesianPoint id="i192" pos="1" Coordinates="6000 0" />
+                                              </Points>
+                                            </IfcPolyline>
+                                          </Items>
+                                        </IfcShapeRepresentation>
+                                        <IfcShapeRepresentation id="i204" pos="1" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                                          <ContextOfItems ref="i205" xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" />
+                                          <Items>
+                                            <IfcExtrudedAreaSolid id="i202" pos="0" Depth="6000">
+                                              <StyledByItem id="i203" xsi:type="IfcStyledItem">
+                                                <Styles>
+                                                  <IfcPresentationStyleAssignment ref="i168" pos="0" xsi:nil="true" />
+                                                </Styles>
+                                              </StyledByItem>
+                                              <SweptArea id="i199" xsi:type="IfcRectangleProfileDef" ProfileType="area" ProfileName="RectProfile300x700" XDim="300" YDim="700">
+                                                <Position ref="i198" xsi:type="IfcAxis2Placement2D" xsi:nil="true" />
+                                              </SweptArea>
+                                              <Position ref="i201" xsi:type="IfcAxis2Placement3D" xsi:nil="true" />
+                                              <ExtrudedDirection ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                            </IfcExtrudedAreaSolid>
+                                          </Items>
+                                        </IfcShapeRepresentation>
+                                      </Representations>
+                                    </Representation>
+                                  </IfcBeam>
+                                  <IfcBeam id="i218" pos="2" GlobalId="3mpGRPgOTBof7TtTpoczG5" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i221" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i219">
+                                          <Location id="i220" xsi:type="IfcCartesianPoint" Coordinates="-3000 -5850 2650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i222" pos="3" GlobalId="1d04c8m6b3$AIMB6pHYRvz" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i225" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i223">
+                                          <Location id="i224" xsi:type="IfcCartesianPoint" Coordinates="3000 -5850 2650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i226" pos="4" GlobalId="0CW_IsAczCOQoUWty1bYh4" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i229" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i227">
+                                          <Location id="i228" xsi:type="IfcCartesianPoint" Coordinates="-9000 150 2650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i230" pos="5" GlobalId="3c5$wxXLrFCxLHGHhWxmge" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i233" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i231">
+                                          <Location id="i232" xsi:type="IfcCartesianPoint" Coordinates="-3000 150 2650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i234" pos="6" GlobalId="1WFSsEu9X83ek3cHP1wwV$" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i237" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i235">
+                                          <Location id="i236" xsi:type="IfcCartesianPoint" Coordinates="3000 150 2650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i238" pos="7" GlobalId="2bRoYp9GD3hQW7BUlFS7ir" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i241" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i239">
+                                          <Location id="i240" xsi:type="IfcCartesianPoint" Coordinates="-9000 5850 2650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i244" pos="8" GlobalId="3IWQSg$1L6pBcBmMJWW25U" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i247" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i245">
+                                          <Location id="i246" xsi:type="IfcCartesianPoint" Coordinates="-3000 5850 2650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i248" pos="9" GlobalId="2ZJOLgxPPBzg65Io$gUflM" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i251" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i249">
+                                          <Location id="i250" xsi:type="IfcCartesianPoint" Coordinates="3000 5850 2650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i252" pos="10" GlobalId="2ka5P2yfn149TVcLmI5Y21" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i255" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i253">
+                                          <Location id="i254" xsi:type="IfcCartesianPoint" Coordinates="-8850 -6000 2650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i256" pos="11" GlobalId="0Xu3R$pDv8XfseS8ffSPFT" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i259" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i257">
+                                          <Location id="i258" xsi:type="IfcCartesianPoint" Coordinates="-8850 0 2650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i260" pos="12" GlobalId="0aZca4ahfDiBT8P0km1eM9" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i263" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i261">
+                                          <Location id="i262" xsi:type="IfcCartesianPoint" Coordinates="-2850 -6000 2650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i264" pos="13" GlobalId="1AotErECr8awnsHGdjGPi9" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i267" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i265">
+                                          <Location id="i266" xsi:type="IfcCartesianPoint" Coordinates="-2850 0 2650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i268" pos="14" GlobalId="38cNurCBb3iA_w0LkUY_EW" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i271" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i269">
+                                          <Location id="i270" xsi:type="IfcCartesianPoint" Coordinates="3150 -6000 2650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i272" pos="15" GlobalId="19JaIM6vj4vx7wpiRwG4_a" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i275" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i273">
+                                          <Location id="i274" xsi:type="IfcCartesianPoint" Coordinates="3150 0 2650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i276" pos="16" GlobalId="2HO0l0lcvDSQ4ySx88igIX" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i279" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i277">
+                                          <Location id="i278" xsi:type="IfcCartesianPoint" Coordinates="8850 -6000 2650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i280" pos="17" GlobalId="3ImBCiOJP5qekc2VaSYoTz" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i283" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i281">
+                                          <Location id="i282" xsi:type="IfcCartesianPoint" Coordinates="8850 0 2650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcColumn id="i434" pos="18" GlobalId="2dv8_E2fD7MOgDTHxoNrzA" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i437" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i435">
+                                          <Location id="i436" xsi:type="IfcCartesianPoint" Coordinates="-2750 350 3000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i438" pos="19" GlobalId="2Luub_ar11hxu7uIWbsUeU" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i441" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i439">
+                                          <Location id="i440" xsi:type="IfcCartesianPoint" Coordinates="-2750 5650 3000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i442" pos="20" GlobalId="3sHJ5qV8n97wzZoXar6Bi9" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i445" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i443">
+                                          <Location id="i444" xsi:type="IfcCartesianPoint" Coordinates="3250 -5650 3000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i446" pos="21" GlobalId="0pymdmyRf7mPYg$JvqYSjn" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i449" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i447">
+                                          <Location id="i448" xsi:type="IfcCartesianPoint" Coordinates="3250 350 3000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i450" pos="22" GlobalId="04YY9inuLFsfuZWVe213aZ" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i453" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i451">
+                                          <Location id="i452" xsi:type="IfcCartesianPoint" Coordinates="3250 5650 3000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i454" pos="23" GlobalId="2CvILK9XH54goT7qtfriQR" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i457" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i455">
+                                          <Location id="i456" xsi:type="IfcCartesianPoint" Coordinates="8750 -5650 3000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i458" pos="24" GlobalId="3LkKehrZb4FRCxdqOnF1$E" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i461" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i459">
+                                          <Location id="i460" xsi:type="IfcCartesianPoint" Coordinates="8750 350 3000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i462" pos="25" GlobalId="1a568CEDnEcO39ZLfixb$3" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i465" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i463">
+                                          <Location id="i464" xsi:type="IfcCartesianPoint" Coordinates="8750 5650 3000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcSlab id="i498" pos="26" GlobalId="3vDiTC5WL2u8W_u7Ktvd9x" Name="StandardArcSlab_Thickness_250" ObjectType="Slab Thickness 250" PredefinedType="floor">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties id="i514" pos="0" GlobalId="1mQ3WncwHAKhJ8ixdsQ6N6">
+                                        <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                        <RelatingPropertyDefinition>
+                                          <IfcPropertySet id="i512" GlobalId="0c6s0BrNH7luH2IHHIUeWg" Name="Slab Property Set">
+                                            <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                            <HasProperties>
+                                              <IfcPropertySingleValue id="i511" pos="0" Name="Reference">
+                                                <NominalValue>
+                                                  <IfcIdentifier-wrapper>Slab 250</IfcIdentifier-wrapper>
+                                                </NominalValue>
+                                              </IfcPropertySingleValue>
+                                              <IfcPropertySingleValue ref="i210" pos="1" xsi:nil="true" />
+                                              <IfcPropertySingleValue ref="i211" pos="2" xsi:nil="true" />
+                                              <IfcPropertySingleValue id="i513" pos="3" Name="PitchAngle">
+                                                <NominalValue>
+                                                  <IfcPlaneAngleMeasure-wrapper>0</IfcPlaneAngleMeasure-wrapper>
+                                                </NominalValue>
+                                              </IfcPropertySingleValue>
+                                            </HasProperties>
+                                          </IfcPropertySet>
+                                        </RelatingPropertyDefinition>
+                                      </IfcRelDefinesByProperties>
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i501" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i499">
+                                          <Location id="i500" xsi:type="IfcCartesianPoint" Coordinates="-9000 0 2750" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation id="i510" xsi:type="IfcProductDefinitionShape">
+                                      <Representations>
+                                        <IfcShapeRepresentation id="i508" pos="0" RepresentationIdentifier="Body" RepresentationType="SweptSolid">
+                                          <ContextOfItems ref="i205" xsi:type="IfcGeometricRepresentationSubContext" xsi:nil="true" />
+                                          <Items>
+                                            <IfcExtrudedAreaSolid id="i506" pos="0" Depth="250">
+                                              <StyledByItem id="i507" xsi:type="IfcStyledItem">
+                                                <Styles>
+                                                  <IfcPresentationStyleAssignment ref="i168" pos="0" xsi:nil="true" />
+                                                </Styles>
+                                              </StyledByItem>
+                                              <SweptArea id="i505" xsi:type="IfcArbitraryClosedProfileDef" ProfileType="area">
+                                                <OuterCurve id="i502" xsi:type="IfcPolyline">
+                                                  <Points>
+                                                    <IfcCartesianPoint ref="i191" pos="0" xsi:nil="true" />
+                                                    <IfcCartesianPoint ref="i192" pos="1" xsi:nil="true" />
+                                                    <IfcCartesianPoint id="i503" pos="2" Coordinates="6000 6000" />
+                                                    <IfcCartesianPoint id="i504" pos="3" Coordinates="0 6000" />
+                                                    <IfcCartesianPoint ref="i191" pos="4" xsi:nil="true" />
+                                                  </Points>
+                                                </OuterCurve>
+                                              </SweptArea>
+                                              <Position ref="i201" xsi:type="IfcAxis2Placement3D" xsi:nil="true" />
+                                              <ExtrudedDirection ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                            </IfcExtrudedAreaSolid>
+                                          </Items>
+                                        </IfcShapeRepresentation>
+                                      </Representations>
+                                    </Representation>
+                                  </IfcSlab>
+                                  <IfcSlab id="i519" pos="27" GlobalId="2mpWsaL1HDIRfkkoWy33oW" Name="StandardArcSlab_Thickness_250" ObjectType="Slab Thickness 250" PredefinedType="floor">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i514" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i522" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i520">
+                                          <Location id="i521" xsi:type="IfcCartesianPoint" Coordinates="-3000 0 2750" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i510" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcSlab>
+                                  <IfcSlab id="i523" pos="28" GlobalId="3g5ONG1lPEGvZpBFgQpgNi" Name="StandardArcSlab_Thickness_250" ObjectType="Slab Thickness 250" PredefinedType="floor">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i514" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i526" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i524">
+                                          <Location id="i525" xsi:type="IfcCartesianPoint" Coordinates="3000 0 2750" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i510" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcSlab>
+                                  <IfcSlab id="i527" pos="29" GlobalId="135eDhfV56aRZniyOjtj_Z" Name="StandardArcSlab_Thickness_250" ObjectType="Slab Thickness 250" PredefinedType="floor">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i514" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i530" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i528">
+                                          <Location id="i529" xsi:type="IfcCartesianPoint" Coordinates="-9000 -6000 2750" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i510" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcSlab>
+                                  <IfcSlab id="i531" pos="30" GlobalId="1edYpzymz6GfBOV9ywvhf4" Name="StandardArcSlab_Thickness_250" ObjectType="Slab Thickness 250" PredefinedType="floor">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i514" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i534" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i532">
+                                          <Location id="i533" xsi:type="IfcCartesianPoint" Coordinates="-3000 -6000 2750" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i510" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcSlab>
+                                  <IfcSlab id="i535" pos="31" GlobalId="2mXG8Lixf7pO7$iteacFkx" Name="StandardArcSlab_Thickness_250" ObjectType="Slab Thickness 250" PredefinedType="floor">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i514" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i538" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i536">
+                                          <Location id="i537" xsi:type="IfcCartesianPoint" Coordinates="3000 -6000 2750" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i510" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcSlab>
+                                </RelatedElements>
+                              </IfcRelContainedInSpatialStructure>
+                            </ContainsElements>
+                          </IfcBuildingStorey>
+                          <IfcBuildingStorey id="i61" pos="2" GlobalId="2yM5ksX_XFOx6LOfWi0er8" Name="LEVEL 3" LongName="LEVEL 3" CompositionType="element" Elevation="6000">
+                            <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                            <ObjectPlacement id="i62" xsi:type="IfcLocalPlacement">
+                              <RelativePlacement>
+                                <IfcAxis2Placement3D id="i63">
+                                  <Location id="i64" xsi:type="IfcCartesianPoint" Coordinates="0 0 6000" />
+                                </IfcAxis2Placement3D>
+                              </RelativePlacement>
+                            </ObjectPlacement>
+                            <ContainsElements>
+                              <IfcRelContainedInSpatialStructure id="i138" pos="0" GlobalId="2A9wJ0KLHBtPPJP9YAP6LC">
+                                <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                <RelatedElements>
+                                  <IfcGrid id="i117" pos="0" GlobalId="1SgLlZlGD9WvZKsB73N_t4">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <UAxes>
+                                      <IfcGridAxis id="i130" pos="0" AxisTag="Y=-6000" SameSense="false">
+                                        <AxisCurve id="i131" xsi:type="IfcLine">
+                                          <Pnt id="i120" xsi:type="IfcCartesianPoint" Coordinates="-9000 -6000 6000" />
+                                          <Dir ref="i87" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i132" pos="1" AxisTag="Y=0" SameSense="false">
+                                        <AxisCurve id="i133" xsi:type="IfcLine">
+                                          <Pnt id="i134" xsi:type="IfcCartesianPoint" Coordinates="-9000 0 6000" />
+                                          <Dir ref="i87" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i135" pos="2" AxisTag="Y=6000" SameSense="false">
+                                        <AxisCurve id="i136" xsi:type="IfcLine">
+                                          <Pnt id="i137" xsi:type="IfcCartesianPoint" Coordinates="-9000 6000 6000" />
+                                          <Dir ref="i87" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </UAxes>
+                                    <VAxes>
+                                      <IfcGridAxis id="i118" pos="0" AxisTag="X=-9000" SameSense="false">
+                                        <AxisCurve id="i119" xsi:type="IfcLine">
+                                          <Pnt ref="i120" xsi:type="IfcCartesianPoint" xsi:nil="true" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i121" pos="1" AxisTag="X=-3000" SameSense="false">
+                                        <AxisCurve id="i122" xsi:type="IfcLine">
+                                          <Pnt id="i123" xsi:type="IfcCartesianPoint" Coordinates="-3000 -6000 6000" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i124" pos="2" AxisTag="X=3000" SameSense="false">
+                                        <AxisCurve id="i125" xsi:type="IfcLine">
+                                          <Pnt id="i126" xsi:type="IfcCartesianPoint" Coordinates="3000 -6000 6000" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i127" pos="3" AxisTag="X=9000" SameSense="false">
+                                        <AxisCurve id="i128" xsi:type="IfcLine">
+                                          <Pnt id="i129" xsi:type="IfcCartesianPoint" Coordinates="9000 -6000 6000" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </VAxes>
+                                  </IfcGrid>
+                                  <IfcBeam id="i284" pos="1" GlobalId="2NWMAhPj94sQOrI2djzl0K" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i287" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i285">
+                                          <Location id="i286" xsi:type="IfcCartesianPoint" Coordinates="3000 -5850 5650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i288" pos="2" GlobalId="1s5zezfLvBD9WCKi$XOHQD" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i291" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i289">
+                                          <Location id="i290" xsi:type="IfcCartesianPoint" Coordinates="-3000 150 5650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i292" pos="3" GlobalId="137WgoIcb8jx0kZGY0Jx04" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i295" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i293">
+                                          <Location id="i294" xsi:type="IfcCartesianPoint" Coordinates="3000 150 5650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i296" pos="4" GlobalId="3Y$XeJa3PE_8kCcqLBAj__" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i299" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i297">
+                                          <Location id="i298" xsi:type="IfcCartesianPoint" Coordinates="-3000 5850 5650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i300" pos="5" GlobalId="1zZ6myMb52dhYkiT8o0tUZ" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i303" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i301">
+                                          <Location id="i302" xsi:type="IfcCartesianPoint" Coordinates="3000 5850 5650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i304" pos="6" GlobalId="0bps4wNRbB6vLfu0oAuFwB" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i307" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i305">
+                                          <Location id="i306" xsi:type="IfcCartesianPoint" Coordinates="-2850 0 5650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i308" pos="7" GlobalId="0BWBExQTHCLfTBajmO6_KC" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i311" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i309">
+                                          <Location id="i310" xsi:type="IfcCartesianPoint" Coordinates="3150 -6000 5650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i312" pos="8" GlobalId="2dYSESOpj3_948DytGQFAQ" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i315" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i313">
+                                          <Location id="i314" xsi:type="IfcCartesianPoint" Coordinates="3150 0 5650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i316" pos="9" GlobalId="3oLLmDGGXB_f_Rk_Ep6quo" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i319" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i317">
+                                          <Location id="i318" xsi:type="IfcCartesianPoint" Coordinates="8850 -6000 5650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i320" pos="10" GlobalId="2bI3JC9pP3Rx3YzSK4Io_N" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i323" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i321">
+                                          <Location id="i322" xsi:type="IfcCartesianPoint" Coordinates="8850 0 5650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcColumn id="i466" pos="11" GlobalId="0OLu1F5519wOr8T8vcGrFi" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i469" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i467">
+                                          <Location id="i468" xsi:type="IfcCartesianPoint" Coordinates="-2750 350 6000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i470" pos="12" GlobalId="2vItLoN0XCdRKola1Ds$JK" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i473" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i471">
+                                          <Location id="i472" xsi:type="IfcCartesianPoint" Coordinates="-2750 5650 6000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i474" pos="13" GlobalId="0CBqPyHmH5Xx$RqdkCcLSC" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i477" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i475">
+                                          <Location id="i476" xsi:type="IfcCartesianPoint" Coordinates="3250 -5650 6000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i478" pos="14" GlobalId="0fSBpUTTj58BJjq$NIfhAq" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i481" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i479">
+                                          <Location id="i480" xsi:type="IfcCartesianPoint" Coordinates="3250 350 6000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i482" pos="15" GlobalId="2oNVwwiEPFxe0ES2Llg2hW" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i485" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i483">
+                                          <Location id="i484" xsi:type="IfcCartesianPoint" Coordinates="3250 5650 6000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i486" pos="16" GlobalId="16VMUzI7D9P8Ig7Z4E26Tf" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i489" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i487">
+                                          <Location id="i488" xsi:type="IfcCartesianPoint" Coordinates="8750 -5650 6000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i490" pos="17" GlobalId="1Ij_UV4eP5fuiNDURung9L" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i493" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i491">
+                                          <Location id="i492" xsi:type="IfcCartesianPoint" Coordinates="8750 350 6000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcColumn id="i494" pos="18" GlobalId="2l78Vh5YL5V8PhrCibEypn" Name="StandardStrColumn_Rec_500_700" ObjectType="Rectangular Col 500 x 700" PredefinedType="column">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i379" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i497" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i495">
+                                          <Location id="i496" xsi:type="IfcCartesianPoint" Coordinates="8750 5650 6000" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i373" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcColumn>
+                                  <IfcSlab id="i539" pos="19" GlobalId="0Os7zuXzD208Kn5YcjKIP7" Name="StandardArcSlab_Thickness_250" ObjectType="Slab Thickness 250" PredefinedType="floor">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i514" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i542" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i540">
+                                          <Location id="i541" xsi:type="IfcCartesianPoint" Coordinates="-3000 0 5750" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i510" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcSlab>
+                                  <IfcSlab id="i543" pos="20" GlobalId="1Fg0VrFVXFWQrBrFJERW7y" Name="StandardArcSlab_Thickness_250" ObjectType="Slab Thickness 250" PredefinedType="floor">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i514" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i546" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i544">
+                                          <Location id="i545" xsi:type="IfcCartesianPoint" Coordinates="3000 0 5750" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i510" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcSlab>
+                                  <IfcSlab id="i547" pos="21" GlobalId="1V727AT0j1H9pyxZ5B9fyV" Name="StandardArcSlab_Thickness_250" ObjectType="Slab Thickness 250" PredefinedType="floor">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i514" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i550" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i548">
+                                          <Location id="i549" xsi:type="IfcCartesianPoint" Coordinates="3000 -6000 5750" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i510" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcSlab>
+                                </RelatedElements>
+                              </IfcRelContainedInSpatialStructure>
+                            </ContainsElements>
+                          </IfcBuildingStorey>
+                          <IfcBuildingStorey id="i65" pos="3" GlobalId="0dWbFxLgH4HBDAnEfUSvRF" Name="TOP LEVEL" LongName="TOP LEVEL" CompositionType="element" Elevation="9000">
+                            <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                            <ObjectPlacement id="i66" xsi:type="IfcLocalPlacement">
+                              <RelativePlacement>
+                                <IfcAxis2Placement3D id="i67">
+                                  <Location id="i68" xsi:type="IfcCartesianPoint" Coordinates="0 0 9000" />
+                                </IfcAxis2Placement3D>
+                              </RelativePlacement>
+                            </ObjectPlacement>
+                            <ContainsElements>
+                              <IfcRelContainedInSpatialStructure id="i160" pos="0" GlobalId="2OT0aqE1X5sQVeiK7qxCtm">
+                                <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                <RelatedElements>
+                                  <IfcGrid id="i139" pos="0" GlobalId="1aQ3G1F1DDfO8SGICjQSpW">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <UAxes>
+                                      <IfcGridAxis id="i152" pos="0" AxisTag="Y=-6000" SameSense="false">
+                                        <AxisCurve id="i153" xsi:type="IfcLine">
+                                          <Pnt id="i142" xsi:type="IfcCartesianPoint" Coordinates="-9000 -6000 9000" />
+                                          <Dir ref="i87" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i154" pos="1" AxisTag="Y=0" SameSense="false">
+                                        <AxisCurve id="i155" xsi:type="IfcLine">
+                                          <Pnt id="i156" xsi:type="IfcCartesianPoint" Coordinates="-9000 0 9000" />
+                                          <Dir ref="i87" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i157" pos="2" AxisTag="Y=6000" SameSense="false">
+                                        <AxisCurve id="i158" xsi:type="IfcLine">
+                                          <Pnt id="i159" xsi:type="IfcCartesianPoint" Coordinates="-9000 6000 9000" />
+                                          <Dir ref="i87" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </UAxes>
+                                    <VAxes>
+                                      <IfcGridAxis id="i140" pos="0" AxisTag="X=-9000" SameSense="false">
+                                        <AxisCurve id="i141" xsi:type="IfcLine">
+                                          <Pnt ref="i142" xsi:type="IfcCartesianPoint" xsi:nil="true" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i143" pos="1" AxisTag="X=-3000" SameSense="false">
+                                        <AxisCurve id="i144" xsi:type="IfcLine">
+                                          <Pnt id="i145" xsi:type="IfcCartesianPoint" Coordinates="-3000 -6000 9000" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i146" pos="2" AxisTag="X=3000" SameSense="false">
+                                        <AxisCurve id="i147" xsi:type="IfcLine">
+                                          <Pnt id="i148" xsi:type="IfcCartesianPoint" Coordinates="3000 -6000 9000" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i149" pos="3" AxisTag="X=9000" SameSense="false">
+                                        <AxisCurve id="i150" xsi:type="IfcLine">
+                                          <Pnt id="i151" xsi:type="IfcCartesianPoint" Coordinates="9000 -6000 9000" />
+                                          <Dir ref="i73" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </VAxes>
+                                  </IfcGrid>
+                                  <IfcBeam id="i324" pos="1" GlobalId="0ojWhuwlD0BfP8E3SFWUy3" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i327" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i325">
+                                          <Location id="i326" xsi:type="IfcCartesianPoint" Coordinates="3000 -5850 8650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i328" pos="2" GlobalId="1de7YUmerFQfZNNhTFylup" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i331" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i329">
+                                          <Location id="i330" xsi:type="IfcCartesianPoint" Coordinates="-3000 150 8650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i332" pos="3" GlobalId="3eteyu0B9BFO_UcRlwqXNX" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i335" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i333">
+                                          <Location id="i334" xsi:type="IfcCartesianPoint" Coordinates="3000 150 8650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i336" pos="4" GlobalId="1pE4wiEODE9BcC43fdB8Dc" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i339" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i337">
+                                          <Location id="i338" xsi:type="IfcCartesianPoint" Coordinates="-3000 5850 8650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i340" pos="5" GlobalId="2FRkykjDrFSgtQMvobZTSW" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i343" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i341">
+                                          <Location id="i342" xsi:type="IfcCartesianPoint" Coordinates="3000 5850 8650" />
+                                          <Axis ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i186" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i344" pos="6" GlobalId="0PkG7l0KHEIwM2jW2zwT_w" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i347" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i345">
+                                          <Location id="i346" xsi:type="IfcCartesianPoint" Coordinates="-2850 0 8650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i348" pos="7" GlobalId="2PAepLBlX9R9xpkhCJRAWo" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i351" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i349">
+                                          <Location id="i350" xsi:type="IfcCartesianPoint" Coordinates="3150 -6000 8650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i352" pos="8" GlobalId="16leRB10LBNxze34nzy_TZ" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i355" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i353">
+                                          <Location id="i354" xsi:type="IfcCartesianPoint" Coordinates="3150 0 8650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i356" pos="9" GlobalId="3vZnVNtez9MeqmMZju945v" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i359" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i357">
+                                          <Location id="i358" xsi:type="IfcCartesianPoint" Coordinates="8850 -6000 8650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcBeam id="i360" pos="10" GlobalId="3zAKlp0Cr9ZA1vvbNHISll" Name="StandardStrBeam_Rec_300_700" ObjectType="Rectangular Beam 300 x 700" PredefinedType="beam">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i207" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i363" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i361">
+                                          <Location id="i362" xsi:type="IfcCartesianPoint" Coordinates="8850 0 8650" />
+                                          <Axis ref="i74" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i206" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcBeam>
+                                  <IfcSlab id="i551" pos="11" GlobalId="2JaWs5yYXE$Bzn_oWnEDKp" Name="StandardArcSlab_Thickness_250" ObjectType="Slab Thickness 250" PredefinedType="floor">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i514" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i554" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i552">
+                                          <Location id="i553" xsi:type="IfcCartesianPoint" Coordinates="-3000 0 8750" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i510" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcSlab>
+                                  <IfcSlab id="i555" pos="12" GlobalId="2j5QoqF2TBje_Jk6fsoMty" Name="StandardArcSlab_Thickness_250" ObjectType="Slab Thickness 250" PredefinedType="floor">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i514" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i558" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i556">
+                                          <Location id="i557" xsi:type="IfcCartesianPoint" Coordinates="3000 0 8750" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i510" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcSlab>
+                                  <IfcSlab id="i559" pos="13" GlobalId="27tS9H2bX3M8gg8ozOgQJ1" Name="StandardArcSlab_Thickness_250" ObjectType="Slab Thickness 250" PredefinedType="floor">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <IsDefinedBy>
+                                      <IfcRelDefinesByProperties ref="i514" pos="0" xsi:nil="true" />
+                                    </IsDefinedBy>
+                                    <ObjectPlacement id="i562" xsi:type="IfcLocalPlacement">
+                                      <RelativePlacement>
+                                        <IfcAxis2Placement3D id="i560">
+                                          <Location id="i561" xsi:type="IfcCartesianPoint" Coordinates="3000 -6000 8750" />
+                                          <Axis ref="i200" xsi:type="IfcDirection" xsi:nil="true" />
+                                          <RefDirection ref="i86" xsi:type="IfcDirection" xsi:nil="true" />
+                                        </IfcAxis2Placement3D>
+                                      </RelativePlacement>
+                                    </ObjectPlacement>
+                                    <Representation ref="i510" xsi:type="IfcProductDefinitionShape" xsi:nil="true" />
+                                  </IfcSlab>
+                                </RelatedElements>
+                              </IfcRelContainedInSpatialStructure>
+                            </ContainsElements>
+                          </IfcBuildingStorey>
+                        </RelatedObjects>
+                      </IfcRelAggregates>
+                    </IsDecomposedBy>
+                    <ObjectPlacement id="i52" xsi:type="IfcLocalPlacement">
+                      <PlacementRelTo id="i49" xsi:type="IfcLocalPlacement">
+                        <RelativePlacement>
+                          <IfcAxis2Placement3D ref="i47" xsi:nil="true" />
+                        </RelativePlacement>
+                      </PlacementRelTo>
+                      <RelativePlacement>
+                        <IfcAxis2Placement3D ref="i47" xsi:nil="true" />
+                      </RelativePlacement>
+                    </ObjectPlacement>
+                  </IfcBuilding>
+                </RelatedObjects>
+              </IfcRelAggregates>
+            </IsDecomposedBy>
+            <ObjectPlacement ref="i49" xsi:type="IfcLocalPlacement" xsi:nil="true" />
+          </IfcSite>
+        </RelatedObjects>
+      </IfcRelAggregates>
+    </IsDecomposedBy>
+    <RepresentationContexts>
+      <IfcGeometricRepresentationContext id="i163" pos="0" ContextIdentifier="" ContextType="Model" CoordinateSpaceDimension="3" Precision="0.001">
+        <WorldCoordinateSystem>
+          <IfcAxis2Placement3D ref="i47" xsi:nil="true" />
+        </WorldCoordinateSystem>
+        <TrueNorth id="i164" xsi:type="IfcDirection" DirectionRatios="6.12303176911189E-17 1" />
+        <HasSubContexts>
+          <IfcGeometricRepresentationSubContext ref="i195" pos="0" xsi:nil="true" />
+          <IfcGeometricRepresentationSubContext ref="i205" pos="1" xsi:nil="true" />
+        </HasSubContexts>
+      </IfcGeometricRepresentationContext>
+    </RepresentationContexts>
+    <UnitsInContext id="i8" xsi:type="IfcUnitAssignment">
+      <Units>
+        <IfcSIUnit id="i9" pos="0" UnitType="lengthunit" Prefix="milli" Name="metre" />
+        <IfcSIUnit id="i10" pos="1" UnitType="areaunit" Prefix="micro" Name="square_metre" />
+        <IfcSIUnit id="i11" pos="2" UnitType="volumeunit" Prefix="nano" Name="cubic_metre" />
+        <IfcDerivedUnit id="i12" pos="3" UnitType="sectionmodulusunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i13" pos="0" Exponent="3">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcDerivedUnit id="i14" pos="4" UnitType="momentofinertiaunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i15" pos="0" Exponent="4">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcSIUnit id="i16" pos="5" UnitType="planeangleunit" Name="radian" />
+        <IfcSIUnit id="i17" pos="6" UnitType="timeunit" Name="second" />
+        <IfcSIUnit id="i18" pos="7" UnitType="massunit" Prefix="giga" Name="gram" />
+        <IfcDerivedUnit id="i19" pos="8" UnitType="massdensityunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i20" pos="0" Exponent="1">
+              <Unit ref="i18" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i21" pos="1" Exponent="-3">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcSIUnit id="i22" pos="9" UnitType="forceunit" Prefix="kilo" Name="newton" />
+        <IfcDerivedUnit id="i23" pos="10" UnitType="torqueunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i24" pos="0" Exponent="1">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i25" pos="1" Exponent="1">
+              <Unit ref="i22" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcSIUnit id="i26" pos="11" UnitType="pressureunit" Prefix="giga" Name="pascal" />
+        <IfcDerivedUnit id="i27" pos="12" UnitType="linearforceunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i28" pos="0" Exponent="-1">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i29" pos="1" Exponent="1">
+              <Unit ref="i22" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcDerivedUnit id="i30" pos="13" UnitType="planarforceunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i31" pos="0" Exponent="-2">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i32" pos="1" Exponent="1">
+              <Unit ref="i22" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcDerivedUnit id="i33" pos="14" UnitType="linearmomentunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i34" pos="0" Exponent="1">
+              <Unit ref="i22" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i35" pos="1" Exponent="1">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i36" pos="2" Exponent="-1">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcDerivedUnit id="i37" pos="15" UnitType="shearmodulusunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i38" pos="0" Exponent="-2">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i39" pos="1" Exponent="1">
+              <Unit ref="i22" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcDerivedUnit id="i40" pos="16" UnitType="modulusofelasticityunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i41" pos="0" Exponent="-2">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i42" pos="1" Exponent="1">
+              <Unit ref="i22" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcSIUnit id="i43" pos="17" UnitType="thermodynamictemperatureunit" Name="degree_celsius" />
+        <IfcDerivedUnit id="i44" pos="18" UnitType="thermalexpansioncoefficientunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i45" pos="0" Exponent="-1">
+              <Unit ref="i43" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+      </Units>
+    </UnitsInContext>
+  </IfcProject>
+  <IfcRelAssociatesMaterial id="i214" GlobalId="3qHe00dYLCLwGoU1zs8IHg">
+    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+    <RelatedObjects>
+      <IfcBeam ref="i187" pos="0" xsi:nil="true" />
+      <IfcBeam ref="i218" pos="1" xsi:nil="true" />
+      <IfcBeam ref="i222" pos="2" xsi:nil="true" />
+      <IfcBeam ref="i226" pos="3" xsi:nil="true" />
+      <IfcBeam ref="i230" pos="4" xsi:nil="true" />
+      <IfcBeam ref="i234" pos="5" xsi:nil="true" />
+      <IfcBeam ref="i276" pos="6" xsi:nil="true" />
+      <IfcBeam ref="i280" pos="7" xsi:nil="true" />
+      <IfcBeam ref="i284" pos="8" xsi:nil="true" />
+      <IfcBeam ref="i288" pos="9" xsi:nil="true" />
+      <IfcBeam ref="i292" pos="10" xsi:nil="true" />
+      <IfcBeam ref="i316" pos="11" xsi:nil="true" />
+      <IfcBeam ref="i320" pos="12" xsi:nil="true" />
+      <IfcBeam ref="i324" pos="13" xsi:nil="true" />
+      <IfcBeam ref="i328" pos="14" xsi:nil="true" />
+      <IfcBeam ref="i332" pos="15" xsi:nil="true" />
+      <IfcBeam ref="i356" pos="16" xsi:nil="true" />
+      <IfcBeam ref="i360" pos="17" xsi:nil="true" />
+    </RelatedObjects>
+    <RelatingMaterial>
+      <IfcMaterialProfileSetUsage id="i215" CardinalPoint="9">
+        <ForProfileSet id="i217" xsi:type="IfcMaterialProfileSet">
+          <MaterialProfiles>
+            <IfcMaterialProfile id="i216" pos="0">
+              <Material id="i179" xsi:type="IfcMaterial" Name="FCU25">
+                <HasProperties>
+                  <IfcMaterialProperties id="i180" pos="0" Name="FCU25">
+                    <Properties>
+                      <IfcPropertySingleValue id="i181" pos="0" Name="CompressiveStrength">
+                        <NominalValue>
+                          <IfcPressureMeasure-wrapper>0.025</IfcPressureMeasure-wrapper>
+                        </NominalValue>
+                        <Unit>
+                          <IfcSIUnit ref="i26" xsi:nil="true" />
+                        </Unit>
+                      </IfcPropertySingleValue>
+                      <IfcPropertySingleValue id="i182" pos="1" Name="MassDensity">
+                        <NominalValue>
+                          <IfcMassDensityMeasure-wrapper>2.5492905E-12</IfcMassDensityMeasure-wrapper>
+                        </NominalValue>
+                        <Unit>
+                          <IfcDerivedUnit ref="i19" xsi:nil="true" />
+                        </Unit>
+                      </IfcPropertySingleValue>
+                      <IfcPropertySingleValue id="i183" pos="2" Name="PoissonRatio">
+                        <NominalValue>
+                          <IfcRatioMeasure-wrapper>0.2</IfcRatioMeasure-wrapper>
+                        </NominalValue>
+                      </IfcPropertySingleValue>
+                      <IfcPropertySingleValue id="i184" pos="3" Name="ThermalExpansionCoefficient">
+                        <NominalValue>
+                          <IfcThermalExpansionCoefficientMeasure-wrapper>9.8999995E-06</IfcThermalExpansionCoefficientMeasure-wrapper>
+                        </NominalValue>
+                        <Unit>
+                          <IfcDerivedUnit ref="i40" xsi:nil="true" />
+                        </Unit>
+                      </IfcPropertySingleValue>
+                      <IfcPropertySingleValue id="i185" pos="4" Name="YoungModulus">
+                        <NominalValue>
+                          <IfcModulusOfElasticityMeasure-wrapper>22</IfcModulusOfElasticityMeasure-wrapper>
+                        </NominalValue>
+                        <Unit>
+                          <IfcDerivedUnit ref="i40" xsi:nil="true" />
+                        </Unit>
+                      </IfcPropertySingleValue>
+                    </Properties>
+                  </IfcMaterialProperties>
+                </HasProperties>
+                <HasRepresentation id="i177" xsi:type="IfcMaterialDefinitionRepresentation">
+                  <Representations>
+                    <IfcStyledRepresentation id="i178" pos="0" RepresentationIdentifier="Style" RepresentationType="Material">
+                      <ContextOfItems ref="i163" xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" />
+                      <Items>
+                        <IfcStyledItem id="i169" pos="0">
+                          <Styles>
+                            <IfcPresentationStyleAssignment ref="i168" pos="0" xsi:nil="true" />
+                          </Styles>
+                        </IfcStyledItem>
+                      </Items>
+                    </IfcStyledRepresentation>
+                  </Representations>
+                </HasRepresentation>
+              </Material>
+              <Profile ref="i199" xsi:type="IfcRectangleProfileDef" xsi:nil="true" />
+            </IfcMaterialProfile>
+          </MaterialProfiles>
+        </ForProfileSet>
+      </IfcMaterialProfileSetUsage>
+    </RelatingMaterial>
+  </IfcRelAssociatesMaterial>
+  <IfcRelAssociatesMaterial id="i243" GlobalId="1FSNije6f4r8P405jUyjGJ">
+    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+    <RelatedObjects>
+      <IfcBeam ref="i238" pos="0" xsi:nil="true" />
+      <IfcBeam ref="i244" pos="1" xsi:nil="true" />
+      <IfcBeam ref="i248" pos="2" xsi:nil="true" />
+      <IfcBeam ref="i252" pos="3" xsi:nil="true" />
+      <IfcBeam ref="i256" pos="4" xsi:nil="true" />
+      <IfcBeam ref="i260" pos="5" xsi:nil="true" />
+      <IfcBeam ref="i264" pos="6" xsi:nil="true" />
+      <IfcBeam ref="i268" pos="7" xsi:nil="true" />
+      <IfcBeam ref="i272" pos="8" xsi:nil="true" />
+      <IfcBeam ref="i296" pos="9" xsi:nil="true" />
+      <IfcBeam ref="i300" pos="10" xsi:nil="true" />
+      <IfcBeam ref="i304" pos="11" xsi:nil="true" />
+      <IfcBeam ref="i308" pos="12" xsi:nil="true" />
+      <IfcBeam ref="i312" pos="13" xsi:nil="true" />
+      <IfcBeam ref="i336" pos="14" xsi:nil="true" />
+      <IfcBeam ref="i340" pos="15" xsi:nil="true" />
+      <IfcBeam ref="i344" pos="16" xsi:nil="true" />
+      <IfcBeam ref="i348" pos="17" xsi:nil="true" />
+      <IfcBeam ref="i352" pos="18" xsi:nil="true" />
+    </RelatedObjects>
+    <RelatingMaterial>
+      <IfcMaterialProfileSetUsage id="i242" CardinalPoint="7">
+        <ForProfileSet ref="i217" xsi:type="IfcMaterialProfileSet" xsi:nil="true" />
+      </IfcMaterialProfileSetUsage>
+    </RelatingMaterial>
+  </IfcRelAssociatesMaterial>
+  <IfcRelAssociatesMaterial id="i383" GlobalId="2jn936Bnn3NwAaUOPW6QUO">
+    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+    <RelatedObjects>
+      <IfcColumnType id="i376" pos="0" GlobalId="2EKMVxNQX85wr2POMTo0IM" Name="RectColumn500x700" ElementType="RectColumn500x700" PredefinedType="column">
+        <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+        <RepresentationMaps>
+          <IfcRepresentationMap id="i375" pos="0">
+            <MappingOrigin>
+              <IfcAxis2Placement3D ref="i47" xsi:nil="true" />
+            </MappingOrigin>
+            <MappedRepresentation ref="i371" xsi:type="IfcShapeRepresentation" xsi:nil="true" />
+          </IfcRepresentationMap>
+        </RepresentationMaps>
+      </IfcColumnType>
+      <IfcColumn ref="i364" pos="1" xsi:nil="true" />
+      <IfcColumn ref="i384" pos="2" xsi:nil="true" />
+      <IfcColumn ref="i394" pos="3" xsi:nil="true" />
+      <IfcColumn ref="i398" pos="4" xsi:nil="true" />
+      <IfcColumn ref="i406" pos="5" xsi:nil="true" />
+      <IfcColumn ref="i410" pos="6" xsi:nil="true" />
+      <IfcColumn ref="i434" pos="7" xsi:nil="true" />
+      <IfcColumn ref="i442" pos="8" xsi:nil="true" />
+      <IfcColumn ref="i446" pos="9" xsi:nil="true" />
+      <IfcColumn ref="i466" pos="10" xsi:nil="true" />
+      <IfcColumn ref="i474" pos="11" xsi:nil="true" />
+      <IfcColumn ref="i478" pos="12" xsi:nil="true" />
+    </RelatedObjects>
+    <RelatingMaterial>
+      <IfcMaterialProfileSetUsage id="i382" CardinalPoint="7">
+        <ForProfileSet id="i381" xsi:type="IfcMaterialProfileSet">
+          <MaterialProfiles>
+            <IfcMaterialProfile id="i380" pos="0">
+              <Material id="i170" xsi:type="IfcMaterial" Name="FCU30">
+                <HasProperties>
+                  <IfcMaterialProperties id="i171" pos="0" Name="FCU30">
+                    <Properties>
+                      <IfcPropertySingleValue id="i172" pos="0" Name="CompressiveStrength">
+                        <NominalValue>
+                          <IfcPressureMeasure-wrapper>0.03</IfcPressureMeasure-wrapper>
+                        </NominalValue>
+                        <Unit>
+                          <IfcSIUnit ref="i26" xsi:nil="true" />
+                        </Unit>
+                      </IfcPropertySingleValue>
+                      <IfcPropertySingleValue id="i173" pos="1" Name="MassDensity">
+                        <NominalValue>
+                          <IfcMassDensityMeasure-wrapper>2.5492905E-12</IfcMassDensityMeasure-wrapper>
+                        </NominalValue>
+                        <Unit>
+                          <IfcDerivedUnit ref="i19" xsi:nil="true" />
+                        </Unit>
+                      </IfcPropertySingleValue>
+                      <IfcPropertySingleValue id="i174" pos="2" Name="PoissonRatio">
+                        <NominalValue>
+                          <IfcRatioMeasure-wrapper>0.2</IfcRatioMeasure-wrapper>
+                        </NominalValue>
+                      </IfcPropertySingleValue>
+                      <IfcPropertySingleValue id="i175" pos="3" Name="ThermalExpansionCoefficient">
+                        <NominalValue>
+                          <IfcThermalExpansionCoefficientMeasure-wrapper>9.8999995E-06</IfcThermalExpansionCoefficientMeasure-wrapper>
+                        </NominalValue>
+                        <Unit>
+                          <IfcDerivedUnit ref="i40" xsi:nil="true" />
+                        </Unit>
+                      </IfcPropertySingleValue>
+                      <IfcPropertySingleValue id="i176" pos="4" Name="YoungModulus">
+                        <NominalValue>
+                          <IfcModulusOfElasticityMeasure-wrapper>24</IfcModulusOfElasticityMeasure-wrapper>
+                        </NominalValue>
+                        <Unit>
+                          <IfcDerivedUnit ref="i40" xsi:nil="true" />
+                        </Unit>
+                      </IfcPropertySingleValue>
+                    </Properties>
+                  </IfcMaterialProperties>
+                </HasProperties>
+                <HasRepresentation id="i161" xsi:type="IfcMaterialDefinitionRepresentation">
+                  <Representations>
+                    <IfcStyledRepresentation id="i162" pos="0" RepresentationIdentifier="Style" RepresentationType="Material">
+                      <ContextOfItems ref="i163" xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" />
+                      <Items>
+                        <IfcStyledItem ref="i169" pos="0" xsi:nil="true" />
+                      </Items>
+                    </IfcStyledRepresentation>
+                  </Representations>
+                </HasRepresentation>
+              </Material>
+              <Profile ref="i368" xsi:type="IfcRectangleProfileDef" xsi:nil="true" />
+            </IfcMaterialProfile>
+          </MaterialProfiles>
+        </ForProfileSet>
+      </IfcMaterialProfileSetUsage>
+    </RelatingMaterial>
+  </IfcRelAssociatesMaterial>
+  <IfcRelAssociatesMaterial id="i393" GlobalId="3Lsvw14nfFah4pRNlNzs77">
+    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+    <RelatedObjects>
+      <IfcColumnType ref="i376" pos="0" xsi:nil="true" />
+      <IfcColumn ref="i388" pos="1" xsi:nil="true" />
+      <IfcColumn ref="i402" pos="2" xsi:nil="true" />
+      <IfcColumn ref="i414" pos="3" xsi:nil="true" />
+      <IfcColumn ref="i438" pos="4" xsi:nil="true" />
+      <IfcColumn ref="i450" pos="5" xsi:nil="true" />
+      <IfcColumn ref="i470" pos="6" xsi:nil="true" />
+      <IfcColumn ref="i482" pos="7" xsi:nil="true" />
+    </RelatedObjects>
+    <RelatingMaterial>
+      <IfcMaterialProfileSetUsage id="i392" CardinalPoint="1">
+        <ForProfileSet ref="i381" xsi:type="IfcMaterialProfileSet" xsi:nil="true" />
+      </IfcMaterialProfileSetUsage>
+    </RelatingMaterial>
+  </IfcRelAssociatesMaterial>
+  <IfcRelAssociatesMaterial id="i423" GlobalId="3gK0acpJPDLBR$0Ol_hShs">
+    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+    <RelatedObjects>
+      <IfcColumnType ref="i376" pos="0" xsi:nil="true" />
+      <IfcColumn ref="i418" pos="1" xsi:nil="true" />
+      <IfcColumn ref="i424" pos="2" xsi:nil="true" />
+      <IfcColumn ref="i454" pos="3" xsi:nil="true" />
+      <IfcColumn ref="i458" pos="4" xsi:nil="true" />
+      <IfcColumn ref="i486" pos="5" xsi:nil="true" />
+      <IfcColumn ref="i490" pos="6" xsi:nil="true" />
+    </RelatedObjects>
+    <RelatingMaterial>
+      <IfcMaterialProfileSetUsage id="i422" CardinalPoint="9">
+        <ForProfileSet ref="i381" xsi:type="IfcMaterialProfileSet" xsi:nil="true" />
+      </IfcMaterialProfileSetUsage>
+    </RelatingMaterial>
+  </IfcRelAssociatesMaterial>
+  <IfcRelAssociatesMaterial id="i433" GlobalId="1KaxizCm9Aiw9TmVv86w8E">
+    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+    <RelatedObjects>
+      <IfcColumnType ref="i376" pos="0" xsi:nil="true" />
+      <IfcColumn ref="i428" pos="1" xsi:nil="true" />
+      <IfcColumn ref="i462" pos="2" xsi:nil="true" />
+      <IfcColumn ref="i494" pos="3" xsi:nil="true" />
+    </RelatedObjects>
+    <RelatingMaterial>
+      <IfcMaterialProfileSetUsage id="i432" CardinalPoint="3">
+        <ForProfileSet ref="i381" xsi:type="IfcMaterialProfileSet" xsi:nil="true" />
+      </IfcMaterialProfileSetUsage>
+    </RelatingMaterial>
+  </IfcRelAssociatesMaterial>
+  <IfcRelAssociatesMaterial id="i518" GlobalId="3ITPeidmvFxwUJZ9dyleT7">
+    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+    <RelatedObjects>
+      <IfcSlab ref="i498" pos="0" xsi:nil="true" />
+      <IfcSlab ref="i519" pos="1" xsi:nil="true" />
+      <IfcSlab ref="i523" pos="2" xsi:nil="true" />
+      <IfcSlab ref="i527" pos="3" xsi:nil="true" />
+      <IfcSlab ref="i531" pos="4" xsi:nil="true" />
+      <IfcSlab ref="i535" pos="5" xsi:nil="true" />
+      <IfcSlab ref="i539" pos="6" xsi:nil="true" />
+      <IfcSlab ref="i543" pos="7" xsi:nil="true" />
+      <IfcSlab ref="i547" pos="8" xsi:nil="true" />
+      <IfcSlab ref="i551" pos="9" xsi:nil="true" />
+      <IfcSlab ref="i555" pos="10" xsi:nil="true" />
+      <IfcSlab ref="i559" pos="11" xsi:nil="true" />
+    </RelatedObjects>
+    <RelatingMaterial>
+      <IfcMaterialLayerSetUsage id="i515" LayerSetDirection="axis3" DirectionSense="positive" OffsetFromReferenceLine="-250">
+        <ForLayerSet id="i516" xsi:type="IfcMaterialLayerSet">
+          <MaterialLayers>
+            <IfcMaterialLayer id="i517" pos="0" LayerThickness="250">
+              <Material ref="i179" xsi:type="IfcMaterial" xsi:nil="true" />
+            </IfcMaterialLayer>
+          </MaterialLayers>
+        </ForLayerSet>
+      </IfcMaterialLayerSetUsage>
+    </RelatingMaterial>
+  </IfcRelAssociatesMaterial>
+  <IfcRelDefinesByType id="i374" GlobalId="2Bu8Ltao13yPJ3onQuiS0G">
+    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+    <RelatedObjects>
+      <IfcColumn ref="i364" pos="0" xsi:nil="true" />
+      <IfcColumn ref="i384" pos="1" xsi:nil="true" />
+      <IfcColumn ref="i388" pos="2" xsi:nil="true" />
+      <IfcColumn ref="i394" pos="3" xsi:nil="true" />
+      <IfcColumn ref="i398" pos="4" xsi:nil="true" />
+      <IfcColumn ref="i402" pos="5" xsi:nil="true" />
+      <IfcColumn ref="i406" pos="6" xsi:nil="true" />
+      <IfcColumn ref="i410" pos="7" xsi:nil="true" />
+      <IfcColumn ref="i414" pos="8" xsi:nil="true" />
+      <IfcColumn ref="i418" pos="9" xsi:nil="true" />
+      <IfcColumn ref="i424" pos="10" xsi:nil="true" />
+      <IfcColumn ref="i428" pos="11" xsi:nil="true" />
+      <IfcColumn ref="i434" pos="12" xsi:nil="true" />
+      <IfcColumn ref="i438" pos="13" xsi:nil="true" />
+      <IfcColumn ref="i442" pos="14" xsi:nil="true" />
+      <IfcColumn ref="i446" pos="15" xsi:nil="true" />
+      <IfcColumn ref="i450" pos="16" xsi:nil="true" />
+      <IfcColumn ref="i454" pos="17" xsi:nil="true" />
+      <IfcColumn ref="i458" pos="18" xsi:nil="true" />
+      <IfcColumn ref="i462" pos="19" xsi:nil="true" />
+      <IfcColumn ref="i466" pos="20" xsi:nil="true" />
+      <IfcColumn ref="i470" pos="21" xsi:nil="true" />
+      <IfcColumn ref="i474" pos="22" xsi:nil="true" />
+      <IfcColumn ref="i478" pos="23" xsi:nil="true" />
+      <IfcColumn ref="i482" pos="24" xsi:nil="true" />
+      <IfcColumn ref="i486" pos="25" xsi:nil="true" />
+      <IfcColumn ref="i490" pos="26" xsi:nil="true" />
+      <IfcColumn ref="i494" pos="27" xsi:nil="true" />
+    </RelatedObjects>
+    <RelatingType ref="i376" xsi:type="IfcColumnType" xsi:nil="true" />
+  </IfcRelDefinesByType>
+  <IfcPresentationLayerAssignment id="i196" Name="S-BEAMS">
+    <AssignedItems>
+      <IfcShapeRepresentation ref="i194" pos="0" xsi:nil="true" />
+      <IfcShapeRepresentation ref="i204" pos="1" xsi:nil="true" />
+    </AssignedItems>
+  </IfcPresentationLayerAssignment>
+  <IfcPresentationLayerAssignment id="i372" Name="S-COLS">
+    <AssignedItems>
+      <IfcShapeRepresentation ref="i371" pos="0" xsi:nil="true" />
+    </AssignedItems>
+  </IfcPresentationLayerAssignment>
+  <IfcPresentationLayerAssignment id="i509" Name="S-FLOR">
+    <AssignedItems>
+      <IfcShapeRepresentation ref="i508" pos="0" xsi:nil="true" />
+    </AssignedItems>
+  </IfcPresentationLayerAssignment>
+</ifcXML>

@@ -276,16 +276,16 @@ function StartCreateNewMaterialClick() {
 document.getElementById("Start-Save-As").onclick = StartSaveAs;
 function StartSaveAs() {
     var fileName = $('#New-File-Required-Name')[0].value;
-    var PathDivHidden = document.getElementById("Saving-Path-Hidden");
-    var filePath = PathDivHidden.value;
+    //var PathDivHidden = document.getElementById("Saving-Path-Hidden");
+    //var filePath = PathDivHidden.value;
     var saveAsOption = parseInt($('#SaveAs-DDL').find(":selected").val());
 
     switch (saveAsOption) {
         case 1://architecture
-            SaveBimModelListedAsArchByNameAndPath(fileName, filePath);
+            SaveBimModelListedAsArchByNameAndPath(fileName, WebSiteFilePath);
             break;
         case 2://structure
-            SaveBimModelListedAsStrByNameAndPath(fileName, filePath);
+            SaveBimModelListedAsStrByNameAndPath(fileName, WebSiteFilePath);
             break;
 
     }
@@ -686,4 +686,10 @@ function StartDiplayAnalysisResultClick() {
     var ForceName = $('#DisplayAnalysis-SatrainingAction-DLL').find(":selected").val();
     DisplayAnalysisResultForALLBimLines(loadCase,ForceName);
    // DisplayAnalysisResultForALLBimLines("deadLoad","P");
+}
+
+
+document.getElementById("Clear-Analysis-Results-Button").onclick = ClearAnalysisResultsButtonClick;
+function ClearAnalysisResultsButtonClick() {
+    ClearModelAnalysisResults();
 }

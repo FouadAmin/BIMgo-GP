@@ -73,7 +73,8 @@ function LoadingFailed() {
     //bimModelJS = BimModelNewSlantedBeamG;
     //bimModelJS = BimModelAnalyzed;
     //bimModelJS = BimModelSapSampleNotAnalyzed;
-    bimModelJS = BimModelSapSampleAnalyzed;
+    bimModelJS = BimModel_SAPGeneralSampleNew1_StrG;
+    //bimModelJS = BimModelSapSampleAnalyzed;
     //bimModelJS = BimModel_TwoFloors_1STR_2Arch_Theta;
     //bimModelJS=BimModelG;
     
@@ -98,10 +99,10 @@ function RunMainProgram() {
 
 
 
-function SaveBimModelListedAsStrByNameAndPath(fileName,filePath) {
+function SaveBimModelListedAsStrByNameAndPath(fileName, sentFilePath) {
     //Sample 
     //http://localhost:2611/BimApi/BimIO/SaveBimModelListedAsStrByNameAndPath?filePath=D:\\IFCSamples\\&&fileName=New_Str_SlantedG
-    var APIURL = "http://localhost:2611/BimApi/BimIO/SaveBimModelListedAsStrByNameAndPath?filePath="+filePath+"&&"+"fileName="+fileName;
+    var APIURL = "http://localhost:2611/BimApi/BimIO/SaveBimModelListedAsStrByNameAndPath?filePath=" + sentFilePath+"&&"+"fileName="+fileName;
 
     $.ajax({
         url: APIURL,
@@ -114,6 +115,7 @@ function SaveBimModelListedAsStrByNameAndPath(fileName,filePath) {
         //processData:true,
         success: function (data) {
             alert("data Saved");
+            SaveFileDataAtDataBase(WebSiteUserId, sentFilePath, fileName);
         },
         done: function () {
             console.log("data Saved");
@@ -124,10 +126,10 @@ function SaveBimModelListedAsStrByNameAndPath(fileName,filePath) {
     });
 }
 
-function SaveBimModelListedAsArchByNameAndPath(fileName,filePath) {
+function SaveBimModelListedAsArchByNameAndPath(fileName,sentFilePath) {
     //Sample 
     //http://localhost:2611/BimApi/BimIO/SaveBimModelListedAsArchByNameAndPath?filePath=D:\\IFCSamples\\&&fileName=New_Str_SlantedG
-    var APIURL = "http://localhost:2611/BimApi/BimIO/SaveBimModelListedAsArchByNameAndPath?filePath="+filePath+"&&"+"fileName="+fileName;
+    var APIURL = "http://localhost:2611/BimApi/BimIO/SaveBimModelListedAsArchByNameAndPath?filePath=" + sentFilePath+"&&"+"fileName="+fileName;
 
     $.ajax({
         url: APIURL,
@@ -140,6 +142,7 @@ function SaveBimModelListedAsArchByNameAndPath(fileName,filePath) {
         //processData:true,
         success: function (data) {
             alert("data Saved");
+            SaveFileDataAtDataBase(WebSiteUserId, sentFilePath, fileName);
         },
         done: function () {
             console.log("data Saved");
@@ -152,6 +155,9 @@ function SaveBimModelListedAsArchByNameAndPath(fileName,filePath) {
 
 
 function AnalyzeModelSent(pointsTolerance,maximumShellMeshSize) {
+
+    ClearModelAnalysisResults();
+
     //Sample 
     //http://localhost:2611/BimApi/BimAnalysis/AnalyzeModelSent?analysisFilePath=D:\\IFCSamples\\AnalysisDirectory&&fileName=AnalyzeFromServer&&pointsTolerance=0.01&&maximumShellMeshSize=1000
     var APIURL = "http://localhost:2611/BimApi/BimAnalysis/AnalyzeModelSent?analysisFilePath=D:\\IFCSamples\\AnalysisDirectory&&fileName=AnalyzeFromServer&&pointsTolerance="+pointsTolerance+"&&maximumShellMeshSize="+maximumShellMeshSize;

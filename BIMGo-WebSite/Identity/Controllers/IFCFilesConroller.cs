@@ -221,6 +221,10 @@ namespace Identity.Controllers
                     //the image will be saved with a unique filename
                     // ImageFile.CopyToAsync(DestinationStream);
                     IFCFile.CopyTo(DestinationStream);
+
+                    DestinationStream.Flush();
+                    DestinationStream.Dispose();
+                    DestinationStream.Close();
                     var currentUser = await _userManager.FindByNameAsync(User.Identity.Name);
 
                     var ObjectFile = new IFCFile

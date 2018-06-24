@@ -22,7 +22,7 @@ function UpdateBimSelection() {
 
             getBimElementByMappingId(threeSelectedElement.MappingId);
 
-            var LineSolidTypeName = "Other";
+            var LineSolidTypeName = "Slab"; //this is not valid for future development
 
             if (bimSelectedElement != undefined) {
                 if (bimSelectedElement.LineSolidType) {
@@ -40,7 +40,7 @@ function UpdateBimSelection() {
                             LineSolidTypeName = "Other";
                             break;
                         default:
-                            LineSolidTypeName = "Other";
+                            LineSolidTypeName = "Slab"; //this is not valid for future development
                             break;
                     }
                 }
