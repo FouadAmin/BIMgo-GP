@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ifcXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ifc="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1" xsi:schemaLocation="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1 http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1/IFC4_ADD1.xsd" id="uos_1" express="http://www.buildingsmart-tech.org/ifc/IFC4/Add1/IFC4_ADD1.exp" configuration="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1/IFC4_ADD1_config.xml" xmlns="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1">
+  <header>
+    <time_stamp>2018-06-24T08:53:22</time_stamp>
+    <preprocessor_version>Xbim File Processor version 4.0.0.0</preprocessor_version>
+    <originating_system>Xbim version 4.0.0.0</originating_system>
+  </header>
+  <IfcProject id="i1" GlobalId="3sNACBHTLBxQtpGVD$Nr7h" Name="BimProject" LongName="longName__BimProject" Phase="Modeling">
+    <OwnerHistory id="i2" xsi:type="IfcOwnerHistory" ChangeAction="added" CreationDate="0">
+      <OwningUser id="i5" xsi:type="IfcPersonAndOrganization">
+        <ThePerson id="i3" xsi:type="IfcPerson" FamilyName="Track" GivenName="CEI" MiddleNames="" PrefixTitles="" SuffixTitles="" />
+        <TheOrganization id="i4" xsi:type="IfcOrganization" Name="ITI" />
+      </OwningUser>
+      <OwningApplication id="i6" xsi:type="IfcApplication" Version="1.0" ApplicationFullName="BimProject" ApplicationIdentifier="BimProject.exe">
+        <ApplicationDeveloper id="i7" xsi:type="IfcOrganization" Name="Ghosts" />
+      </OwningApplication>
+    </OwnerHistory>
+    <IsDecomposedBy>
+      <IfcRelAggregates id="i50" pos="0" GlobalId="141rrQ2WDES9$5jdavvp_F">
+        <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+        <RelatedObjects>
+          <IfcSite id="i46" pos="0" GlobalId="2VUKYZpTX04BshQ6Pwm$ir" Name="simple Site" CompositionType="element" RefLatitude="42 21 31 181945" RefLongitude="-71 -3 -24 -263305" RefElevation="0">
+            <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+            <IsDecomposedBy>
+              <IfcRelAggregates id="i53" pos="0" GlobalId="34EekfitjEGwpfCDDVanlk">
+                <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                <RelatedObjects>
+                  <IfcBuilding id="i51" pos="0" GlobalId="0$DWp6WILCW9H__0djTF1$" Name="simple building" CompositionType="element">
+                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                    <IsDecomposedBy>
+                      <IfcRelAggregates id="i56" pos="0" GlobalId="0UJ3UQ7Vf61RY$grpsp0nD">
+                        <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                        <RelatedObjects>
+                          <IfcBuildingStorey id="i54" pos="0" GlobalId="0Swyhw2mv3WgxBhhz1UfJo" Name="LEVEL 0" LongName="LEVEL 0" CompositionType="element" Elevation="0">
+                            <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                            <ObjectPlacement id="i55" xsi:type="IfcLocalPlacement">
+                              <RelativePlacement>
+                                <IfcAxis2Placement3D id="i47">
+                                  <Location id="i48" xsi:type="IfcCartesianPoint" Coordinates="0 0 0" />
+                                </IfcAxis2Placement3D>
+                              </RelativePlacement>
+                            </ObjectPlacement>
+                            <ContainsElements>
+                              <IfcRelContainedInSpatialStructure id="i92" pos="0" GlobalId="31fkPjruL4CQpiRxr090_r">
+                                <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                <RelatedElements>
+                                  <IfcGrid id="i65" pos="0" GlobalId="3bHGukM9P2$v76UnNJyVnE">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <UAxes>
+                                      <IfcGridAxis id="i79" pos="0" AxisTag="Y=0" SameSense="false">
+                                        <AxisCurve id="i80" xsi:type="IfcLine">
+                                          <Pnt ref="i48" xsi:type="IfcCartesianPoint" xsi:nil="true" />
+                                          <Dir id="i82" xsi:type="IfcVector" Magnitude="18000">
+                                            <Orientation id="i81" xsi:type="IfcDirection" DirectionRatios="1 0 0" />
+                                          </Dir>
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i83" pos="1" AxisTag="Y=4000" SameSense="false">
+                                        <AxisCurve id="i84" xsi:type="IfcLine">
+                                          <Pnt id="i85" xsi:type="IfcCartesianPoint" Coordinates="0 4000 0" />
+                                          <Dir ref="i82" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i86" pos="2" AxisTag="Y=8000" SameSense="false">
+                                        <AxisCurve id="i87" xsi:type="IfcLine">
+                                          <Pnt id="i88" xsi:type="IfcCartesianPoint" Coordinates="0 8000 0" />
+                                          <Dir ref="i82" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i89" pos="3" AxisTag="Y=12000" SameSense="false">
+                                        <AxisCurve id="i90" xsi:type="IfcLine">
+                                          <Pnt id="i91" xsi:type="IfcCartesianPoint" Coordinates="0 12000 0" />
+                                          <Dir ref="i82" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </UAxes>
+                                    <VAxes>
+                                      <IfcGridAxis id="i66" pos="0" AxisTag="X=0" SameSense="false">
+                                        <AxisCurve id="i67" xsi:type="IfcLine">
+                                          <Pnt ref="i48" xsi:type="IfcCartesianPoint" xsi:nil="true" />
+                                          <Dir id="i68" xsi:type="IfcVector" Magnitude="12000">
+                                            <Orientation id="i69" xsi:type="IfcDirection" DirectionRatios="0 1 0" />
+                                          </Dir>
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i70" pos="1" AxisTag="X=6000" SameSense="false">
+                                        <AxisCurve id="i71" xsi:type="IfcLine">
+                                          <Pnt id="i72" xsi:type="IfcCartesianPoint" Coordinates="6000 0 0" />
+                                          <Dir ref="i68" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i73" pos="2" AxisTag="X=12000" SameSense="false">
+                                        <AxisCurve id="i74" xsi:type="IfcLine">
+                                          <Pnt id="i75" xsi:type="IfcCartesianPoint" Coordinates="12000 0 0" />
+                                          <Dir ref="i68" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i76" pos="3" AxisTag="X=18000" SameSense="false">
+                                        <AxisCurve id="i77" xsi:type="IfcLine">
+                                          <Pnt id="i78" xsi:type="IfcCartesianPoint" Coordinates="18000 0 0" />
+                                          <Dir ref="i68" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </VAxes>
+                                  </IfcGrid>
+                                </RelatedElements>
+                              </IfcRelContainedInSpatialStructure>
+                            </ContainsElements>
+                          </IfcBuildingStorey>
+                          <IfcBuildingStorey id="i57" pos="1" GlobalId="1xCMeAFNL8NAbX5bfieDy7" Name="LEVEL 1" LongName="LEVEL 1" CompositionType="element" Elevation="3000">
+                            <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                            <ObjectPlacement id="i58" xsi:type="IfcLocalPlacement">
+                              <RelativePlacement>
+                                <IfcAxis2Placement3D id="i59">
+                                  <Location id="i60" xsi:type="IfcCartesianPoint" Coordinates="0 0 3000" />
+                                </IfcAxis2Placement3D>
+                              </RelativePlacement>
+                            </ObjectPlacement>
+                            <ContainsElements>
+                              <IfcRelContainedInSpatialStructure id="i116" pos="0" GlobalId="1XYc8PsYP1Bg_kpT22jDgR">
+                                <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                <RelatedElements>
+                                  <IfcGrid id="i93" pos="0" GlobalId="0H8seK4UHAgu3D8PM$lY79">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <UAxes>
+                                      <IfcGridAxis id="i105" pos="0" AxisTag="Y=0" SameSense="false">
+                                        <AxisCurve id="i106" xsi:type="IfcLine">
+                                          <Pnt ref="i60" xsi:type="IfcCartesianPoint" xsi:nil="true" />
+                                          <Dir ref="i82" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i107" pos="1" AxisTag="Y=4000" SameSense="false">
+                                        <AxisCurve id="i108" xsi:type="IfcLine">
+                                          <Pnt id="i109" xsi:type="IfcCartesianPoint" Coordinates="0 4000 3000" />
+                                          <Dir ref="i82" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i110" pos="2" AxisTag="Y=8000" SameSense="false">
+                                        <AxisCurve id="i111" xsi:type="IfcLine">
+                                          <Pnt id="i112" xsi:type="IfcCartesianPoint" Coordinates="0 8000 3000" />
+                                          <Dir ref="i82" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i113" pos="3" AxisTag="Y=12000" SameSense="false">
+                                        <AxisCurve id="i114" xsi:type="IfcLine">
+                                          <Pnt id="i115" xsi:type="IfcCartesianPoint" Coordinates="0 12000 3000" />
+                                          <Dir ref="i82" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </UAxes>
+                                    <VAxes>
+                                      <IfcGridAxis id="i94" pos="0" AxisTag="X=0" SameSense="false">
+                                        <AxisCurve id="i95" xsi:type="IfcLine">
+                                          <Pnt ref="i60" xsi:type="IfcCartesianPoint" xsi:nil="true" />
+                                          <Dir ref="i68" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i96" pos="1" AxisTag="X=6000" SameSense="false">
+                                        <AxisCurve id="i97" xsi:type="IfcLine">
+                                          <Pnt id="i98" xsi:type="IfcCartesianPoint" Coordinates="6000 0 3000" />
+                                          <Dir ref="i68" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i99" pos="2" AxisTag="X=12000" SameSense="false">
+                                        <AxisCurve id="i100" xsi:type="IfcLine">
+                                          <Pnt id="i101" xsi:type="IfcCartesianPoint" Coordinates="12000 0 3000" />
+                                          <Dir ref="i68" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i102" pos="3" AxisTag="X=18000" SameSense="false">
+                                        <AxisCurve id="i103" xsi:type="IfcLine">
+                                          <Pnt id="i104" xsi:type="IfcCartesianPoint" Coordinates="18000 0 3000" />
+                                          <Dir ref="i68" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </VAxes>
+                                  </IfcGrid>
+                                </RelatedElements>
+                              </IfcRelContainedInSpatialStructure>
+                            </ContainsElements>
+                          </IfcBuildingStorey>
+                          <IfcBuildingStorey id="i61" pos="2" GlobalId="28pW0_sQTC8ua495Q6wPS4" Name="LEVEL 2" LongName="LEVEL 2" CompositionType="element" Elevation="6000">
+                            <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                            <ObjectPlacement id="i62" xsi:type="IfcLocalPlacement">
+                              <RelativePlacement>
+                                <IfcAxis2Placement3D id="i63">
+                                  <Location id="i64" xsi:type="IfcCartesianPoint" Coordinates="0 0 6000" />
+                                </IfcAxis2Placement3D>
+                              </RelativePlacement>
+                            </ObjectPlacement>
+                            <ContainsElements>
+                              <IfcRelContainedInSpatialStructure id="i140" pos="0" GlobalId="0ldZ_BPS50mufj4VfXX8bW">
+                                <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                <RelatedElements>
+                                  <IfcGrid id="i117" pos="0" GlobalId="0UnANju8LBRANx$k3WYeUa">
+                                    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+                                    <UAxes>
+                                      <IfcGridAxis id="i129" pos="0" AxisTag="Y=0" SameSense="false">
+                                        <AxisCurve id="i130" xsi:type="IfcLine">
+                                          <Pnt ref="i64" xsi:type="IfcCartesianPoint" xsi:nil="true" />
+                                          <Dir ref="i82" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i131" pos="1" AxisTag="Y=4000" SameSense="false">
+                                        <AxisCurve id="i132" xsi:type="IfcLine">
+                                          <Pnt id="i133" xsi:type="IfcCartesianPoint" Coordinates="0 4000 6000" />
+                                          <Dir ref="i82" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i134" pos="2" AxisTag="Y=8000" SameSense="false">
+                                        <AxisCurve id="i135" xsi:type="IfcLine">
+                                          <Pnt id="i136" xsi:type="IfcCartesianPoint" Coordinates="0 8000 6000" />
+                                          <Dir ref="i82" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i137" pos="3" AxisTag="Y=12000" SameSense="false">
+                                        <AxisCurve id="i138" xsi:type="IfcLine">
+                                          <Pnt id="i139" xsi:type="IfcCartesianPoint" Coordinates="0 12000 6000" />
+                                          <Dir ref="i82" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </UAxes>
+                                    <VAxes>
+                                      <IfcGridAxis id="i118" pos="0" AxisTag="X=0" SameSense="false">
+                                        <AxisCurve id="i119" xsi:type="IfcLine">
+                                          <Pnt ref="i64" xsi:type="IfcCartesianPoint" xsi:nil="true" />
+                                          <Dir ref="i68" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i120" pos="1" AxisTag="X=6000" SameSense="false">
+                                        <AxisCurve id="i121" xsi:type="IfcLine">
+                                          <Pnt id="i122" xsi:type="IfcCartesianPoint" Coordinates="6000 0 6000" />
+                                          <Dir ref="i68" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i123" pos="2" AxisTag="X=12000" SameSense="false">
+                                        <AxisCurve id="i124" xsi:type="IfcLine">
+                                          <Pnt id="i125" xsi:type="IfcCartesianPoint" Coordinates="12000 0 6000" />
+                                          <Dir ref="i68" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                      <IfcGridAxis id="i126" pos="3" AxisTag="X=18000" SameSense="false">
+                                        <AxisCurve id="i127" xsi:type="IfcLine">
+                                          <Pnt id="i128" xsi:type="IfcCartesianPoint" Coordinates="18000 0 6000" />
+                                          <Dir ref="i68" xsi:type="IfcVector" xsi:nil="true" />
+                                        </AxisCurve>
+                                      </IfcGridAxis>
+                                    </VAxes>
+                                  </IfcGrid>
+                                </RelatedElements>
+                              </IfcRelContainedInSpatialStructure>
+                            </ContainsElements>
+                          </IfcBuildingStorey>
+                        </RelatedObjects>
+                      </IfcRelAggregates>
+                    </IsDecomposedBy>
+                    <ObjectPlacement id="i52" xsi:type="IfcLocalPlacement">
+                      <PlacementRelTo id="i49" xsi:type="IfcLocalPlacement">
+                        <RelativePlacement>
+                          <IfcAxis2Placement3D ref="i47" xsi:nil="true" />
+                        </RelativePlacement>
+                      </PlacementRelTo>
+                      <RelativePlacement>
+                        <IfcAxis2Placement3D ref="i47" xsi:nil="true" />
+                      </RelativePlacement>
+                    </ObjectPlacement>
+                  </IfcBuilding>
+                </RelatedObjects>
+              </IfcRelAggregates>
+            </IsDecomposedBy>
+            <ObjectPlacement ref="i49" xsi:type="IfcLocalPlacement" xsi:nil="true" />
+          </IfcSite>
+        </RelatedObjects>
+      </IfcRelAggregates>
+    </IsDecomposedBy>
+    <RepresentationContexts>
+      <IfcGeometricRepresentationContext id="i143" pos="0" ContextIdentifier="" ContextType="Model" CoordinateSpaceDimension="3" Precision="0.001">
+        <WorldCoordinateSystem>
+          <IfcAxis2Placement3D ref="i47" xsi:nil="true" />
+        </WorldCoordinateSystem>
+        <TrueNorth id="i144" xsi:type="IfcDirection" DirectionRatios="6.12303176911189E-17 1" />
+      </IfcGeometricRepresentationContext>
+    </RepresentationContexts>
+    <UnitsInContext id="i8" xsi:type="IfcUnitAssignment">
+      <Units>
+        <IfcSIUnit id="i9" pos="0" UnitType="lengthunit" Prefix="milli" Name="metre" />
+        <IfcSIUnit id="i10" pos="1" UnitType="areaunit" Prefix="micro" Name="square_metre" />
+        <IfcSIUnit id="i11" pos="2" UnitType="volumeunit" Prefix="nano" Name="cubic_metre" />
+        <IfcDerivedUnit id="i12" pos="3" UnitType="sectionmodulusunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i13" pos="0" Exponent="3">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcDerivedUnit id="i14" pos="4" UnitType="momentofinertiaunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i15" pos="0" Exponent="4">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcSIUnit id="i16" pos="5" UnitType="planeangleunit" Name="radian" />
+        <IfcSIUnit id="i17" pos="6" UnitType="timeunit" Name="second" />
+        <IfcSIUnit id="i18" pos="7" UnitType="massunit" Prefix="giga" Name="gram" />
+        <IfcDerivedUnit id="i19" pos="8" UnitType="massdensityunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i20" pos="0" Exponent="1">
+              <Unit ref="i18" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i21" pos="1" Exponent="-3">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcSIUnit id="i22" pos="9" UnitType="forceunit" Prefix="kilo" Name="newton" />
+        <IfcDerivedUnit id="i23" pos="10" UnitType="torqueunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i24" pos="0" Exponent="1">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i25" pos="1" Exponent="1">
+              <Unit ref="i22" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcSIUnit id="i26" pos="11" UnitType="pressureunit" Prefix="giga" Name="pascal" />
+        <IfcDerivedUnit id="i27" pos="12" UnitType="linearforceunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i28" pos="0" Exponent="-1">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i29" pos="1" Exponent="1">
+              <Unit ref="i22" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcDerivedUnit id="i30" pos="13" UnitType="planarforceunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i31" pos="0" Exponent="-2">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i32" pos="1" Exponent="1">
+              <Unit ref="i22" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcDerivedUnit id="i33" pos="14" UnitType="linearmomentunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i34" pos="0" Exponent="1">
+              <Unit ref="i22" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i35" pos="1" Exponent="1">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i36" pos="2" Exponent="-1">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcDerivedUnit id="i37" pos="15" UnitType="shearmodulusunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i38" pos="0" Exponent="-2">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i39" pos="1" Exponent="1">
+              <Unit ref="i22" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcDerivedUnit id="i40" pos="16" UnitType="modulusofelasticityunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i41" pos="0" Exponent="-2">
+              <Unit ref="i9" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+            <IfcDerivedUnitElement id="i42" pos="1" Exponent="1">
+              <Unit ref="i22" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+        <IfcSIUnit id="i43" pos="17" UnitType="thermodynamictemperatureunit" Name="degree_celsius" />
+        <IfcDerivedUnit id="i44" pos="18" UnitType="thermalexpansioncoefficientunit">
+          <Elements>
+            <IfcDerivedUnitElement id="i45" pos="0" Exponent="-1">
+              <Unit ref="i43" xsi:type="IfcSIUnit" xsi:nil="true" />
+            </IfcDerivedUnitElement>
+          </Elements>
+        </IfcDerivedUnit>
+      </Units>
+    </UnitsInContext>
+  </IfcProject>
+  <IfcStructuralLoadGroup id="i166" GlobalId="0vrR4zbr13gxORdCG5FRGJ" Name="DEAD" PredefinedType="load_group" ActionType="permanent_g" ActionSource="dead_load_g">
+    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+  </IfcStructuralLoadGroup>
+  <IfcStructuralLoadGroup id="i167" GlobalId="1Mq0TbFHn7lQzahBJvqrtY" Name="Live" PredefinedType="load_group" ActionType="variable_q" ActionSource="live_load_q">
+    <OwnerHistory ref="i2" xsi:type="IfcOwnerHistory" xsi:nil="true" />
+  </IfcStructuralLoadGroup>
+  <IfcColourRgb id="i147" Red="0.699999988079071" Green="0.699999988079071" Blue="0.699999988079071" />
+  <IfcSurfaceStyleRendering id="i146" Transparency="0" ReflectanceMethod="notdefined">
+    <SurfaceColour ref="i147" xsi:type="IfcColourRgb" xsi:nil="true" />
+    <SpecularColour>
+      <IfcNormalisedRatioMeasure-wrapper>0.5</IfcNormalisedRatioMeasure-wrapper>
+    </SpecularColour>
+    <SpecularHighlight>
+      <IfcSpecularExponent-wrapper>128</IfcSpecularExponent-wrapper>
+    </SpecularHighlight>
+  </IfcSurfaceStyleRendering>
+  <IfcSurfaceStyle id="i145" Name="surfaceStyle_R:0.699999988079071_G:0.699999988079071_B:0.699999988079071" Side="both">
+    <Styles>
+      <IfcSurfaceStyleRendering ref="i146" pos="0" xsi:nil="true" />
+    </Styles>
+  </IfcSurfaceStyle>
+  <IfcPresentationStyleAssignment id="i148">
+    <Styles>
+      <IfcSurfaceStyle ref="i145" pos="0" xsi:nil="true" />
+    </Styles>
+  </IfcPresentationStyleAssignment>
+  <IfcStyledItem id="i149">
+    <Styles>
+      <IfcPresentationStyleAssignment ref="i148" pos="0" xsi:nil="true" />
+    </Styles>
+  </IfcStyledItem>
+  <IfcStyledRepresentation id="i142" RepresentationIdentifier="Style" RepresentationType="Material">
+    <ContextOfItems ref="i143" xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" />
+    <Items>
+      <IfcStyledItem ref="i149" pos="0" xsi:nil="true" />
+    </Items>
+  </IfcStyledRepresentation>
+  <IfcMaterialDefinitionRepresentation id="i141">
+    <Representations>
+      <IfcStyledRepresentation ref="i142" pos="0" xsi:nil="true" />
+    </Representations>
+  </IfcMaterialDefinitionRepresentation>
+  <IfcMaterial id="i150" Name="FCU25">
+    <HasProperties>
+      <IfcMaterialProperties id="i151" pos="0" Name="FCU25">
+        <Properties>
+          <IfcPropertySingleValue id="i152" pos="0" Name="CompressiveStrength">
+            <NominalValue>
+              <IfcPressureMeasure-wrapper>0.025</IfcPressureMeasure-wrapper>
+            </NominalValue>
+            <Unit>
+              <IfcSIUnit ref="i26" xsi:nil="true" />
+            </Unit>
+          </IfcPropertySingleValue>
+          <IfcPropertySingleValue id="i153" pos="1" Name="MassDensity">
+            <NominalValue>
+              <IfcMassDensityMeasure-wrapper>2.5E-12</IfcMassDensityMeasure-wrapper>
+            </NominalValue>
+            <Unit>
+              <IfcDerivedUnit ref="i19" xsi:nil="true" />
+            </Unit>
+          </IfcPropertySingleValue>
+          <IfcPropertySingleValue id="i154" pos="2" Name="PoissonRatio">
+            <NominalValue>
+              <IfcRatioMeasure-wrapper>0.2</IfcRatioMeasure-wrapper>
+            </NominalValue>
+          </IfcPropertySingleValue>
+          <IfcPropertySingleValue id="i155" pos="3" Name="ThermalExpansionCoefficient">
+            <NominalValue>
+              <IfcThermalExpansionCoefficientMeasure-wrapper>9.9E-06</IfcThermalExpansionCoefficientMeasure-wrapper>
+            </NominalValue>
+            <Unit>
+              <IfcDerivedUnit ref="i40" xsi:nil="true" />
+            </Unit>
+          </IfcPropertySingleValue>
+          <IfcPropertySingleValue id="i156" pos="4" Name="YoungModulus">
+            <NominalValue>
+              <IfcModulusOfElasticityMeasure-wrapper>22</IfcModulusOfElasticityMeasure-wrapper>
+            </NominalValue>
+            <Unit>
+              <IfcDerivedUnit ref="i40" xsi:nil="true" />
+            </Unit>
+          </IfcPropertySingleValue>
+        </Properties>
+      </IfcMaterialProperties>
+    </HasProperties>
+    <HasRepresentation ref="i141" xsi:type="IfcMaterialDefinitionRepresentation" xsi:nil="true" />
+  </IfcMaterial>
+  <IfcStyledRepresentation id="i158" RepresentationIdentifier="Style" RepresentationType="Material">
+    <ContextOfItems ref="i143" xsi:type="IfcGeometricRepresentationContext" xsi:nil="true" />
+    <Items>
+      <IfcStyledItem ref="i149" pos="0" xsi:nil="true" />
+    </Items>
+  </IfcStyledRepresentation>
+  <IfcMaterialDefinitionRepresentation id="i157">
+    <Representations>
+      <IfcStyledRepresentation ref="i158" pos="0" xsi:nil="true" />
+    </Representations>
+  </IfcMaterialDefinitionRepresentation>
+  <IfcMaterial id="i159" Name="FCU30">
+    <HasProperties>
+      <IfcMaterialProperties id="i160" pos="0" Name="FCU30">
+        <Properties>
+          <IfcPropertySingleValue id="i161" pos="0" Name="CompressiveStrength">
+            <NominalValue>
+              <IfcPressureMeasure-wrapper>0.03</IfcPressureMeasure-wrapper>
+            </NominalValue>
+            <Unit>
+              <IfcSIUnit ref="i26" xsi:nil="true" />
+            </Unit>
+          </IfcPropertySingleValue>
+          <IfcPropertySingleValue id="i162" pos="1" Name="MassDensity">
+            <NominalValue>
+              <IfcMassDensityMeasure-wrapper>2.5E-12</IfcMassDensityMeasure-wrapper>
+            </NominalValue>
+            <Unit>
+              <IfcDerivedUnit ref="i19" xsi:nil="true" />
+            </Unit>
+          </IfcPropertySingleValue>
+          <IfcPropertySingleValue id="i163" pos="2" Name="PoissonRatio">
+            <NominalValue>
+              <IfcRatioMeasure-wrapper>0.2</IfcRatioMeasure-wrapper>
+            </NominalValue>
+          </IfcPropertySingleValue>
+          <IfcPropertySingleValue id="i164" pos="3" Name="ThermalExpansionCoefficient">
+            <NominalValue>
+              <IfcThermalExpansionCoefficientMeasure-wrapper>9.9E-06</IfcThermalExpansionCoefficientMeasure-wrapper>
+            </NominalValue>
+            <Unit>
+              <IfcDerivedUnit ref="i40" xsi:nil="true" />
+            </Unit>
+          </IfcPropertySingleValue>
+          <IfcPropertySingleValue id="i165" pos="4" Name="YoungModulus">
+            <NominalValue>
+              <IfcModulusOfElasticityMeasure-wrapper>24</IfcModulusOfElasticityMeasure-wrapper>
+            </NominalValue>
+            <Unit>
+              <IfcDerivedUnit ref="i40" xsi:nil="true" />
+            </Unit>
+          </IfcPropertySingleValue>
+        </Properties>
+      </IfcMaterialProperties>
+    </HasProperties>
+    <HasRepresentation ref="i157" xsi:type="IfcMaterialDefinitionRepresentation" xsi:nil="true" />
+  </IfcMaterial>
+</ifcXML>

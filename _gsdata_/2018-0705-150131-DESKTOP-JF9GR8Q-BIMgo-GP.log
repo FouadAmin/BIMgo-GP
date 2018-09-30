@@ -1,0 +1,24 @@
+2018-07-05 15:01:31: -- Analysis Started by User Command
+2018-07-05 15:01:52: Changes: 16, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 44834
+2018-07-05 15:01:52: Left to Right: Copy File: 16 
+2018-07-05 15:01:52: -- Analysis Complete. Time 00:00:21, Speed: 2,134 files/s
+2018-07-05 15:01:52: 
+2018-07-05 15:02:20: == Sync Started by User Command
+2018-07-05 15:02:21: Create Folder 'D:/Civil Material/private/Private BIMgo-GP Backup/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_052024'
+2018-07-05 15:02:21: Create Folder 'D:/Civil Material/private/Private BIMgo-GP Backup/Presentation/Data'
+2018-07-05 15:02:21: Copy New 'C:/PerformanceFolder/BIMgo-GP/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test1.ifc' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test1.ifc' (33,385)
+2018-07-05 15:02:21: Copy New 'C:/PerformanceFolder/BIMgo-GP/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test1.ifcxml' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test1.ifcxml' (173,670)
+2018-07-05 15:02:21: Copy New 'C:/PerformanceFolder/BIMgo-GP/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test2.ifc' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test2.ifc' (73,677)
+2018-07-05 15:02:21: Copy New 'C:/PerformanceFolder/BIMgo-GP/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test2.ifcxml' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test2.ifcxml' (378,197)
+2018-07-05 15:02:21: Copy New 'C:/PerformanceFolder/BIMgo-GP/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test3.ifc' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test3.ifc' (34,056)
+2018-07-05 15:02:21: Copy New 'C:/PerformanceFolder/BIMgo-GP/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test3.ifcxml' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test3.ifcxml' (177,318)
+2018-07-05 15:02:21: Copy New 'C:/PerformanceFolder/BIMgo-GP/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test4.ifc' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test4.ifc' (71,510)
+2018-07-05 15:02:21: Copy New 'C:/PerformanceFolder/BIMgo-GP/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test4.ifcxml' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test4.ifcxml' (366,609)
+2018-07-05 15:02:21: Copy New 'C:/PerformanceFolder/BIMgo-GP/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test5.ifc' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test5.ifc' (8,369)
+2018-07-05 15:02:21: Copy New 'C:/PerformanceFolder/BIMgo-GP/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test5.ifcxml' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/BIMGo-WebSite/Identity/wwwroot/UsersDirectory/foad@gmail.com/20180624_023322/test5.ifcxml' (34,156)
+2018-07-05 15:02:22: Copy Over 'C:/PerformanceFolder/BIMgo-GP/Presentation/BIMgoPPT4.pptx' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/Presentation/BIMgoPPT4.pptx' (11,580,881)
+2018-07-05 15:02:22: Copy New 'C:/PerformanceFolder/BIMgo-GP/Presentation/BIMgoPPT5.pptx' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/Presentation/BIMgoPPT5.pptx' (11,581,585)
+2018-07-05 15:02:22: Copy New 'C:/PerformanceFolder/BIMgo-GP/Presentation/Data/BIMgo_DEMO_Video.mp4' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/Presentation/Data/BIMgo_DEMO_Video.mp4' (27,306,124)
+2018-07-05 15:02:22: Copy New 'C:/PerformanceFolder/BIMgo-GP/Presentation/Data/ClassDiagram1.png' -> 'D:/Civil Material/private/Private BIMgo-GP Backup/Presentation/Data/ClassDiagram1.png' (224,085)
+2018-07-05 15:02:24: == Sync Complete. Time: 00:00:04, Speed: 24.8 MB/s, OK: 16, Errors: 0
+2018-07-05 15:02:24: 
