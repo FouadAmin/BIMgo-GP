@@ -1,5 +1,5 @@
 # BIMgo-GP
-Bim Authering Tool As a graduation project for ITI-CEI-Intake38
+Bim Authoring  Tool As a graduation project for ITI-CEI-Intake38
 # How To Run 
 1 -  Open APICodeManager.sln from Path ......\BIMgo-GP\ApiCodeManager 
 2 -  Run Project BimAPI 
